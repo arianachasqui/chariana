@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es" data-adm><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><title>Panel · Chariana</title>
+<meta name="theme-color" content="#0a0a0a"><link rel="manifest" href="manifest-admin.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Panel Chariana"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0a0a0a;--white:#faf8f4;--gold:#C9A84C;--gold2:#e8c96a;--gold-light:#f9f2df;--cream:#F6EFE7;--cream2:#ede4d8;--crimson:#8B0000;--gray:#6b6b6b;--gray2:#c8c0b4;
+--ink:#0a0a0a;--paper:#faf8f4;--ivory:#F6EFE7;--wine:#8B0000;--muted:#6b6b6b;--line:#ede4d8;--r:12px;--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--sans:'Jost',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--nav:72px}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--cream);color:var(--black);overflow-x:hidden;line-height:1.6}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--cream)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:400}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:inherit}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.announce{background:var(--black);color:var(--gold);text-align:center;padding:10px 14px;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500}
+.announce a{color:var(--gold2);margin-left:8px;border-bottom:1px solid rgba(232,201,106,.3);white-space:nowrap}
+@media(max-width:600px){.announce{font-size:10px;letter-spacing:2px}}
+/* NAV */
+.nav{background:rgba(10,10,10,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(201,168,76,.18)}
+.nav .wrap{max-width:none;display:flex;align-items:center;gap:16px;height:var(--nav)}
+.logo{font:italic 300 28px var(--serif);color:var(--white);letter-spacing:5px;text-transform:uppercase;margin-right:auto}.logo span{color:var(--gold)}
+.menu{display:flex;gap:36px;list-style:none;margin-right:12px}
+.menu a{position:relative;color:rgba(255,255,255,.62);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;transition:color .2s}
+.menu a:after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .25s}
+.menu a:hover{color:var(--gold)}.menu a:hover:after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 36px;border-radius:4px;border:1px solid transparent;font:600 11px var(--sans);letter-spacing:2.5px;text-transform:uppercase;transition:all .2s;background:transparent;white-space:nowrap;min-height:46px}
+.btn.fill{background:var(--gold);color:var(--black);font-weight:700}.btn.fill:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.line{border-color:rgba(255,255,255,.25);color:var(--white);font-weight:500}.btn.line:hover{border-color:var(--gold);color:var(--gold)}
+.btn.dark{background:var(--black);color:var(--gold)}.btn.dark:hover{background:var(--gold);color:var(--black)}
+.nav .btn{padding:9px 20px;min-height:0}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;padding:6px}.burger span{display:block;width:24px;height:1.5px;background:var(--white)}
+.drawer{position:fixed;inset:0;z-index:200;background:rgba(10,10,10,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;transform:translateX(100%);transition:transform .35s cubic-bezier(.25,.46,.45,.94);visibility:hidden}
+.drawer.on{transform:none;visibility:visible}.drawer a{font:300 36px var(--serif);color:var(--white);letter-spacing:2px}.drawer a:hover,.drawer a.g{color:var(--gold)}
+.dx{position:absolute;top:22px;right:26px;background:none;border:0;color:rgba(255,255,255,.55);font-size:28px}
+@media(max-width:900px){.menu,.nav .btn{display:none}.burger{display:flex}.logo{font-size:24px;letter-spacing:4px}}
+/* IDIOMA */
+.lang{position:relative}.lang>button{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:4px;border:1px solid rgba(201,168,76,.35);background:rgba(255,255,255,.05);color:var(--gold);font:600 11px var(--sans);letter-spacing:1.5px;text-transform:uppercase}
+.lang>button:hover{background:rgba(201,168,76,.15)}
+.lang ul{display:none;position:absolute;right:0;top:calc(100% + 8px);min-width:160px;list-style:none;background:var(--black);border:1px solid rgba(201,168,76,.3);border-radius:8px;padding:6px;box-shadow:0 16px 40px rgba(0,0,0,.45);z-index:300}
+.lang.open ul{display:block}.lang li button{display:flex;justify-content:space-between;width:100%;background:none;border:0;padding:10px 11px;border-radius:5px;color:rgba(255,255,255,.75);font:400 12px var(--sans);letter-spacing:.5px}
+.lang li button:hover,.lang li.on button{background:rgba(201,168,76,.14);color:var(--gold)}.lang li b{font-size:10px;letter-spacing:1.5px;opacity:.6}
+/* HERO */
+.hero{position:relative;min-height:max(600px,calc(100svh - 112px));background:var(--black);display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
+.hero-bg{position:absolute;inset:0;background:url(https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=80) center/cover;opacity:.22}
+.glow{position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;max-width:100%;background:radial-gradient(circle,rgba(201,168,76,.1) 0%,transparent 70%);pointer-events:none}
+.hc{position:relative;padding:60px 20px 90px;animation:fadeUp .9s ease both}
+.eyebrow{font-size:10px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;font-weight:500;margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:12px}
+.eyebrow:before,.eyebrow:after{content:'';width:40px;height:1px;background:var(--gold);opacity:.5}
+.hero h1{font:300 clamp(52px,9vw,110px)/.95 var(--serif);color:var(--white);letter-spacing:-1px;margin-bottom:28px}.hero h1 em{display:block;color:var(--gold);font-style:italic}
+.hero p{color:rgba(255,255,255,.5);font-size:13px;letter-spacing:1.5px;max-width:380px;margin:0 auto 40px;line-height:1.9}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.45;animation:bounce 2s ease-in-out infinite}
+.scroll span{font-size:9px;letter-spacing:3px;color:var(--white);text-transform:uppercase}.sl{width:1px;height:36px;background:linear-gradient(var(--white),transparent)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}@keyframes bounce{0%,100%{transform:translateX(-50%)}50%{transform:translateX(-50%) translateY(-8px)}}
+.stats{background:var(--black);padding:30px 20px;display:flex;justify-content:center;border-top:1px solid rgba(201,168,76,.12);border-bottom:1px solid rgba(201,168,76,.12)}
+.stat{text-align:center;padding:0 clamp(18px,5vw,56px);border-right:1px solid rgba(255,255,255,.08)}.stat:last-child{border:0}
+.stat b{display:block;font:400 clamp(28px,5vw,36px)/1 var(--serif);color:var(--gold)}.stat span{display:block;font-size:9px;letter-spacing:2.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-top:6px;font-weight:500}
+/* SECCIONES */
+.sec{padding:clamp(56px,8vw,80px) 0}.center{text-align:center}
+.tag{display:block;font-size:9px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;font-weight:600;margin-bottom:10px}
+.title{font:300 clamp(32px,5vw,52px)/1.1 var(--serif);letter-spacing:.5px;color:var(--black)}.title em{color:var(--crimson);font-style:italic}
+.rule{width:48px;height:2px;background:var(--gold);margin:18px 0 0;border-radius:1px}.center .rule{margin:18px auto 0}.sechd{margin-bottom:clamp(32px,5vw,52px)}
+.cols{display:grid;gap:16px;grid-template-columns:1fr 1fr;max-width:1200px;margin:0 auto}@media(max-width:760px){.cols{grid-template-columns:1fr}}
+.col{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:clamp(320px,44vw,440px);padding:clamp(26px,4vw,38px);border-radius:12px;overflow:hidden;color:var(--white);transition:transform .35s,box-shadow .35s;text-align:left}
+.col:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.2)}
+.col.t{background:radial-gradient(520px 320px at 85% 0,rgba(201,168,76,.26),transparent 60%),linear-gradient(160deg,#a01010,#5a0000 70%,#3a0000)}
+.col.c{background:radial-gradient(520px 320px at 85% 0,rgba(201,168,76,.2),transparent 60%),linear-gradient(160deg,#2b2b2b,#0a0a0a)}
+.col:before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 4 56 30 30 56 4 30Z' fill='none' stroke='%23e8c96a' stroke-opacity='.11'/%3E%3C/svg%3E")}
+.col>*{position:relative}.col small{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);font-weight:500}.col h3{font:300 clamp(34px,5vw,46px)/1.05 var(--serif);margin:10px 0 12px;letter-spacing:1px}
+.col p{color:rgba(255,255,255,.62);font-size:13px;line-height:1.8;max-width:400px}.col .go{margin-top:22px;color:var(--gold2);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600}
+/* PRODUCTOS */
+.grid{display:grid;gap:clamp(12px,2vw,20px);grid-template-columns:repeat(2,1fr)}@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{display:flex;flex-direction:column;text-align:left;background:var(--white);border:0;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:transform .35s cubic-bezier(.25,.46,.45,.94),box-shadow .35s;padding:0;animation:fadeUp .45s ease both}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,.12)}
+.card .im{position:relative;aspect-ratio:1/1.05;background:var(--cream);overflow:hidden}.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.card:hover .im img{transform:scale(1.06)}
+.bd{position:absolute;top:11px;left:11px;z-index:2;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 9px;border-radius:3px;font-weight:600;background:var(--black);color:var(--gold)}.bd.oferta{background:var(--crimson);color:#fff}.bd.popular{background:var(--gold);color:var(--black)}
+.card .tx{padding:13px 15px 16px}.card .ct{font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;font-weight:600;margin-bottom:4px}
+.card h3{font:400 clamp(17px,2.2vw,19px)/1.2 var(--serif);margin-bottom:5px}.stars{color:var(--gold);font-size:11px;letter-spacing:1px;margin-bottom:8px}
+.pr{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}.pr b{font:600 19px var(--serif)}.pr s{font-size:12px;color:var(--gray)}.low{margin-top:6px;font-size:11px;color:var(--crimson);font-weight:500;letter-spacing:.3px}
+/* CATALOGO */
+.head{background:var(--black);position:relative;overflow:hidden;text-align:center;padding:clamp(44px,7vw,64px) 20px clamp(34px,5vw,48px)}
+.head:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(201,168,76,.12) 0%,transparent 70%)}.head>*{position:relative}
+.head .tag{letter-spacing:5px;font-weight:500;font-size:10px;margin-bottom:16px}.head h1{font:300 clamp(40px,7vw,72px)/1.05 var(--serif);color:var(--white);letter-spacing:1px}.head h1 em{color:var(--gold);font-style:italic}
+.head p{color:rgba(255,255,255,.5);font-size:13px;max-width:420px;margin:14px auto 0;line-height:1.8}.head .hl{width:50px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px auto 0}
+.bar{position:sticky;top:var(--nav);z-index:40;background:rgba(246,239,231,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--cream2);padding:12px 0}
+.pills{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:2px 0}.pills::-webkit-scrollbar{display:none}
+.pill{flex:none;min-height:40px;padding:0 20px;border-radius:4px;border:1px solid var(--cream2);background:var(--white);font:600 11px var(--sans);letter-spacing:2px;text-transform:uppercase;white-space:nowrap;color:var(--gray);transition:.2s}
+.pill:hover{border-color:var(--gold);color:var(--black)}.pill.on{background:var(--black);color:var(--gold);border-color:var(--black)}
+.pill.sm{min-height:34px;padding:0 14px;font-size:10px;letter-spacing:1.5px;font-weight:500}.pill.sm.on{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.tools{display:flex;gap:10px;align-items:center;margin-top:10px}.tools .pills{flex:1}.tools select{flex:none;height:36px;border:1px solid var(--cream2);border-radius:4px;background:var(--white);padding:0 10px;font:400 12px var(--sans);max-width:46%;color:var(--black)}
+.csec{padding:clamp(34px,6vw,56px) 0 6px}.chd{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--cream2)}
+.chd h2{font:300 clamp(32px,5vw,46px)/1.1 var(--serif);letter-spacing:.5px}.chd.t h2{color:var(--crimson);font-style:italic}.chd p{color:var(--gray);font-size:13px;line-height:1.8;max-width:520px;margin-top:6px}.chd .n{font-size:10px;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;font-weight:600}
+.empty{text-align:center;padding:60px 16px;color:var(--gray)}
+/* MODAL */
+.back{position:fixed;inset:0;z-index:300;background:rgba(10,10,10,.7);backdrop-filter:blur(4px);display:none;align-items:flex-end;justify-content:center}.back.on{display:flex}
+.sheet{position:relative;width:100%;max-height:92svh;overflow-y:auto;background:var(--white);border-radius:16px 16px 0 0;animation:fadeUp .3s ease both}
+.sheet .im{aspect-ratio:4/3;background:var(--cream)}.sheet .im img{width:100%;height:100%;object-fit:cover}
+.sheet .in{padding:24px clamp(20px,4vw,28px) calc(26px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:11px}
+.sheet .cl{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:600}.sheet h2{font:400 clamp(28px,5vw,34px)/1.1 var(--serif)}
+.sheet p{font-size:13px;line-height:1.75;color:var(--gray)}.sheet .pr b{font-size:28px}.sheet .btn{width:100%;margin-top:6px;border-radius:8px}
+.sheet .btn.fill{background:var(--black);color:var(--gold)}.sheet .btn.fill:hover{background:var(--gold);color:var(--black)}
+.x{position:absolute;top:12px;right:12px;z-index:3;width:32px;height:32px;border-radius:50%;border:0;background:rgba(10,10,10,.55);color:#fff;font-size:15px;transition:.2s}.x:hover{background:var(--crimson)}
+@media(min-width:760px){.back{align-items:center;padding:24px}.sheet{display:grid;grid-template-columns:44% 1fr;max-width:720px;border-radius:14px;max-height:88svh}.sheet .im{aspect-ratio:auto;min-height:100%}}
+/* NOSOTROS (negro) / CONTACTO */
+.proceso{background:var(--black);text-align:center}.proceso .title{color:var(--white)}.proceso .title em{color:var(--gold)}
+.proceso .lead{color:rgba(255,255,255,.45);font-size:13px;line-height:1.8;max-width:520px;margin:18px auto 0;letter-spacing:.3px}
+.pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:900px;margin:clamp(34px,5vw,52px) auto 0;position:relative}
+.pasos:before{content:'';position:absolute;top:28px;left:15%;right:15%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.3),transparent)}
+.paso{display:flex;flex-direction:column;align-items:center;gap:12px}.paso i{width:56px;height:56px;border-radius:50%;border:1px solid rgba(201,168,76,.3);display:grid;place-items:center;background:#0f0e0b;position:relative;z-index:1;font-style:normal;font-size:20px;color:var(--gold)}
+.paso h3{font:600 12px var(--sans);color:var(--white);letter-spacing:1px;text-transform:uppercase}.paso p{font-size:12px;color:rgba(255,255,255,.4);line-height:1.6;max-width:200px}
+@media(max-width:700px){.pasos{grid-template-columns:1fr;gap:28px}.pasos:before{display:none}}
+.contact{background:var(--black);text-align:center;position:relative;overflow:hidden}.contact:before{content:'';position:absolute;top:0;left:50%;width:1px;height:60px;background:linear-gradient(var(--gold),transparent)}
+.contact .title{color:var(--white)}.contact .rule{margin-left:auto;margin-right:auto}.contact p{font-size:13px;color:rgba(255,255,255,.45);max-width:420px;margin:18px auto 38px;line-height:1.8}
+.btn.wab{background:#25D366;color:#fff;border-radius:8px;letter-spacing:1.5px;font-weight:600;padding:14px 28px}.btn.wab:hover{transform:translateY(-3px)}
+.flogo{font:italic 300 clamp(36px,10vw,56px) var(--serif);color:rgba(255,255,255,.08);letter-spacing:8px;margin-top:46px;user-select:none;text-transform:uppercase}.flogo span{color:rgba(201,168,76,.18)}
+footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font-size:11px;letter-spacing:.5px;padding:0 16px calc(26px + env(safe-area-inset-bottom,0px));border-top:0}
+.contact+footer{padding-top:0}footer.solo{padding-top:26px;border-top:1px solid rgba(201,168,76,.15)}
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:90;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(37,211,102,.35);transition:.2s}.wa:hover{transform:scale(1.1)}.wa svg{width:30px;height:30px;fill:#fff}
+.bt{position:fixed;right:28px;bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:90;width:38px;height:38px;border-radius:50%;background:rgba(10,10,10,.7);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:14px;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.25s;backdrop-filter:blur(6px)}.bt.on{opacity:1;pointer-events:auto}.bt:hover{background:var(--gold);color:var(--black)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}
+.cur-d,.cur-r{position:fixed;pointer-events:none;z-index:9999;border-radius:50%;transform:translate(-50%,-50%);display:none}
+@media(pointer:fine){.cur-d,.cur-r{display:block}body,a,button{cursor:none}.cur-d{width:8px;height:8px;background:var(--gold);transition:transform .08s}.cur-r{width:30px;height:30px;border:1.5px solid rgba(201,168,76,.55);transition:left .12s,top .12s,width .2s,height .2s,background .2s}.cur-d.big{transform:translate(-50%,-50%) scale(2.5)}.cur-r.big{width:48px;height:48px;background:rgba(201,168,76,.07);border-color:var(--gold)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+<style>
+body{background:var(--cream)}.btn.line{color:var(--black);border-color:var(--gold)}.btn.line:hover{background:var(--gold-light)}.btn.fill,.btn.dark{border-color:transparent}.btn{letter-spacing:2px}.pn{max-width:760px;margin:0 auto;padding:22px 16px 90px}
+.fld{display:block;margin-top:14px;font:500 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+input,select,textarea{width:100%;margin-top:6px;padding:13px;border:1.5px solid var(--line);border-radius:10px;background:#fff;font:400 16px var(--sans);color:var(--ink)}textarea{min-height:84px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-bottom:16px}.box h2{font-size:28px;margin-bottom:6px}.mut{color:var(--muted);font-size:14px}
+.row{display:flex;gap:14px;align-items:center;padding:12px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);margin-bottom:10px;cursor:pointer}.row img{width:62px;height:76px;object-fit:cover;border-radius:8px;background:#efe6d8;flex:none}
+.row b{font:600 20px var(--serif)}.row span{display:block;font-size:13px;color:var(--muted)}.row i{margin-left:auto;font-style:normal;color:var(--gold);font-size:20px}
+.top{display:flex;align-items:center;gap:10px;margin-bottom:18px}.top h1{font-size:34px;margin-right:auto}
+.btn.s{min-height:42px;padding:0 18px;font-size:12px}.btn.red{border-color:#b33;color:#b33}.btn.blk{width:100%;margin-top:14px}
+.ph{display:flex;gap:14px;align-items:center;margin-top:6px}.ph img{width:96px;height:120px;object-fit:cover;border-radius:10px;background:#efe6d8}
+.sheet{max-width:640px}.sheet .in{padding-top:26px}.ok{color:#2f6b3a;font-weight:500}.er{color:#b00;font-weight:500}details{margin-top:16px}summary{cursor:pointer;font-weight:500;color:var(--gold)}
+#msg{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:99;background:var(--ink);color:var(--gold2);border:1px solid var(--gold);border-radius:12px;padding:14px 16px;display:none;max-width:560px;margin:0 auto}
+</style></head><body>
+<div class="pn" id="app"></div><div id="msg"></div>
+<div class="back" id="bk"><div class="sheet" id="sh"></div></div>
+<script>window.__DATA={"config": {"whatsapp": "", "wa_link": "https://wa.link/45liym", "imgs": {}}, "productos": [{"id": 1, "nombre": "Aretes Rojos", "col": "tierradentro", "cat": "Aretes", "precio": 20000, "precioOld": 25000, "img": "2.jpeg", "badge": "oferta", "estrellas": 5, "stock": 4, "desc": "Elegantes aretes en tono rojo profundo, perfectos para noches especiales. Material hipoalergénico.", "i18n": {"en": {"nombre": "Red Earrings", "desc": "Elegant earrings in a deep red tone, perfect for special nights. Hypoallergenic material."}, "it": {"nombre": "Orecchini Rossi", "desc": "Eleganti orecchini in un rosso profondo, perfetti per le serate speciali. Materiale ipoallergenico."}, "fr": {"nombre": "Boucles d'oreilles Rouges", "desc": "Élégantes boucles d'oreilles d'un rouge profond, parfaites pour les soirées spéciales. Matériau hypoallergénique."}, "pt": {"nombre": "Brincos Vermelhos", "desc": "Elegantes brincos em tom vermelho profundo, perfeitos para noites especiais. Material hipoalergênico."}}}, {"id": 2, "nombre": "Aretes Dorados", "col": "contemporanea", "cat": "Aretes", "precio": 25000, "precioOld": null, "img": "3.jpeg", "badge": "nuevo", "estrellas": 5, "stock": 12, "desc": "Aretes de acabado dorado 18k con diseño contemporáneo. Livianos y cómodos para uso diario.", "i18n": {"en": {"nombre": "Golden Earrings", "desc": "18k gold-finish earrings with a contemporary design. Lightweight and comfortable for everyday wear."}, "it": {"nombre": "Orecchini Dorati", "desc": "Orecchini con finitura oro 18k dal design contemporaneo. Leggeri e comodi per l'uso quotidiano."}, "fr": {"nombre": "Boucles d'oreilles Dorées", "desc": "Boucles d'oreilles à finition or 18 carats au design contemporain. Légères et confortables au quotidien."}, "pt": {"nombre": "Brincos Dourados", "desc": "Brincos com acabamento dourado 18k e design contemporâneo. Leves e confortáveis para o dia a dia."}}}, {"id": 3, "nombre": "Anillo Elegante", "col": "contemporanea", "cat": "Anillos", "precio": 18000, "precioOld": null, "img": "4.jpeg", "badge": null, "estrellas": 4, "stock": 8, "desc": "Anillo de diseño minimalista que combina con cualquier outfit. Talla ajustable.", "i18n": {"en": {"nombre": "Elegant Ring", "desc": "Minimalist ring design that goes with any outfit. Adjustable size."}, "it": {"nombre": "Anello Elegante", "desc": "Anello dal design minimalista che si abbina a ogni outfit. Misura regolabile."}, "fr": {"nombre": "Bague Élégante", "desc": "Bague au design minimaliste qui s'accorde avec toutes les tenues. Taille ajustable."}, "pt": {"nombre": "Anel Elegante", "desc": "Anel de design minimalista que combina com qualquer look. Tamanho ajustável."}}}, {"id": 4, "nombre": "Anillo Flor", "col": "tierradentro", "cat": "Anillos", "precio": 20000, "precioOld": null, "img": "5.jpeg", "badge": "popular", "estrellas": 5, "stock": 6, "desc": "Diseño floral delicado, símbolo de feminidad y naturaleza. Un clásico de Chariana.", "i18n": {"en": {"nombre": "Flower Ring", "desc": "Delicate floral design, a symbol of femininity and nature. A Chariana classic."}, "it": {"nombre": "Anello Fiore", "desc": "Delicato design floreale, simbolo di femminilità e natura. Un classico di Chariana."}, "fr": {"nombre": "Bague Fleur", "desc": "Design floral délicat, symbole de féminité et de nature. Un classique de Chariana."}, "pt": {"nombre": "Anel Flor", "desc": "Design floral delicado, símbolo de feminilidade e natureza. Um clássico da Chariana."}}}, {"id": 5, "nombre": "Collar Perlas", "col": "contemporanea", "cat": "Collares", "precio": 30000, "precioOld": 38000, "img": "6.jpeg", "badge": "oferta", "estrellas": 5, "stock": 3, "desc": "Collar de perlas cultivadas con cierre dorado. Elegancia atemporal para toda ocasión.", "i18n": {"en": {"nombre": "Pearl Necklace", "desc": "Cultured pearl necklace with a gold clasp. Timeless elegance for every occasion."}, "it": {"nombre": "Collana di Perle", "desc": "Collana di perle coltivate con chiusura dorata. Eleganza senza tempo per ogni occasione."}, "fr": {"nombre": "Collier de Perles", "desc": "Collier de perles de culture avec fermoir doré. Une élégance intemporelle pour toute occasion."}, "pt": {"nombre": "Colar de Pérolas", "desc": "Colar de pérolas cultivadas com fecho dourado. Elegância atemporal para qualquer ocasião."}}}, {"id": 6, "nombre": "Collar Dorado", "col": "tierradentro", "cat": "Collares", "precio": 35000, "precioOld": null, "img": "7.jpeg", "badge": "nuevo", "estrellas": 4, "stock": 10, "desc": "Cadena dorada de malla fina con dije artesanal. El complemento perfecto para tu look.", "i18n": {"en": {"nombre": "Golden Necklace", "desc": "Fine mesh gold chain with a handcrafted pendant. The perfect complement to your look."}, "it": {"nombre": "Collana Dorata", "desc": "Catena dorata a maglia sottile con ciondolo artigianale. Il complemento perfetto per il tuo look."}, "fr": {"nombre": "Collier Doré", "desc": "Chaîne dorée à maille fine avec pendentif artisanal. Le complément parfait de votre look."}, "pt": {"nombre": "Colar Dourado", "desc": "Corrente dourada de malha fina com pingente artesanal. O complemento perfeito para o seu visual."}}}, {"id": 7, "nombre": "Pulsera Artesanal", "col": "tierradentro", "cat": "Pulseras", "precio": 22000, "precioOld": null, "img": "8.jpeg", "badge": "nuevo", "estrellas": 5, "stock": 5, "desc": "Tejida a mano con hilos y cuentas doradas. Cada pulsera es única e irrepetible.", "i18n": {"en": {"nombre": "Handmade Bracelet", "desc": "Hand-woven with threads and golden beads. Every bracelet is unique and unrepeatable."}, "it": {"nombre": "Braccialetto Artigianale", "desc": "Intrecciato a mano con fili e perline dorate. Ogni braccialetto è unico e irripetibile."}, "fr": {"nombre": "Bracelet Artisanal", "desc": "Tissé à la main avec des fils et des perles dorées. Chaque bracelet est unique et irremplaçable."}, "pt": {"nombre": "Pulseira Artesanal", "desc": "Tecida à mão com fios e contas douradas. Cada pulseira é única e irrepetível."}}}, {"id": 8, "nombre": "Set Accesorios", "col": "contemporanea", "cat": "Sets", "precio": 28000, "precioOld": 35000, "img": "9.jpeg", "badge": "oferta", "estrellas": 5, "stock": 2, "desc": "Set completo: aretes + collar + pulsera a juego. El regalo perfecto para alguien especial.", "i18n": {"en": {"nombre": "Accessories Set", "desc": "Complete set: earrings + necklace + bracelet to match. The perfect gift for someone special."}, "it": {"nombre": "Set di Accessori", "desc": "Set completo: orecchini + collana + braccialetto coordinati. Il regalo perfetto per una persona speciale."}, "fr": {"nombre": "Parure d'Accessoires", "desc": "Parure complète : boucles d'oreilles + collier + bracelet assortis. Le cadeau parfait pour une personne spéciale."}, "pt": {"nombre": "Conjunto de Acessórios", "desc": "Conjunto completo: brincos + colar + pulseira combinando. O presente perfeito para alguém especial."}}}], "textos": {}};</script>
+<script>
+/* CHARIANA · idiomas (ES · EN · IT · FR · PT) y utilidades compartidas.
+   Para cambiar un texto del sitio: busca su clave y edita la línea. R('clave', es, en, it, fr, pt) */
+(function(){
+  var L=['es','en','it','fr','pt'],NAMES={es:'Español',en:'English',it:'Italiano',fr:'Français',pt:'Português'},
+      LOC={es:'es-CO',en:'en-US',it:'it-IT',fr:'fr-FR',pt:'pt-BR'},D={es:{},en:{},it:{},fr:{},pt:{}},KEY='chariana-lang';
+  function R(k){var a=arguments;L.forEach(function(l,i){D[l][k]=a[i+1]})}
+
+  /* ---- Navegación ---- */
+  R('nav_home','Inicio','Home','Home','Accueil','Início');
+  R('nav_cols','Colecciones','Collections','Collezioni','Collections','Coleções');
+  R('nav_about','Nosotros','About us','Chi siamo','À propos','Sobre nós');
+  R('nav_contact','Contacto','Contact','Contatti','Contact','Contato');
+  R('nav_cat','Catálogo','Catalogue','Catalogo','Catalogue','Catálogo');
+  R('back','← Inicio','← Home','← Home','← Accueil','← Início');
+  /* ---- Portada ---- */
+  R('hero_eyebrow','Joyería artesanal colombiana','Colombian handmade jewelry','Gioielli artigianali colombiani','Bijoux artisanaux colombiens','Joias artesanais colombianas');
+  R('hero_t1','Joyería que','Jewelry that','Gioielli che','Des bijoux qui','Joias que');
+  R('hero_t2','te define','defines you','ti definiscono','vous définissent','te definem');
+  R('hero_desc','Accesorios artesanales únicos, diseñados con amor en Colombia.','Unique handcrafted accessories, designed with love in Colombia.','Accessori artigianali unici, progettati con amore in Colombia.','Accessoires artisanaux uniques, conçus avec amour en Colombie.','Acessórios artesanais únicos, desenhados com amor na Colômbia.');
+  R('hero_cta','Ver catálogo','View catalogue','Vedi il catalogo','Voir le catalogue','Ver catálogo');
+  R('hero_cta2','Nuestras colecciones','Our collections','Le nostre collezioni','Nos collections','Nossas coleções');
+  R('col_tag','Nuestras líneas','Our lines','Le nostre linee','Nos lignes','Nossas linhas');
+  R('col_title','Dos colecciones, <em>una sola esencia</em>','Two collections, <em>one essence</em>','Due collezioni, <em>una sola essenza</em>','Deux collections, <em>une seule essence</em>','Duas coleções, <em>uma só essência</em>');
+  R('col_tierradentro','Tierradentro','Tierradentro','Tierradentro','Tierradentro','Tierradentro');
+  R('col_contemporanea','Línea Contemporánea','Contemporary Line','Linea Contemporanea','Ligne Contemporaine','Linha Contemporânea');
+  R('col_tierradentro_desc','Inspirada en la herencia ancestral de Tierradentro, Cauca. Artesanía con raíces, memoria e identidad.','Inspired by the ancestral heritage of Tierradentro, Cauca. Craftsmanship with roots, memory and identity.','Ispirata all\'eredità ancestrale di Tierradentro, Cauca. Artigianato con radici, memoria e identità.','Inspirée de l\'héritage ancestral de Tierradentro, Cauca. Un artisanat plein de racines, de mémoire et d\'identité.','Inspirada na herança ancestral de Tierradentro, Cauca. Artesanato com raízes, memória e identidade.');
+  R('col_contemporanea_desc','Diseños modernos y versátiles para el día a día. Líneas limpias, estilo actual.','Modern, versatile designs for everyday wear. Clean lines, current style.','Design moderni e versatili per ogni giorno. Linee pulite, stile attuale.','Des créations modernes et polyvalentes pour le quotidien. Lignes épurées, style actuel.','Designs modernos e versáteis para o dia a dia. Linhas limpas, estilo atual.');
+  R('col_btn','Ver colección →','View collection →','Vedi la collezione →','Voir la collection →','Ver coleção →');
+  R('n_one','{n} pieza','{n} piece','{n} pezzo','{n} pièce','{n} peça');
+  R('n_many','{n} piezas','{n} pieces','{n} pezzi','{n} pièces','{n} peças');
+  R('feat_tag','Favoritos','Favourites','Preferiti','Favoris','Favoritos');
+  R('feat_title','Piezas <em>destacadas</em>','<em>Featured</em> pieces','Pezzi <em>in evidenza</em>','Pièces <em>à l\'honneur</em>','Peças <em>em destaque</em>');
+  R('feat_all','Ver todo el catálogo','See the full catalogue','Vedi tutto il catalogo','Voir tout le catalogue','Ver todo o catálogo');
+  R('about_tag','Nosotros','About us','Chi siamo','À propos','Sobre nós');
+  R('about_title','Hecho a mano, <em>pensado para ti</em>','Handmade, <em>made for you</em>','Fatto a mano, <em>pensato per te</em>','Fait main, <em>pensé pour vous</em>','Feito à mão, <em>pensado para você</em>');
+  R('about_desc','Cada pieza de Chariana nace en manos colombianas, con materiales cuidados y diseños que cuentan una historia.','Every Chariana piece is born in Colombian hands, with carefully chosen materials and designs that tell a story.','Ogni pezzo Chariana nasce da mani colombiane, con materiali curati e design che raccontano una storia.','Chaque pièce Chariana naît entre des mains colombiennes, avec des matériaux soignés et des créations qui racontent une histoire.','Cada peça da Chariana nasce em mãos colombianas, com materiais cuidadosos e designs que contam uma história.');
+  R('v1_t','100% artesanal','100% handmade','100% artigianale','100% artisanal','100% artesanal');
+  R('v1_d','Piezas únicas, hechas con dedicación.','Unique pieces, made with dedication.','Pezzi unici, realizzati con dedizione.','Des pièces uniques, réalisées avec dévouement.','Peças únicas, feitas com dedicação.');
+  R('v2_t','Envíos a toda Colombia','Shipping across Colombia','Spedizioni in tutta la Colombia','Livraison dans toute la Colombie','Envios para toda a Colômbia');
+  R('v2_d','Te lo llevamos hasta la puerta.','Delivered to your door.','Te lo portiamo fino a casa.','Livré jusqu\'à votre porte.','Levamos até a sua porta.');
+  R('v3_t','Material hipoalergénico','Hypoallergenic material','Materiale ipoallergenico','Matériau hypoallergénique','Material hipoalergênico');
+  R('v3_d','Cómodo y seguro para tu piel.','Comfortable and safe for your skin.','Comodo e sicuro per la tua pelle.','Confortable et sûr pour votre peau.','Confortável e seguro para a sua pele.');
+  R('ct_tag','Contacto','Contact','Contatti','Contact','Contato');
+  R('ct_title','Hablemos','Let\'s talk','Parliamone','Parlons-en','Vamos conversar');
+  R('ct_desc','¿Dudas, pedidos o envíos? Escríbenos y te respondemos pronto.','Questions, orders or shipping? Write to us and we\'ll reply soon.','Domande, ordini o spedizioni? Scrivici e ti risponderemo presto.','Questions, commandes ou livraison ? Écrivez-nous, nous vous répondons vite.','Dúvidas, pedidos ou envios? Escreva-nos e responderemos em breve.');
+  R('ct_btn','Escribir por WhatsApp','Message us on WhatsApp','Scrivici su WhatsApp','Écrire sur WhatsApp','Falar no WhatsApp');
+  R('copy','© {y} Chariana Accesorios · Todos los derechos reservados','© {y} Chariana Accesorios · All rights reserved','© {y} Chariana Accesorios · Tutti i diritti riservati','© {y} Chariana Accesorios · Tous droits réservés','© {y} Chariana Accesorios · Todos os direitos reservados');
+  R('announce','✦ Envíos a todo Colombia ✦ Accesorios 100% artesanales','✦ Shipping across Colombia ✦ 100% handmade accessories','✦ Spedizioni in tutta la Colombia ✦ Accessori 100% artigianali','✦ Livraison dans toute la Colombie ✦ Accessoires 100% artisanaux','✦ Envios para toda a Colômbia ✦ Acessórios 100% artesanais');
+  R('announce_link','Ver catálogo →','View catalogue →','Vedi il catalogo →','Voir le catalogue →','Ver catálogo →');
+  R('col_lbl_1','Colección 01','Collection 01','Collezione 01','Collection 01','Coleção 01');R('col_lbl_2','Colección 02','Collection 02','Collezione 02','Collection 02','Coleção 02');
+  R('scroll','Desliza','Scroll','Scorri','Défiler','Role');R('stat_p','Piezas','Pieces','Pezzi','Pièces','Peças');R('stat_c','Colecciones','Collections','Collezioni','Collections','Coleções');R('stat_h','Artesanal','Handmade','Artigianale','Artisanal','Artesanal');
+  /* ---- Catálogo ---- */
+  R('cat_title','Catálogo','Catalogue','Catalogo','Catalogue','Catálogo');
+  R('cat_sub','Explora nuestras dos colecciones y escríbenos para pedir la pieza que te guste.','Explore our two collections and message us to order the piece you love.','Esplora le nostre due collezioni e scrivici per ordinare il pezzo che ami.','Découvrez nos deux collections et écrivez-nous pour commander la pièce qui vous plaît.','Explore nossas duas coleções e fale conosco para pedir a peça que você amar.');
+  R('f_all','Todas','All','Tutte','Toutes','Todas');
+  R('f_allc','Todo','All','Tutto','Tout','Tudo');
+  R('sort_def','Destacados','Featured','In evidenza','En vedette','Destaques');
+  R('sort_asc','Precio: menor a mayor','Price: low to high','Prezzo: crescente','Prix : croissant','Preço: menor para maior');
+  R('sort_desc','Precio: mayor a menor','Price: high to low','Prezzo: decrescente','Prix : décroissant','Preço: maior para menor');
+  R('no_res','No hay piezas en esta selección.','No pieces in this selection.','Nessun pezzo in questa selezione.','Aucune pièce dans cette sélection.','Nenhuma peça nesta seleção.');
+  R('err','No se pudo cargar el catálogo. Intenta de nuevo.','The catalogue could not be loaded. Please try again.','Impossibile caricare il catalogo. Riprova.','Impossible de charger le catalogue. Réessayez.','Não foi possível carregar o catálogo. Tente novamente.');
+  R('b_oferta','Oferta','Sale','Offerta','Promo','Oferta');R('b_nuevo','Nuevo','New','Novità','Nouveau','Novo');R('b_popular','Popular','Popular','Popolare','Populaire','Popular');
+  R('low','¡Últimas {n}!','Only {n} left!','Ultimi {n}!','Plus que {n} !','Últimas {n}!');R('ok','Disponible','In stock','Disponibile','Disponible','Disponível');
+  R('order','Pedir por WhatsApp','Order on WhatsApp','Ordina su WhatsApp','Commander sur WhatsApp','Pedir pelo WhatsApp');
+  R('msg','Hola Chariana, me interesa: {name} ({price})','Hello Chariana, I\'m interested in: {name} ({price})','Ciao Chariana, mi interessa: {name} ({price})','Bonjour Chariana, je suis intéressé(e) par : {name} ({price})','Olá Chariana, tenho interesse em: {name} ({price})');
+  R('close','Cerrar','Close','Chiudi','Fermer','Fechar');
+  var C={Aretes:['Aretes','Earrings','Orecchini','Boucles d\'oreilles','Brincos'],Anillos:['Anillos','Rings','Anelli','Bagues','Anéis'],Collares:['Collares','Necklaces','Collane','Colliers','Colares'],Pulseras:['Pulseras','Bracelets','Bracciali','Bracelets','Pulseiras'],Sets:['Sets','Sets','Set','Parures','Conjuntos'],Cadenas:['Cadenas','Chains','Catenine','Chaînes','Correntes'],Accesorios:['Accesorios','Accessories','Accessori','Accessoires','Acessórios']};
+  Object.keys(C).forEach(function(k){R.apply(null,['c_'+k].concat(C[k]))});
+
+  function detect(){var s;try{s=localStorage.getItem(KEY)}catch(e){}
+    if(s&&D[s])return s;var n=((navigator.languages&&navigator.languages[0])||navigator.language||'es').slice(0,2).toLowerCase();return D[n]?n:'es'}
+  var cur=detect(),OV={};try{OV=JSON.parse(localStorage.getItem('chariana-ov')||'{}')}catch(e){}
+  function t(k,v){var s=(OV[k]&&OV[k][cur])||(D[cur]&&D[cur][k]);if(s==null)s=D.es[k];if(s==null)return k;if(v)s=s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!=null?v[x]:m});return s}
+  function qa(s){return[].slice.call(document.querySelectorAll(s))}
+  function build(){var h=document.getElementById('lang');if(!h)return;
+    h.innerHTML='<div class="lang" id="lg"><button type="button" aria-haspopup="true" aria-label="Idioma">🌐 '+cur.toUpperCase()+' ▾</button><ul>'+L.map(function(c){return'<li class="'+(c===cur?'on':'')+'"><button type="button" data-l="'+c+'">'+NAMES[c]+'<b>'+c.toUpperCase()+'</b></button></li>'}).join('')+'</ul></div>';
+    var g=document.getElementById('lg');g.querySelector('button').onclick=function(e){e.stopPropagation();g.classList.toggle('open')};
+    qa('#lg [data-l]').forEach(function(b){b.onclick=function(){g.classList.remove('open');set(b.dataset.l)}})}
+  document.addEventListener('click',function(){var g=document.getElementById('lg');if(g)g.classList.remove('open')});
+  function apply(){document.documentElement.lang=cur;
+    qa('[data-i]').forEach(function(e){e.textContent=t(e.dataset.i,{y:new Date().getFullYear()})});
+    qa('[data-ih]').forEach(function(e){e.innerHTML=t(e.dataset.ih)});
+    var ti=document.querySelector('title[data-i]');if(ti)document.title=t(ti.dataset.i);build()}
+  function set(l){if(!D[l])return;cur=l;try{localStorage.setItem(KEY,l)}catch(e){}apply();window.dispatchEvent(new Event('langchange'))}
+  var PH='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><rect width="100" height="125" fill="#efe6d8"/><path d="M50 40 72 62 50 84 28 62Z" fill="none" stroke="#c9a84c" stroke-width="2"/><path d="M38 40h24l10 22H28Z" fill="none" stroke="#c9a84c" stroke-width="1.5"/></svg>');
+  document.addEventListener('error',function(e){var i=e.target;if(i&&i.tagName==='IMG'&&!i.dataset.f){i.dataset.f=1;i.src=PH}},true);
+  function setOv(o){OV=o||{};try{localStorage.setItem('chariana-ov',JSON.stringify(OV))}catch(e){}apply()}
+  window.I={D:D,setOv:setOv,t:t,get lang(){return cur},set:set,apply:apply,PH:PH,
+    pick:function(p){var x=p.i18n&&p.i18n[cur]||{};return{nombre:x.nombre||p.nombre,desc:x.desc||p.desc}},
+    money:function(n){try{return new Intl.NumberFormat(LOC[cur],{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n)}catch(e){return'$'+n}},
+    img:function(p){return p.img||PH},
+    cat:function(c){return D.es['c_'+c]?t('c_'+c):c},
+    load:function(){return fetch('productos.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){if(window.__DATA)return window.__DATA;throw 0})},
+    wa:function(cfg,text){var n=(cfg&&cfg.whatsapp||'').replace(/\D/g,'');return n?'https://wa.me/'+n+(text?'?text='+encodeURIComponent(text):''):(cfg&&cfg.wa_link)||'#'},
+    esc:function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}};
+  function mk(c,h){var e=document.createElement('div');e.className=c;if(h)e.innerHTML=h;document.body.appendChild(e);return e}
+  function extras(){if(document.documentElement.hasAttribute('data-adm'))return;var bt=mk('bt','↑');bt.setAttribute('role','button');bt.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+    window.addEventListener('scroll',function(){bt.classList.toggle('on',window.scrollY>500)},{passive:true});
+    if(window.matchMedia&&matchMedia('(pointer:fine)').matches){var d=mk('cur-d'),r=mk('cur-r');
+      document.addEventListener('mousemove',function(e){d.style.left=e.clientX+'px';d.style.top=e.clientY+'px';r.style.left=e.clientX+'px';r.style.top=e.clientY+'px'});
+      document.addEventListener('mouseover',function(e){var b=!!e.target.closest('a,button,.card,.col');d.classList.toggle('big',b);r.classList.toggle('big',b)})}}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',extras);else extras();
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
+})();
+</script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},K='chariana-gh',S={};try{S=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+var DB=null,SHA=null,ED=null,CATS=['Aretes','Anillos','Collares','Pulseras','Sets','Cadenas','Accesorios'],LG=['en','it','fr','pt'],LN={en:'Inglés',it:'Italiano',fr:'Francés',pt:'Portugués'};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var enc=function(s){return btoa(unescape(encodeURIComponent(s)))},dec=function(s){return decodeURIComponent(escape(atob(s)))};
+function msg(t,bad){var m=$('msg');m.innerHTML=(bad?'<span class="er" style="color:#ff9a9a">':'')+t+(bad?'</span>':'');m.style.display='block';clearTimeout(msg.t);msg.t=setTimeout(function(){m.style.display='none'},bad?7000:3500)}
+function api(path,o){o=o||{};var w=o.method==='PUT';return fetch('https://api.github.com/repos/'+S.owner+'/'+S.repo+'/contents/'+path+(w?'':'?ref='+encodeURIComponent(S.branch)+'&_='+Date.now()),{method:o.method||'GET',cache:'no-store',headers:{Authorization:'Bearer '+S.token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:o.body}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(r.status===401?'El token no es válido o venció':r.status===404?'No se encontró el repositorio o el archivo (revisa usuario, repositorio y permisos)':r.status===409||r.status===422?'Alguien cambió el archivo. Recarga la página e intenta de nuevo':(j.message||r.status));return j})})}
+function load(){return api('productos.json').then(function(j){SHA=j.sha;DB=JSON.parse(dec(j.content));DB.config=DB.config||{};DB.config.imgs=DB.config.imgs||{};DB.textos=DB.textos||{}})}
+function commit(m,img){var p=Promise.resolve();[].concat(img||[]).forEach(function(im){p=p.then(function(){return api(im.name,{method:'PUT',body:JSON.stringify({message:'Imagen '+im.name,content:im.b64,branch:S.branch})})})});
+  return p.then(function(){return api('productos.json',{method:'PUT',body:JSON.stringify({message:m,content:enc(JSON.stringify(DB,null,2)+'\n'),sha:SHA,branch:S.branch})})}).then(function(r){SHA=r.content.sha})}
+
+var PW=null;window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();PW=e});window.addEventListener('appinstalled',function(){PW=null;msg('✓ Panel instalado')});
+if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw-admin.js').catch(function(){});
+document.addEventListener('click',function(e){if(e.target.id==='ins')inst()});
+function inst(){if((window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone)return msg('Ya está instalado en este celular');
+  if(PW){PW.prompt();PW.userChoice.then(function(){PW=null});return}
+  var ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  var p=ios?['Abre esta página en <b>Safari</b>.','Toca <b>Compartir</b> (el cuadro con la flecha hacia arriba).','Elige <b>Añadir a pantalla de inicio</b>.','Toca <b>Añadir</b>.']:['Abre esta página en <b>Chrome</b>.','Toca el menú <b>⋮</b> (arriba a la derecha).','Elige <b>Instalar aplicación</b> o <b>Añadir a pantalla de inicio</b>.','Toca <b>Instalar</b>.'];
+  sheet('<h2 style="font-size:30px">'+(ios?'Instalar en iPhone':'Instalar en Android')+'</h2><ol class="mut" style="padding-left:20px;margin:12px 0;line-height:1.9;font-size:16px">'+p.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ol><button class="btn fill blk" id="cl">Entendido</button>');$('cl').onclick=shut}
+function login(){
+  $('app').innerHTML='<div class="top"><h1>Panel Chariana</h1></div><div class="box"><h2>Conectar con GitHub</h2><p class="mut">Se hace una sola vez en este celular. Lo que cambies aquí se guarda en tu GitHub y la página se actualiza sola.</p>'
+  +'<label class="fld">Usuario de GitHub<input id="o" autocapitalize="none" value="'+esc(S.owner||'')+'"></label><label class="fld">Nombre del repositorio<input id="r" autocapitalize="none" value="'+esc(S.repo||'')+'"></label><label class="fld">Rama<input id="b" autocapitalize="none" value="'+esc(S.branch||'main')+'"></label><label class="fld">Token de acceso<input id="t" type="password" autocomplete="off" value="'+esc(S.token||'')+'"></label>'
+  +'<button class="btn fill blk" id="go">Conectar</button><button class="btn line blk" id="ins" type="button">Instalar en este celular</button><details><summary>¿Cómo saco el token?</summary><ol class="mut" style="padding-left:20px;margin-top:10px;line-height:1.8"><li>Entra a github.com → tu foto → <b>Settings</b>.</li><li><b>Developer settings → Personal access tokens → Fine-grained tokens → Generate new token</b>.</li><li>En <b>Repository access</b> elige <b>Only select repositories</b> y marca tu repositorio de Chariana.</li><li>En <b>Permissions → Repository permissions → Contents</b> elige <b>Read and write</b>.</li><li>Genera el token, cópialo y pégalo arriba. Guárdalo solo para ti.</li></ol></details></div>';
+  $('go').onclick=function(){S={owner:$('o').value.trim(),repo:$('r').value.trim(),branch:$('b').value.trim()||'main',token:$('t').value.trim()};if(!S.owner||!S.repo||!S.token)return msg('Completa todos los campos',1);
+    $('go').textContent='Conectando…';load().then(function(){localStorage.setItem(K,JSON.stringify(S));home()}).catch(function(e){$('go').textContent='Conectar';msg(e.message,1)})}}
+var TAB='prod',LG5=['es','en','it','fr','pt'],LN5={es:'Español',en:'Inglés',it:'Italiano',fr:'Francés',pt:'Portugués'};
+var GR=[['Portada',['announce','announce_link','hero_eyebrow','hero_t1','hero_t2','hero_desc','hero_cta','hero_cta2']],['Colecciones',['col_tag','col_title','col_tierradentro','col_tierradentro_desc','col_contemporanea','col_contemporanea_desc','col_btn']],['Destacados',['feat_tag','feat_title','feat_all']],['Nosotros',['about_tag','about_title','about_desc','v1_t','v1_d','v2_t','v2_d','v3_t','v3_d']],['Contacto y pie',['ct_tag','ct_title','ct_desc','ct_btn','copy']],['Catálogo',['cat_title','cat_sub']]];
+var LAB={announce:'Barra negra de arriba',announce_link:'Enlace de la barra negra',hero_eyebrow:'Frase pequeña sobre el título',hero_t1:'Título · primera línea',hero_t2:'Título · línea dorada',hero_desc:'Texto bajo el título',hero_cta:'Botón principal',hero_cta2:'Botón secundario',col_tag:'Etiqueta de colecciones',col_title:'Título de colecciones',col_tierradentro:'Colección 1 · nombre',col_tierradentro_desc:'Colección 1 · descripción',col_contemporanea:'Colección 2 · nombre',col_contemporanea_desc:'Colección 2 · descripción',col_btn:'Botón de cada colección',feat_tag:'Etiqueta de destacados',feat_title:'Título de destacados',feat_all:'Botón "ver todo el catálogo"',about_tag:'Etiqueta de Nosotros',about_title:'Título de Nosotros',about_desc:'Texto de Nosotros',v1_t:'Ventaja 1 · título',v1_d:'Ventaja 1 · texto',v2_t:'Ventaja 2 · título',v2_d:'Ventaja 2 · texto',v3_t:'Ventaja 3 · título',v3_d:'Ventaja 3 · texto',ct_tag:'Etiqueta de contacto',ct_title:'Título de contacto',ct_desc:'Texto de contacto',ct_btn:'Botón de WhatsApp',copy:'Pie de página',cat_title:'Título del catálogo',cat_sub:'Texto del catálogo'};
+var SL=[['hero','Imagen de la portada','Fondo de la primera pantalla. Mejor horizontal.'],['col_t','Colección Tierradentro','Fondo de su tarjeta en la portada.'],['col_c','Colección Contemporánea','Fondo de su tarjeta en la portada.']];
+function val(k,l){return(DB.textos[k]&&DB.textos[k][l])||I.D[l][k]||''}
+function plain(s){return String(s).replace(/<[^>]*>/g,'')}
+function tabProd(){return'<button class="btn dark s blk" id="nw" style="margin:0 0 14px">＋ Nuevo producto</button>'+DB.productos.map(function(p){return'<div class="row" data-id="'+p.id+'"><img src="'+esc(p.img||'')+'" alt="" onerror="this.style.visibility=\'hidden\'"><div><b>'+esc(p.nombre)+'</b><span>'+(p.col==='tierradentro'?'Tierradentro':'Contemporánea')+' · '+esc(p.cat)+'</span><span>$'+Number(p.precio).toLocaleString('es-CO')+' · stock '+p.stock+'</span></div><i>✎</i></div>'}).join('')}
+function tabTxt(){return'<p class="mut" style="margin-bottom:12px">Toca un texto para cambiarlo. Escribes en español y los otros idiomas se traducen solos.</p>'+GR.map(function(g){return'<h3 style="font:600 24px var(--serif);margin:18px 0 8px">'+g[0]+'</h3>'+g[1].map(function(k){var v=plain(val(k,'es'));return'<div class="row" data-k="'+k+'"><div style="min-width:0"><span style="font-size:12px;text-transform:uppercase;letter-spacing:.08em">'+LAB[k]+(DB.textos[k]?' · <b style="color:var(--gold);font:600 12px var(--sans)">editado</b>':'')+'</span><b style="font:500 19px var(--serif);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(v)+'</b></div><i>✎</i></div>'}).join('')}).join('')}
+function tabImg(){return'<p class="mut" style="margin-bottom:12px">Cambia las imágenes de la portada. Se guardan al instante y se reducen solas para que carguen rápido.</p>'+SL.map(function(s){var f=DB.config.imgs[s[0]];return'<div class="box"><h2 style="font-size:24px">'+s[1]+'</h2><p class="mut" style="font-size:13px">'+s[2]+'</p><div class="ph" style="margin-top:10px">'+(f?'<img src="'+esc(f)+'" alt="">':'<div class="mut" style="width:96px;height:120px;border:1px dashed var(--gray2);border-radius:10px;display:grid;place-items:center;text-align:center;font-size:12px;padding:6px">Imagen original</div>')+'<div><button class="btn line s" data-s="'+s[0]+'">Cambiar imagen</button>'+(f?'<button class="btn line s" data-r="'+s[0]+'" style="margin-top:8px">Volver a la original</button>':'')+'<input type="file" accept="image/*" hidden id="f_'+s[0]+'"></div></div></div>'}).join('')}
+function home(){
+  var T=[['prod','Productos'],['txt','Textos'],['img','Imágenes']];
+  $('app').innerHTML='<div class="top"><h1>Panel</h1><button class="btn line s" id="cf">Ajustes</button></div><div class="pills" style="margin-bottom:16px">'+T.map(function(t){return'<button class="pill'+(TAB===t[0]?' on':'')+'" data-t="'+t[0]+'">'+t[1]+'</button>'}).join('')+'</div>'+(TAB==='prod'?tabProd():TAB==='txt'?tabTxt():tabImg())+'<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px"><button class="btn dark s" id="ins">Instalar en este celular</button><button class="btn line s" id="lo">Desconectar</button></div>';
+  document.querySelectorAll('[data-t]').forEach(function(b){b.onclick=function(){TAB=b.dataset.t;home()}});
+  document.querySelectorAll('.row[data-id]').forEach(function(r){r.onclick=function(){form(+r.dataset.id)}});
+  document.querySelectorAll('.row[data-k]').forEach(function(r){r.onclick=function(){editText(r.dataset.k)}});
+  var nw=$('nw');if(nw)nw.onclick=function(){form(0)};
+  document.querySelectorAll('[data-s]').forEach(function(b){b.onclick=function(){$('f_'+b.dataset.s).click()};$('f_'+b.dataset.s).onchange=function(e){setImg(b.dataset.s,e.target.files[0])}});
+  document.querySelectorAll('[data-r]').forEach(function(b){b.onclick=function(){delete DB.config.imgs[b.dataset.r];commit('Imagen original: '+b.dataset.r).then(function(){home();msg('✓ Listo')}).catch(function(e){msg(e.message,1)})}});
+  $('lo').onclick=function(){if(confirm('¿Desconectar?')){localStorage.removeItem(K);S={};login()}};$('cf').onclick=ajustes}
+function rs(f,max,cb){var im=new Image();im.onload=function(){var k=Math.min(1,max/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.85))};im.src=URL.createObjectURL(f)}
+function setImg(slot,f){if(!f)return;msg('Subiendo…');rs(f,1600,function(u){var n='sitio-'+slot+'-'+Date.now().toString(36)+'.jpg';DB.config.imgs[slot]=n;commit('Imagen del sitio: '+slot,{name:n,b64:u.split(',')[1]}).then(function(){home();msg('✓ Guardado. Se ve en la página en 1 o 2 minutos.')}).catch(function(e){msg(e.message,1);load().then(home)})})}
+function editText(k){
+  var hasEm=/<em>/.test(I.D.es[k]);
+  sheet('<h2 style="font-size:30px">'+LAB[k]+'</h2>'+(hasEm?'<p class="mut" style="font-size:13px">Lo que escribas entre <b>&lt;em&gt;</b> y <b>&lt;/em&gt;</b> sale en cursiva de color.</p>':'')+LG5.map(function(l){return'<label class="fld">'+LN5[l]+'<textarea id="t_'+l+'" style="min-height:'+(l==='es'?'90px':'70px')+'">'+esc(val(k,l))+'</textarea></label>'}).join('')
+  +'<p class="mut" style="font-size:13px;margin-top:10px">Cambia solo el español: los idiomas que no toques se traducen automáticamente al guardar.</p>'
+  +'<button class="btn fill blk" id="sv">Guardar</button>'+(DB.textos[k]?'<button class="btn line blk" id="rs">Volver al texto original</button>':'')+'<button class="btn line blk" id="cl">Cancelar</button>');
+  $('cl').onclick=shut;if($('rs'))$('rs').onclick=function(){delete DB.textos[k];busy('rs');commit('Texto original: '+k).then(function(){shut();home();msg('✓ Restaurado')}).catch(function(e){busy('rs',1);msg(e.message,1)})};
+  $('sv').onclick=function(){var orig={};LG5.forEach(function(l){orig[l]=val(k,l)});var nv={};LG5.forEach(function(l){nv[l]=$('t_'+l).value.trim()});if(!nv.es)return msg('El español no puede quedar vacío',1);
+    busy('sv');var esChanged=nv.es!==orig.es,todo=esChanged?LG.filter(function(l){return nv[l]===orig[l]}):[];
+    todo.reduce(function(p,l){return p.then(function(){return tr1(nv.es,l).then(function(t){if(t)nv[l]=t}).catch(function(){})})},Promise.resolve()).then(function(){
+      DB.textos[k]=nv;return commit('Texto: '+k)}).then(function(){shut();home();msg('✓ Guardado. Se ve en la página en 1 o 2 minutos.')}).catch(function(e){busy('sv',1);msg(e.message,1)})}}
+function ajustes(){sheet('<h2>Ajustes</h2><p class="mut">Número de WhatsApp para recibir pedidos (con código de país, sin + ni espacios). Ej: 573001234567</p><label class="fld">WhatsApp<input id="wn" inputmode="numeric" value="'+esc(DB.config.whatsapp||'')+'"></label><button class="btn fill blk" id="sv">Guardar</button><button class="btn line blk" id="cl">Cancelar</button>');
+  $('cl').onclick=shut;$('sv').onclick=function(){DB.config.whatsapp=$('wn').value.replace(/\D/g,'');busy('sv');commit('Ajustes de WhatsApp').then(function(){shut();msg('<span class="ok" style="color:#9be0a6">✓ Guardado</span>')}).catch(function(e){busy('sv',1);msg(e.message,1)})}}
+function sheet(h){$('sh').innerHTML='<div class="in">'+h+'</div>';$('bk').classList.add('on');document.body.style.overflow='hidden'}
+function shut(){$('bk').classList.remove('on');document.body.style.overflow='';ED=null}
+$('bk').onclick=function(e){if(e.target===$('bk'))shut()};
+function busy(id,off){var b=$(id);if(!b)return;b.disabled=!off;b.style.opacity=off?1:.6;if(!off){b.dataset.t=b.textContent;b.textContent='Guardando…'}else b.textContent=b.dataset.t||b.textContent}
+function form(id){
+  var p=id?JSON.parse(JSON.stringify(DB.productos.filter(function(x){return x.id===id})[0])):{id:Math.max(0,Math.max.apply(null,DB.productos.map(function(x){return x.id})))+1,nombre:'',col:'tierradentro',cat:'Aretes',precio:0,precioOld:null,img:'',badge:null,estrellas:5,stock:5,desc:'',i18n:{}};
+  ED={p:p,img:null};var T=p.i18n||{};
+  var opt=function(a,v){return a.map(function(x){return'<option value="'+esc(x[0])+'"'+(x[0]===v?' selected':'')+'>'+esc(x[1])+'</option>'}).join('')};
+  sheet('<h2>'+(id?'Editar producto':'Nuevo producto')+'</h2>'
+  +'<label class="fld">Foto</label><div class="ph"><img id="pv" src="'+esc(p.img||'')+'" alt=""><div><button class="btn line s" id="pb" type="button">Elegir foto</button><input type="file" id="pf" accept="image/*" hidden><p class="mut" style="margin-top:8px;font-size:13px">Puedes tomarla con la cámara o elegirla de la galería.</p></div></div>'
+  +'<label class="fld">Nombre (español)<input id="n" value="'+esc(p.nombre)+'"></label>'
+  +'<label class="fld">Descripción (español)<textarea id="d">'+esc(p.desc)+'</textarea></label>'
+  +'<div class="r2"><label class="fld">Colección<select id="c">'+opt([['tierradentro','Tierradentro'],['contemporanea','Línea Contemporánea']],p.col)+'</select></label><label class="fld">Categoría<select id="k">'+opt(CATS.map(function(c){return[c,c]}),p.cat)+'</select></label></div>'
+  +'<div class="r2"><label class="fld">Precio<input id="pr" type="number" inputmode="numeric" value="'+p.precio+'"></label><label class="fld">Precio anterior<input id="po" type="number" inputmode="numeric" value="'+(p.precioOld||'')+'"></label></div>'
+  +'<div class="r2"><label class="fld">Unidades disponibles<input id="st" type="number" inputmode="numeric" value="'+p.stock+'"></label><label class="fld">Etiqueta<select id="bd">'+opt([['','Ninguna'],['nuevo','Nuevo'],['oferta','Oferta'],['popular','Popular']],p.badge||'')+'</select></label></div>'
+  +'<details open><summary>Traducciones</summary><button class="btn line s" id="tr" type="button" style="margin:12px 0 0">✦ Traducir automáticamente</button><p class="mut" style="font-size:13px;margin-top:8px">Traduce el nombre y la descripción a los 4 idiomas. Puedes corregirlos a mano.</p>'
+  +LG.map(function(l){var x=T[l]||{};return'<label class="fld">'+LN[l]+' · nombre<input id="n_'+l+'" value="'+esc(x.nombre||'')+'"></label><label class="fld">'+LN[l]+' · descripción<textarea id="d_'+l+'">'+esc(x.desc||'')+'</textarea></label>'}).join('')+'</details>'
+  +'<button class="btn fill blk" id="sv">Guardar</button>'+(id?'<button class="btn red blk" id="rm">Eliminar producto</button>':'')+'<button class="btn line blk" id="cl">Cancelar</button>');
+  $('cl').onclick=shut;$('pb').onclick=function(){$('pf').click()};$('pf').onchange=function(e){photo(e.target.files[0])};$('tr').onclick=translate;$('sv').onclick=save;if(id)$('rm').onclick=remove}
+function photo(f){if(!f)return;var im=new Image();im.onload=function(){var m=1200,k=Math.min(1,m/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+  var u=c.toDataURL('image/jpeg',.85);ED.img={name:'prod-'+ED.p.id+'-'+Date.now().toString(36)+'.jpg',b64:u.split(',')[1]};$('pv').src=u};im.src=URL.createObjectURL(f)}
+function tr1(q,l){return fetch('https://api.mymemory.translated.net/get?q='+encodeURIComponent(q)+'&langpair=es|'+l).then(function(r){return r.json()}).then(function(j){var t=document.createElement('textarea');t.innerHTML=(j.responseData&&j.responseData.translatedText)||'';return t.value})}
+function translate(){var n=$('n').value.trim(),d=$('d').value.trim();if(!n)return msg('Escribe primero el nombre en español',1);var b=$('tr');b.disabled=true;b.textContent='Traduciendo…';
+  LG.reduce(function(pr,l){return pr.then(function(){return Promise.all([tr1(n,l),d?tr1(d,l):''])}).then(function(r){$('n_'+l).value=r[0];$('d_'+l).value=r[1]})},Promise.resolve()).then(function(){b.textContent='✦ Traducir automáticamente';b.disabled=false;msg('Traducido. Revisa los textos y guarda.')}).catch(function(){b.textContent='✦ Traducir automáticamente';b.disabled=false;msg('No se pudo traducir ahora. Escríbelas a mano.',1)})}
+function save(){var p=ED.p;p.nombre=$('n').value.trim();if(!p.nombre)return msg('Falta el nombre',1);
+  p.desc=$('d').value.trim();p.col=$('c').value;p.cat=$('k').value;p.precio=+$('pr').value||0;p.precioOld=+$('po').value||null;p.stock=+$('st').value||0;p.badge=$('bd').value||null;
+  p.i18n={};LG.forEach(function(l){var n=$('n_'+l).value.trim(),d=$('d_'+l).value.trim();if(n||d)p.i18n[l]={nombre:n||p.nombre,desc:d||p.desc}});
+  if(ED.img)p.img=ED.img.name;var i=DB.productos.map(function(x){return x.id}).indexOf(p.id);if(i<0)DB.productos.push(p);else DB.productos[i]=p;
+  busy('sv');commit((i<0?'Nuevo producto: ':'Editar: ')+p.nombre,ED.img).then(function(){shut();home();msg('✓ Guardado. La página se actualiza sola en 1 o 2 minutos.')}).catch(function(e){busy('sv',1);msg(e.message,1);return load().then(function(){}).catch(function(){})})}
+function remove(){var p=ED.p;if(!confirm('¿Eliminar "'+p.nombre+'"?'))return;DB.productos=DB.productos.filter(function(x){return x.id!==p.id});busy('rm');
+  commit('Eliminar: '+p.nombre).then(function(){shut();home();msg('✓ Eliminado')}).catch(function(e){msg(e.message,1);load().then(home)})}
+if(S.token&&S.owner&&S.repo){$('app').innerHTML='<p class="mut" style="padding:40px 0;text-align:center">Cargando…</p>';load().then(home).catch(function(e){login();msg(e.message,1)})}else login();
+})();
+</script></body></html>

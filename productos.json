@@ -1,0 +1,258 @@
+{
+  "config": {
+    "whatsapp": "",
+    "wa_link": "https://wa.link/45liym",
+    "imgs": {}
+  },
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Aretes Rojos",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 20000,
+      "precioOld": 25000,
+      "img": "2.jpeg",
+      "badge": "oferta",
+      "estrellas": 5,
+      "stock": 4,
+      "desc": "Elegantes aretes en tono rojo profundo, perfectos para noches especiales. Material hipoalergénico.",
+      "i18n": {
+        "en": {
+          "nombre": "Red Earrings",
+          "desc": "Elegant earrings in a deep red tone, perfect for special nights. Hypoallergenic material."
+        },
+        "it": {
+          "nombre": "Orecchini Rossi",
+          "desc": "Eleganti orecchini in un rosso profondo, perfetti per le serate speciali. Materiale ipoallergenico."
+        },
+        "fr": {
+          "nombre": "Boucles d'oreilles Rouges",
+          "desc": "Élégantes boucles d'oreilles d'un rouge profond, parfaites pour les soirées spéciales. Matériau hypoallergénique."
+        },
+        "pt": {
+          "nombre": "Brincos Vermelhos",
+          "desc": "Elegantes brincos em tom vermelho profundo, perfeitos para noites especiais. Material hipoalergênico."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Aretes Dorados",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 25000,
+      "precioOld": null,
+      "img": "3.jpeg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 12,
+      "desc": "Aretes de acabado dorado 18k con diseño contemporáneo. Livianos y cómodos para uso diario.",
+      "i18n": {
+        "en": {
+          "nombre": "Golden Earrings",
+          "desc": "18k gold-finish earrings with a contemporary design. Lightweight and comfortable for everyday wear."
+        },
+        "it": {
+          "nombre": "Orecchini Dorati",
+          "desc": "Orecchini con finitura oro 18k dal design contemporaneo. Leggeri e comodi per l'uso quotidiano."
+        },
+        "fr": {
+          "nombre": "Boucles d'oreilles Dorées",
+          "desc": "Boucles d'oreilles à finition or 18 carats au design contemporain. Légères et confortables au quotidien."
+        },
+        "pt": {
+          "nombre": "Brincos Dourados",
+          "desc": "Brincos com acabamento dourado 18k e design contemporâneo. Leves e confortáveis para o dia a dia."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "Anillo Elegante",
+      "col": "contemporanea",
+      "cat": "Anillos",
+      "precio": 18000,
+      "precioOld": null,
+      "img": "4.jpeg",
+      "badge": null,
+      "estrellas": 4,
+      "stock": 8,
+      "desc": "Anillo de diseño minimalista que combina con cualquier outfit. Talla ajustable.",
+      "i18n": {
+        "en": {
+          "nombre": "Elegant Ring",
+          "desc": "Minimalist ring design that goes with any outfit. Adjustable size."
+        },
+        "it": {
+          "nombre": "Anello Elegante",
+          "desc": "Anello dal design minimalista che si abbina a ogni outfit. Misura regolabile."
+        },
+        "fr": {
+          "nombre": "Bague Élégante",
+          "desc": "Bague au design minimaliste qui s'accorde avec toutes les tenues. Taille ajustable."
+        },
+        "pt": {
+          "nombre": "Anel Elegante",
+          "desc": "Anel de design minimalista que combina com qualquer look. Tamanho ajustável."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "nombre": "Anillo Flor",
+      "col": "tierradentro",
+      "cat": "Anillos",
+      "precio": 20000,
+      "precioOld": null,
+      "img": "5.jpeg",
+      "badge": "popular",
+      "estrellas": 5,
+      "stock": 6,
+      "desc": "Diseño floral delicado, símbolo de feminidad y naturaleza. Un clásico de Chariana.",
+      "i18n": {
+        "en": {
+          "nombre": "Flower Ring",
+          "desc": "Delicate floral design, a symbol of femininity and nature. A Chariana classic."
+        },
+        "it": {
+          "nombre": "Anello Fiore",
+          "desc": "Delicato design floreale, simbolo di femminilità e natura. Un classico di Chariana."
+        },
+        "fr": {
+          "nombre": "Bague Fleur",
+          "desc": "Design floral délicat, symbole de féminité et de nature. Un classique de Chariana."
+        },
+        "pt": {
+          "nombre": "Anel Flor",
+          "desc": "Design floral delicado, símbolo de feminilidade e natureza. Um clássico da Chariana."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "Collar Perlas",
+      "col": "contemporanea",
+      "cat": "Collares",
+      "precio": 30000,
+      "precioOld": 38000,
+      "img": "6.jpeg",
+      "badge": "oferta",
+      "estrellas": 5,
+      "stock": 3,
+      "desc": "Collar de perlas cultivadas con cierre dorado. Elegancia atemporal para toda ocasión.",
+      "i18n": {
+        "en": {
+          "nombre": "Pearl Necklace",
+          "desc": "Cultured pearl necklace with a gold clasp. Timeless elegance for every occasion."
+        },
+        "it": {
+          "nombre": "Collana di Perle",
+          "desc": "Collana di perle coltivate con chiusura dorata. Eleganza senza tempo per ogni occasione."
+        },
+        "fr": {
+          "nombre": "Collier de Perles",
+          "desc": "Collier de perles de culture avec fermoir doré. Une élégance intemporelle pour toute occasion."
+        },
+        "pt": {
+          "nombre": "Colar de Pérolas",
+          "desc": "Colar de pérolas cultivadas com fecho dourado. Elegância atemporal para qualquer ocasião."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "nombre": "Collar Dorado",
+      "col": "tierradentro",
+      "cat": "Collares",
+      "precio": 35000,
+      "precioOld": null,
+      "img": "7.jpeg",
+      "badge": "nuevo",
+      "estrellas": 4,
+      "stock": 10,
+      "desc": "Cadena dorada de malla fina con dije artesanal. El complemento perfecto para tu look.",
+      "i18n": {
+        "en": {
+          "nombre": "Golden Necklace",
+          "desc": "Fine mesh gold chain with a handcrafted pendant. The perfect complement to your look."
+        },
+        "it": {
+          "nombre": "Collana Dorata",
+          "desc": "Catena dorata a maglia sottile con ciondolo artigianale. Il complemento perfetto per il tuo look."
+        },
+        "fr": {
+          "nombre": "Collier Doré",
+          "desc": "Chaîne dorée à maille fine avec pendentif artisanal. Le complément parfait de votre look."
+        },
+        "pt": {
+          "nombre": "Colar Dourado",
+          "desc": "Corrente dourada de malha fina com pingente artesanal. O complemento perfeito para o seu visual."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "nombre": "Pulsera Artesanal",
+      "col": "tierradentro",
+      "cat": "Pulseras",
+      "precio": 22000,
+      "precioOld": null,
+      "img": "8.jpeg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Tejida a mano con hilos y cuentas doradas. Cada pulsera es única e irrepetible.",
+      "i18n": {
+        "en": {
+          "nombre": "Handmade Bracelet",
+          "desc": "Hand-woven with threads and golden beads. Every bracelet is unique and unrepeatable."
+        },
+        "it": {
+          "nombre": "Braccialetto Artigianale",
+          "desc": "Intrecciato a mano con fili e perline dorate. Ogni braccialetto è unico e irripetibile."
+        },
+        "fr": {
+          "nombre": "Bracelet Artisanal",
+          "desc": "Tissé à la main avec des fils et des perles dorées. Chaque bracelet est unique et irremplaçable."
+        },
+        "pt": {
+          "nombre": "Pulseira Artesanal",
+          "desc": "Tecida à mão com fios e contas douradas. Cada pulseira é única e irrepetível."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "nombre": "Set Accesorios",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 28000,
+      "precioOld": 35000,
+      "img": "9.jpeg",
+      "badge": "oferta",
+      "estrellas": 5,
+      "stock": 2,
+      "desc": "Set completo: aretes + collar + pulsera a juego. El regalo perfecto para alguien especial.",
+      "i18n": {
+        "en": {
+          "nombre": "Accessories Set",
+          "desc": "Complete set: earrings + necklace + bracelet to match. The perfect gift for someone special."
+        },
+        "it": {
+          "nombre": "Set di Accessori",
+          "desc": "Set completo: orecchini + collana + braccialetto coordinati. Il regalo perfetto per una persona speciale."
+        },
+        "fr": {
+          "nombre": "Parure d'Accessoires",
+          "desc": "Parure complète : boucles d'oreilles + collier + bracelet assortis. Le cadeau parfait pour une personne spéciale."
+        },
+        "pt": {
+          "nombre": "Conjunto de Acessórios",
+          "desc": "Conjunto completo: brincos + colar + pulseira combinando. O presente perfeito para alguém especial."
+        }
+      }
+    }
+  ],
+  "textos": {}
+}
