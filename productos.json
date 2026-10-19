@@ -261,6 +261,13 @@
       "it": "Chariana Artigianale",
       "fr": "Chariana Artisanal",
       "pt": "Chariana Craft"
+    },
+    "hero_t1": {
+      "es": "Aretes Artesanales",
+      "en": "Artisan Earrings",
+      "it": "Orecchini Artigianali",
+      "fr": "Boucles d'oreilles artisanales",
+      "pt": "Brincos Artesanais"
     }
   }
 }
