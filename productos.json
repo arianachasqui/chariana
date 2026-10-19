@@ -254,5 +254,13 @@
       }
     }
   ],
-  "textos": {}
+  "textos": {
+    "hero_eyebrow": {
+      "es": "Chariana Artesanal",
+      "en": "Chariana Craft",
+      "it": "Chariana Artigianale",
+      "fr": "Chariana Artisanal",
+      "pt": "Chariana Craft"
+    }
+  }
 }
