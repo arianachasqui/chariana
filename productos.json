@@ -8,31 +8,31 @@
     {
       "id": 1,
       "nombre": "Aretes Rojos",
-      "col": "tierradentro",
+      "col": "contemporanea",
       "cat": "Aretes",
       "precio": 20000,
       "precioOld": 25000,
-      "img": "2.jpeg",
-      "badge": "oferta",
+      "img": "prod-1-mvepv5jr.jpg",
+      "badge": "nuevo",
       "estrellas": 5,
       "stock": 4,
       "desc": "Elegantes aretes en tono rojo profundo, perfectos para noches especiales. Material hipoalergénico.",
       "i18n": {
         "en": {
           "nombre": "Red Earrings",
-          "desc": "Elegant earrings in a deep red tone, perfect for special nights. Hypoallergenic material."
+          "desc": "Elegant earrings in deep red, perfect for special nights. Hypoallergenic material."
         },
         "it": {
           "nombre": "Orecchini Rossi",
-          "desc": "Eleganti orecchini in un rosso profondo, perfetti per le serate speciali. Materiale ipoallergenico."
+          "desc": "Eleganti orecchini nei toni del rosso intenso, perfetti per serate speciali. Materiale ipoallergenico."
         },
         "fr": {
-          "nombre": "Boucles d'oreilles Rouges",
-          "desc": "Élégantes boucles d'oreilles d'un rouge profond, parfaites pour les soirées spéciales. Matériau hypoallergénique."
+          "nombre": "Boucles d'oreilles rouges",
+          "desc": "Boucles d'oreilles élégantes dans un ton rouge profond, parfaites pour les soirées spéciales. Matière hypoallergénique."
         },
         "pt": {
-          "nombre": "Brincos Vermelhos",
-          "desc": "Elegantes brincos em tom vermelho profundo, perfeitos para noites especiais. Material hipoalergênico."
+          "nombre": "Brincos vermelhos",
+          "desc": "Brincos elegantes em vermelho escuro, perfeitos para noites especiais. Material hipoalergênico."
         }
       }
     },
