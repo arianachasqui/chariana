@@ -256,11 +256,11 @@
   ],
   "textos": {
     "hero_eyebrow": {
-      "es": "Chariana Artesanal",
-      "en": "Chariana Craft",
-      "it": "Chariana Artigianale",
-      "fr": "Chariana Artisanal",
-      "pt": "Chariana Craft"
+      "es": "Tradición y tendencia, hechas arte.",
+      "en": "Tradition and trend, made art.",
+      "it": "Tradizione e tendenza, fatte arte.",
+      "fr": "Tradition et tendance, faites de l'art.",
+      "pt": "Tradição e tendência, fez arte."
     },
     "hero_t1": {
       "es": "Aretes Artesanales",
