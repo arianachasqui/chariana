@@ -2,7 +2,9 @@
   "config": {
     "whatsapp": "3113163434",
     "wa_link": "https://wa.link/45liym",
-    "imgs": {}
+    "imgs": {
+      "hero": "sitio-hero-mvyi8lo8.jpg"
+    }
   },
   "productos": [
     {
