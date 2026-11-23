@@ -75,7 +75,7 @@
       "id": 3,
       "nombre": "Anillo Elegante",
       "col": "contemporanea",
-      "cat": "Anillos",
+      "cat": "Aretes",
       "precio": 18000,
       "precioOld": null,
       "img": "4.jpeg",
@@ -106,7 +106,7 @@
       "id": 4,
       "nombre": "Anillo Flor",
       "col": "tierradentro",
-      "cat": "Anillos",
+      "cat": "Aretes",
       "precio": 20000,
       "precioOld": null,
       "img": "5.jpeg",
@@ -765,15 +765,6 @@
         "it": "Orecchini",
         "fr": "Boucles d'oreilles",
         "pt": "Brincos"
-      }
-    },
-    {
-      "nombre": "Anillos",
-      "i18n": {
-        "en": "Rings",
-        "it": "Anelli",
-        "fr": "Bagues",
-        "pt": "Anéis"
       }
     },
     {
