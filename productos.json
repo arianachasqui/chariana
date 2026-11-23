@@ -41,37 +41,6 @@
       }
     },
     {
-      "id": 6,
-      "nombre": "Collar Dorado",
-      "col": "tierradentro",
-      "cat": "Collares",
-      "precio": 35000,
-      "precioOld": null,
-      "img": "7.jpeg",
-      "badge": "nuevo",
-      "estrellas": 4,
-      "stock": 10,
-      "desc": "Cadena dorada de malla fina con dije artesanal. El complemento perfecto para tu look.",
-      "i18n": {
-        "en": {
-          "nombre": "Golden Necklace",
-          "desc": "Fine mesh gold chain with a handcrafted pendant. The perfect complement to your look."
-        },
-        "it": {
-          "nombre": "Collana Dorata",
-          "desc": "Catena dorata a maglia sottile con ciondolo artigianale. Il complemento perfetto per il tuo look."
-        },
-        "fr": {
-          "nombre": "Collier Doré",
-          "desc": "Chaîne dorée à maille fine avec pendentif artisanal. Le complément parfait de votre look."
-        },
-        "pt": {
-          "nombre": "Colar Dourado",
-          "desc": "Corrente dourada de malha fina com pingente artesanal. O complemento perfeito para o seu visual."
-        }
-      }
-    },
-    {
       "id": 7,
       "nombre": "Pulsera Artesanal",
       "col": "tierradentro",
