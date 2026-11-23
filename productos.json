@@ -41,37 +41,6 @@
       }
     },
     {
-      "id": 5,
-      "nombre": "Collar Perlas",
-      "col": "contemporanea",
-      "cat": "Collares",
-      "precio": 30000,
-      "precioOld": 38000,
-      "img": "6.jpeg",
-      "badge": "oferta",
-      "estrellas": 5,
-      "stock": 3,
-      "desc": "Collar de perlas cultivadas con cierre dorado. Elegancia atemporal para toda ocasión.",
-      "i18n": {
-        "en": {
-          "nombre": "Pearl Necklace",
-          "desc": "Cultured pearl necklace with a gold clasp. Timeless elegance for every occasion."
-        },
-        "it": {
-          "nombre": "Collana di Perle",
-          "desc": "Collana di perle coltivate con chiusura dorata. Eleganza senza tempo per ogni occasione."
-        },
-        "fr": {
-          "nombre": "Collier de Perles",
-          "desc": "Collier de perles de culture avec fermoir doré. Une élégance intemporelle pour toute occasion."
-        },
-        "pt": {
-          "nombre": "Colar de Pérolas",
-          "desc": "Colar de pérolas cultivadas com fecho dourado. Elegância atemporal para qualquer ocasião."
-        }
-      }
-    },
-    {
       "id": 6,
       "nombre": "Collar Dorado",
       "col": "tierradentro",
