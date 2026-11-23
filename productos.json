@@ -41,37 +41,6 @@
       }
     },
     {
-      "id": 3,
-      "nombre": "Anillo Elegante",
-      "col": "contemporanea",
-      "cat": "Aretes",
-      "precio": 18000,
-      "precioOld": null,
-      "img": "4.jpeg",
-      "badge": null,
-      "estrellas": 4,
-      "stock": 8,
-      "desc": "Anillo de diseño minimalista que combina con cualquier outfit. Talla ajustable.",
-      "i18n": {
-        "en": {
-          "nombre": "Elegant Ring",
-          "desc": "Minimalist ring design that goes with any outfit. Adjustable size."
-        },
-        "it": {
-          "nombre": "Anello Elegante",
-          "desc": "Anello dal design minimalista che si abbina a ogni outfit. Misura regolabile."
-        },
-        "fr": {
-          "nombre": "Bague Élégante",
-          "desc": "Bague au design minimaliste qui s'accorde avec toutes les tenues. Taille ajustable."
-        },
-        "pt": {
-          "nombre": "Anel Elegante",
-          "desc": "Anel de design minimalista que combina com qualquer look. Tamanho ajustável."
-        }
-      }
-    },
-    {
       "id": 4,
       "nombre": "Anillo Flor",
       "col": "tierradentro",
