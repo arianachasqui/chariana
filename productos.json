@@ -320,12 +320,29 @@
       "cat": "Aretes",
       "precio": 65000,
       "precioOld": null,
-      "img": "prod-28-mvyfkbcm.jpg",
+      "img": "prod-28-mwsrbsy8.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano con mostacillas  blancas, rojas, negras y sutiles destellos dorados, con patrones geométricos en rombos y flecos de caída suave, inspirados en la riqueza cultural y ancestral de Tierradentro.",
-      "i18n": {}
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Fabric",
+          "desc": "Handwoven artisan earrings with white, red, and black seed beads and subtle golden accents, featuring geometric diamond patterns and soft-falling fringes, inspired by the rich cultural and ancestral heritage of Tierradentro."
+        },
+        "it": {
+          "nombre": "Tessuto Tierradentro",
+          "desc": "Orecchini artigianali tessuti a mano con perline bianche, rosse, nere e sottili riflessi dorati, con motivi geometrici a rombi e frange dalla caduta morbida, ispirati alla ricchezza culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Tissu Tierradentro",
+          "desc": "Boucles d’oreilles artisanales tissées à la main avec des perles blanches, rouges, noires et de subtils éclats dorés, ornées de motifs géométriques en losanges et de franges au tombé fluide, inspirées de la richesse culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Tecelagem Tierradentro",
+          "desc": "Brincos artesanais tecidos à mão com contas brancas, vermelhas, pretas e sutis toques dourados, com padrões geométricos em forma de losangos e franjas de queda suave, inspirados na riqueza cultural e ancestral de Tierradentro."
+        }
+      }
     },
     {
       "id": 20,
