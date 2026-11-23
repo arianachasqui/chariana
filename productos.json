@@ -419,6 +419,37 @@
           "desc": "Brincos tecidos à mão com delicadas contas brancas, toques em vermelho e preto, uma linha central escura que orienta a queda e sutis acabamentos dourados nas franjas. Inspirados na identidade cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 13,
+      "nombre": "Cascada de Inzá",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 50000,
+      "precioOld": 55000,
+      "img": "prod-13-mvyfkbcm.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con delicadas cuentas blancas, acentos rojos y negros, una línea central oscura que guía la caída y sutiles remates dorados en sus flecos. Inspirados en la identidad cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "cascading",
+          "desc": "Handwoven earrings with delicate white beads, red and black accents, a dark central line that guides the drape, and subtle gold finishes on the fringes. Inspired by the cultural and ancestral identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Cascata di Inzá",
+          "desc": "Orecchini tessuti a mano con delicate perline bianche, dettagli rossi e neri, una linea centrale scura che guida la caduta e sottili rifiniture dorate sulle frange. Ispirati all'identità culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "cascade en",
+          "desc": "Boucles d’oreilles tissées à la main avec de délicates perles blanches, des touches de rouge et de noir, une ligne centrale sombre qui guide la chute et de subtiles finitions dorées sur les franges. Inspirées de l’identité culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Cachoeira de Inzá",
+          "desc": "Brincos tecidos à mão com delicadas contas brancas, detalhes em vermelho e preto, uma linha central escura que guia a queda e sutis acabamentos dourados nas franjas. Inspirados na identidade cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -488,20 +519,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-12-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 13,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-13-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
