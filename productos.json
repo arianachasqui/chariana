@@ -312,6 +312,20 @@
       "stock": 1,
       "desc": "Aretes tejidos a mano con mostacillas blancas, rojas y destellos dorados en forma de gota alargada, inspirados en la riqueza cultural y ancestral.",
       "i18n": {}
+    },
+    {
+      "id": 28,
+      "nombre": "Tejido Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 65000,
+      "precioOld": null,
+      "img": "prod-28-mvyfkbcm.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano con mostacillas  blancas, rojas, negras y sutiles destellos dorados, con patrones geométricos en rombos y flecos de caída suave, inspirados en la riqueza cultural y ancestral de Tierradentro.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -535,20 +549,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-27-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 28,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-28-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
