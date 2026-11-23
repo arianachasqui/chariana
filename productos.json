@@ -481,6 +481,37 @@
           "desc": "Brincos tecidos à mão em forma de gota envolvente com contas brancas, vermelhas e pretas e delicados detalhes dourados. Inspirados na identidade cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 14,
+      "nombre": "Corona de Inzá",
+      "col": "tierradentro",
+      "cat": "Collares",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-14-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano de collar y topos en cuentas blancas predominantes, borde trenzado en rojo y negro y sutiles destellos dorados que iluminan cada detalle. Inspirado en la riqueza cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Inzá Crown",
+          "desc": "Handwoven artisan set of necklace and earrings featuring predominantly white beads, a braided edge in red and black, and subtle golden accents that illuminate every detail. Inspired by the cultural and ancestral richness of Tierradentro."
+        },
+        "it": {
+          "nombre": "Corona di Inzá",
+          "desc": "Set artigianale composto da collana e orecchini a bottone, realizzato a mano con perline prevalentemente bianche, bordo intrecciato in rosso e nero e sottili riflessi dorati che illuminano ogni dettaglio. Ispirato alla ricchezza culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Couronne d’Inzá",
+          "desc": "Ensemble artisanal tissé à la main composé d’un collier et de boucles d’oreilles ornés de perles blanches prédominantes, d’une bordure tressée rouge et noire et de subtils reflets dorés qui illuminent chaque détail. Inspiré par la richesse culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Corona de Inzá",
+          "desc": "Conjunto artesanal tecido à mão de colar e brincos com contas brancas predominantes, borda trançada em vermelho e preto e sutis toques dourados que iluminam cada detalhe. Inspirado na riqueza cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -536,20 +567,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-12-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 14,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-14-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
