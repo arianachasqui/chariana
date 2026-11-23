@@ -270,6 +270,20 @@
       "stock": 2,
       "desc": "Aretes artesanales elaborados a mano en tono blanco, negro y destellos dorados, con flecos de caída ligera.",
       "i18n": {}
+    },
+    {
+      "id": 33,
+      "nombre": "Rombos Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 60000,
+      "precioOld": null,
+      "img": "prod-33-mwsn6xgq.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con patrones geometricos en rojo, blanco y dorados y mostacillas de caída suave. Una pieza artesanal llena de carácter y elegancia para destacar en cualquier ocasión.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -563,20 +577,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-30-mwsmvk4s.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 33,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-33-mwsn6xgq.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
