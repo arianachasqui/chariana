@@ -605,6 +605,37 @@
           "desc": "Brincos tecidos à mão em forma triangular com contas pretas predominantes, linhas vermelhas e brancas que marcam sua estrutura e sutis brilhos dourados em suas franjas com caimento fluido. Inspirados na identidade cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 25,
+      "nombre": "Cumbre de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 35000,
+      "precioOld": 40000,
+      "img": "prod-25-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con herraje tipo gancho, estructura en rombos y flecos escalonados en cuentas negras, rojas y blancas, rematados con pequeños detalles negros en las puntas. Inspirados en la identidad cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Summit",
+          "desc": "Handwoven earrings with hook-style hardware, a diamond pattern, and staggered fringes in black, red, and white beads, finished with small black details at the ends. Inspired by the cultural and ancestral identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Vertice di Tierradentro",
+          "desc": "Orecchini tessuti a mano con gancio, struttura a rombi e frange sfalsate in perline nere, rosse e bianche, rifinite con piccoli dettagli neri alle estremità. Ispirati all'identità culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Sommet de Tierradentro",
+          "desc": "Boucles d'oreilles tissées à la main avec fermoir type crochet, structure en losanges et franges dégradées en perles noires, rouges et blanches, ornées de petits détails noirs aux extrémités. Inspirées de l’identité culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Cúpula de Tierradentro",
+          "desc": "Brincos tecidos à mão com ferragem tipo gancho, estrutura em losangos e franjas escalonadas com contas pretas, vermelhas e brancas, finalizados com pequenos detalhes pretos nas pontas. Inspirados na identidade cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -674,20 +705,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-18-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 25,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-25-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
