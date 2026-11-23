@@ -326,6 +326,37 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano con mostacillas  blancas, rojas, negras y sutiles destellos dorados, con patrones geométricos en rombos y flecos de caída suave, inspirados en la riqueza cultural y ancestral de Tierradentro.",
       "i18n": {}
+    },
+    {
+      "id": 20,
+      "nombre": "Luz y sombra Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 40000,
+      "precioOld": 44990,
+      "img": "prod-20-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con cuentas blancas, un rombo central en tonos negros y dorados, y flecos con caídas delicadas que aportan luz y movimiento. Inspirados en la identidad cultural y ancestral de Tierradentro, Inzá – Cauca, son una pieza artesanal luminosa y elegante para acompañar cualquier ocasión.",
+      "i18n": {
+        "en": {
+          "nombre": "Light and Shadow in Tierradentro",
+          "desc": "Handwoven earrings with white beads, a central rhombus in black and gold tones, and delicate fringe that adds light and movement. Inspired by the cultural and ancestral identity of Tierradentro, Inzá – Cauca, they are a bright and elegant handcrafted piece to complement any occasion."
+        },
+        "it": {
+          "nombre": "Luce e ombra Tierradentro",
+          "desc": "Orecchini tessuti a mano con perline bianche, un rombo centrale nei toni del nero e dell'oro e frange con pendenti delicati che donano luce e movimento. Ispirati all'identità culturale e ancestrale di Tierradentro, Inzá – Cauca, sono un gioiello artigianale luminoso ed elegante per accompagnare ogni occasione."
+        },
+        "fr": {
+          "nombre": "Lumière et ombre à Tierradentro",
+          "desc": "Boucles d'oreilles tissées à la main avec des perles blanches, un losange central dans des tons noirs et dorés, et des franges au tombé délicat qui apportent lumière et mouvement. Inspirées de l’identité culturelle et ancestrale de Tierradentro, Inzá – Cauca, elles constituent une pièce artisanale lumineuse et élégante qui saura accompagner toutes les occasions."
+        },
+        "pt": {
+          "nombre": "Luz e sombra em Tierradentro",
+          "desc": "Brincos tecidos à mão com contas brancas, um losango central em tons de preto e dourado e franjas com caimentos delicados que conferem luz e movimento. Inspirados na identidade cultural e ancestral de Tierradentro, Inzá – Cauca, são uma peça artesanal luminosa e elegante para acompanhar qualquer ocasião."
+        }
+      }
     }
   ],
   "textos": {
@@ -479,20 +510,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-19-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 20,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-20-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
