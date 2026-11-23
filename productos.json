@@ -636,6 +636,37 @@
           "desc": "Brincos tecidos à mão com ferragem tipo gancho, estrutura em losangos e franjas escalonadas com contas pretas, vermelhas e brancas, finalizados com pequenos detalhes pretos nas pontas. Inspirados na identidade cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 36,
+      "nombre": "Ofrenda de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 48000,
+      "precioOld": 55000,
+      "img": "prod-36-mwsqu5vs.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano en silueta de gota envolvente con cuentas negras, blancas, destellos dorados y sutiles acentos rojos que forman un entramado geométrico y curvo lleno de armonía. Inspirados en la identidad cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Offering",
+          "desc": "Handwoven earrings in an enveloping teardrop silhouette with black and white beads, golden sparkles and subtle red accents that form a geometric, curved pattern full of harmony. Inspired by the cultural and ancestral identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Offerta di Tierradentro",
+          "desc": "Orecchini intrecciati a mano a forma di goccia avvolgente con perline nere, bianche, riflessi dorati e delicati dettagli rossi che formano un intreccio geometrico e curvo pieno di armonia. Ispirati all'identità culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Offrande de Tierradentro",
+          "desc": "Boucles d’oreilles tissées à la main en forme de goutte enveloppante, ornées de perles noires et blanches, de reflets dorés et de subtils accents rouges qui forment un motif géométrique et incurvé empreint d’harmonie. Inspirées de l'identité culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Oferenda de Tierradentro",
+          "desc": "Brincos tecidos à mão em formato de gota envolvente com contas pretas, brancas, toques dourados e sutis detalhes em vermelho que formam uma trama geométrica e curva repleta de harmonia. Inspirados na identidade cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -712,20 +743,6 @@
       "i18n": {}
     },
     {
-      "id": 36,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-36-mwsqu5vs.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
       "id": 37,
       "nombre": "",
       "col": "tierradentro",
@@ -738,6 +755,71 @@
       "stock": 5,
       "desc": "",
       "i18n": {}
+    }
+  ],
+  "categorias": [
+    {
+      "nombre": "Aretes",
+      "i18n": {
+        "en": "Earrings",
+        "it": "Orecchini",
+        "fr": "Boucles d'oreilles",
+        "pt": "Brincos"
+      }
+    },
+    {
+      "nombre": "Anillos",
+      "i18n": {
+        "en": "Rings",
+        "it": "Anelli",
+        "fr": "Bagues",
+        "pt": "Anéis"
+      }
+    },
+    {
+      "nombre": "Collares",
+      "i18n": {
+        "en": "Necklaces",
+        "it": "Collane",
+        "fr": "Colliers",
+        "pt": "Colares"
+      }
+    },
+    {
+      "nombre": "Pulseras",
+      "i18n": {
+        "en": "Bracelets",
+        "it": "Bracciali",
+        "fr": "Bracelets",
+        "pt": "Pulseiras"
+      }
+    },
+    {
+      "nombre": "Sets",
+      "i18n": {
+        "en": "Sets",
+        "it": "Set",
+        "fr": "Parures",
+        "pt": "Conjuntos"
+      }
+    },
+    {
+      "nombre": "Cadenas",
+      "i18n": {
+        "en": "Chains",
+        "it": "Catenine",
+        "fr": "Chaînes",
+        "pt": "Correntes"
+      }
+    },
+    {
+      "nombre": "Accesorios",
+      "i18n": {
+        "en": "Accessories",
+        "it": "Accessori",
+        "fr": "Accessoires",
+        "pt": "Acessórios"
+      }
     }
   ]
 }
