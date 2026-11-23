@@ -512,6 +512,37 @@
           "desc": "Conjunto artesanal tecido à mão de colar e brincos com contas brancas predominantes, borda trançada em vermelho e preto e sutis toques dourados que iluminam cada detalhe. Inspirado na riqueza cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 27,
+      "nombre": "Resplandor de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 75000,
+      "precioOld": 80000,
+      "img": "prod-27-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano de collar tipo pechera y topos en cuentas blancas y negras, con un rombo central geométrico y delicados remates dorados que irradian luz alrededor de toda la pieza. Inspirado en la riqueza cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "The Radiance of Tierradentro",
+          "desc": "Handwoven artisanal set consisting of a bib-style necklace and earrings with black and white beads, featuring a central geometric rhombus and delicate gold accents that radiate light around the entire piece. Inspired by the rich cultural and ancestral heritage of Tierradentro."
+        },
+        "it": {
+          "nombre": "Bagliore di Tierradentro",
+          "desc": "Set artigianale tessuto a mano composto da collana a plastron e orecchini a bottone con perline bianche e nere, con un rombo geometrico centrale e delicate finiture dorate che irradiano luce su tutto il gioiello. Ispirato alla ricchezza culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Éclat de Tierradentro",
+          "desc": "Ensemble artisanal tissé à la main composé d'un collier plastron et de boucles d'oreilles ornés de perles blanches et noires, avec un losange géométrique central et de délicates finitions dorées qui rayonnent de lumière sur l'ensemble de la pièce. Inspiré par la richesse culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brilho de Tierradentro",
+          "desc": "Conjunto artesanal tecido à mão composto por colar tipo gargantilha e brincos com contas brancas e pretas, com um losango geométrico central e delicados acabamentos dourados que irradiam luz por toda a peça. Inspirado na riqueza cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -637,20 +668,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-26-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 27,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-27-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
