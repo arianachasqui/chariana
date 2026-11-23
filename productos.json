@@ -41,37 +41,6 @@
       }
     },
     {
-      "id": 4,
-      "nombre": "Anillo Flor",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 20000,
-      "precioOld": null,
-      "img": "5.jpeg",
-      "badge": "popular",
-      "estrellas": 5,
-      "stock": 6,
-      "desc": "Diseño floral delicado, símbolo de feminidad y naturaleza. Un clásico de Chariana.",
-      "i18n": {
-        "en": {
-          "nombre": "Flower Ring",
-          "desc": "Delicate floral design, a symbol of femininity and nature. A Chariana classic."
-        },
-        "it": {
-          "nombre": "Anello Fiore",
-          "desc": "Delicato design floreale, simbolo di femminilità e natura. Un classico di Chariana."
-        },
-        "fr": {
-          "nombre": "Bague Fleur",
-          "desc": "Design floral délicat, symbole de féminité et de nature. Un classique de Chariana."
-        },
-        "pt": {
-          "nombre": "Anel Flor",
-          "desc": "Design floral delicado, símbolo de feminilidade e natureza. Um clássico da Chariana."
-        }
-      }
-    },
-    {
       "id": 5,
       "nombre": "Collar Perlas",
       "col": "contemporanea",
