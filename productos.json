@@ -543,6 +543,37 @@
           "desc": "Conjunto artesanal tecido à mão composto por colar tipo gargantilha e brincos com contas brancas e pretas, com um losango geométrico central e delicados acabamentos dourados que irradiam luz por toda a peça. Inspirado na riqueza cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 23,
+      "nombre": "Alianza de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Pulseras",
+      "precio": 45000,
+      "precioOld": 50000,
+      "img": "prod-23-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano de pulsera ancha y topos romboidales en cuentas blancas, negras, rojas y destellos dorados, con bordes de cuentas blancas que aportan textura y armonía. Inspirado en la riqueza cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Alliance",
+          "desc": "Handwoven artisan set consisting of a wide bracelet and rhomboid studs in white, black, and red beads with gold accents, featuring white bead edges that add texture and harmony. Inspired by the cultural and ancestral richness of Tierradentro."
+        },
+        "it": {
+          "nombre": "Alleanza di Tierradentro",
+          "desc": "Set artigianale tessuto a mano composto da un bracciale largo e da orecchini a rombo con perline bianche, nere, rosse e riflessi dorati, con bordi di perline bianche che conferiscono consistenza e armonia. Ispirato alla ricchezza culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Alliance de Tierradentro",
+          "desc": "Ensemble artisanal tissé à la main composé d’un bracelet large et de boucles d’oreilles losangées ornées de perles blanches, noires, rouges et de reflets dorés, avec des bords en perles blanches qui apportent texture et harmonie. Inspiré par la richesse culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Aliança de Tierradentro",
+          "desc": "Conjunto artesanal tecido à mão composto por uma pulseira larga e pompons romboidais com contas brancas, pretas, vermelhas e detalhes dourados, com bordas de contas brancas que conferem textura e harmonia. Inspirado na riqueza cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -626,20 +657,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-19-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 23,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-23-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
