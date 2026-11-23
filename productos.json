@@ -575,7 +575,22 @@
       "pt": "Chariana Nova"
     }
   },
-  "borradores": [],
+  "borradores": [
+    {
+      "id": 38,
+      "nombre": "",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 0,
+      "precioOld": null,
+      "img": "prod-38-mwsrkjid.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "",
+      "i18n": {}
+    }
+  ],
   "categorias": [
     {
       "nombre": "Aretes",
