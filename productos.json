@@ -284,6 +284,20 @@
       "stock": 1,
       "desc": "Aretes tejidos a mano con patrones geometricos en rojo, blanco y dorados y mostacillas de caída suave. Una pieza artesanal llena de carácter y elegancia para destacar en cualquier ocasión.",
       "i18n": {}
+    },
+    {
+      "id": 30,
+      "nombre": "Tierradentro Mágico",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 85000,
+      "precioOld": null,
+      "img": "prod-30-mwsmvk4s.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Gargantilla tejida a mano con diseño geométrico en blanco, rojo y negro, acabados dorados y cordones blancos con borlas. Un accesorio artesanal con presencia y delicadeza.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -563,20 +577,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-29-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 30,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-30-mwsmvk4s.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
