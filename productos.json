@@ -467,6 +467,37 @@
           "desc": "Brincos tecidos à mão em formato de gota envolvente com contas pretas, brancas, toques dourados e sutis detalhes em vermelho que formam uma trama geométrica e curva repleta de harmonia. Inspirados na identidade cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 37,
+      "nombre": "Solsticio de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-37-mwsr2p40.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en cuentas blancas, rojas, negras y doradas, con entramado geométrico de rombos y remates dorados en los flecos, inspirados en la riqueza cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Solstice",
+          "desc": "Handwoven artisan earrings made with white, red, black, and gold beads, featuring a geometric diamond pattern and gold accents on the fringes, inspired by the rich cultural and ancestral heritage of Tierradentro."
+        },
+        "it": {
+          "nombre": "Solstizio di Tierradentro",
+          "desc": "Orecchini artigianali tessuti a mano con perline bianche, rosse, nere e dorate, con motivo geometrico a rombi e rifiniture dorate sulle frange, ispirati alla ricchezza culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Solstice de Tierradentro",
+          "desc": "Boucles d’oreilles artisanales tissées à la main avec des perles blanches, rouges, noires et dorées, présentant un motif géométrique de losanges et des finitions dorées sur les franges, inspirées de la richesse culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Solstício de Tierradentro",
+          "desc": "Brincos artesanais tecidos à mão com contas brancas, vermelhas, pretas e douradas, com trama geométrica de losangos e acabamentos dourados nas franjas, inspirados na riqueza cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -522,20 +553,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-12-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 37,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-37-mwsr2p40.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
