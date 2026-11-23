@@ -120,11 +120,11 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
 .bt{position:fixed;right:28px;bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:90;width:38px;height:38px;border-radius:50%;background:rgba(10,10,10,.7);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:14px;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.25s;backdrop-filter:blur(6px)}.bt.on{opacity:1;pointer-events:auto}.bt:hover{background:var(--gold);color:var(--black)}
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}
 .cur-d,.cur-r{position:fixed;pointer-events:none;z-index:9999;border-radius:50%;transform:translate(-50%,-50%);display:none}
-@media(pointer:fine){.cur-d,.cur-r{display:block}body,a,button{cursor:none}.cur-d{width:8px;height:8px;background:var(--gold);transition:transform .08s}.cur-r{width:30px;height:30px;border:1.5px solid rgba(201,168,76,.55);transition:left .12s,top .12s,width .2s,height .2s,background .2s}.cur-d.big{transform:translate(-50%,-50%) scale(2.5)}.cur-r.big{width:48px;height:48px;background:rgba(201,168,76,.07);border-color:var(--gold)}}
+@media(pointer:fine){.cur-d,.cur-r{display:block}html:not([data-adm]) body,html:not([data-adm]) a,html:not([data-adm]) button{cursor:none}.cur-d{width:8px;height:8px;background:var(--gold);transition:transform .08s}.cur-r{width:30px;height:30px;border:1.5px solid rgba(201,168,76,.55);transition:left .12s,top .12s,width .2s,height .2s,background .2s}.cur-d.big{transform:translate(-50%,-50%) scale(2.5)}.cur-r.big{width:48px;height:48px;background:rgba(201,168,76,.07);border-color:var(--gold)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 <style>
-body{background:var(--cream)}.btn.line{color:var(--black);border-color:var(--gold)}.btn.line:hover{background:var(--gold-light)}.btn.fill,.btn.dark{border-color:transparent}.btn{letter-spacing:2px}.pn{max-width:760px;margin:0 auto;padding:22px 16px 90px}
+body,a{cursor:auto!important}button,select,.row,.pill,summary,label.fld{cursor:pointer!important}input,textarea{cursor:text!important}body{background:var(--cream)}.btn.line{color:var(--black);border-color:var(--gold)}.btn.line:hover{background:var(--gold-light)}.btn.fill,.btn.dark{border-color:transparent}.btn{letter-spacing:2px}.pn{max-width:760px;margin:0 auto;padding:22px 16px 90px}
 .fld{display:block;margin-top:14px;font:500 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 input,select,textarea{width:100%;margin-top:6px;padding:13px;border:1.5px solid var(--line);border-radius:10px;background:#fff;font:400 16px var(--sans);color:var(--ink)}textarea{min-height:84px;resize:vertical}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -212,7 +212,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r
 
   function detect(){var s;try{s=localStorage.getItem(KEY)}catch(e){}
     if(s&&D[s])return s;var n=((navigator.languages&&navigator.languages[0])||navigator.language||'es').slice(0,2).toLowerCase();return D[n]?n:'es'}
-  var cur=detect(),OV={};try{OV=JSON.parse(localStorage.getItem('chariana-ov')||'{}')}catch(e){}
+  var CR={},cur=detect(),OV={};try{OV=JSON.parse(localStorage.getItem('chariana-ov')||'{}')}catch(e){}
   function t(k,v){var s=(OV[k]&&OV[k][cur])||(D[cur]&&D[cur][k]);if(s==null)s=D.es[k];if(s==null)return k;if(v)s=s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!=null?v[x]:m});return s}
   function qa(s){return[].slice.call(document.querySelectorAll(s))}
   function build(){var h=document.getElementById('lang');if(!h)return;
@@ -232,7 +232,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r
     pick:function(p){var x=p.i18n&&p.i18n[cur]||{};return{nombre:x.nombre||p.nombre,desc:x.desc||p.desc}},
     money:function(n){try{return new Intl.NumberFormat(LOC[cur],{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n)}catch(e){return'$'+n}},
     img:function(p){return p.img||PH},
-    cat:function(c){return D.es['c_'+c]?t('c_'+c):c},
+    setCats:function(a){CR={};(a||[]).forEach(function(x){CR[x.nombre]=x.i18n||{}})},
+    cat:function(c){var x=CR[c];if(x&&x[cur])return x[cur];return D.es['c_'+c]?t('c_'+c):c},
     load:function(){return fetch('productos.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){if(window.__DATA)return window.__DATA;throw 0})},
     wa:function(cfg,text){var n=(cfg&&cfg.whatsapp||'').replace(/\D/g,'');return n?'https://wa.me/'+n+(text?'?text='+encodeURIComponent(text):''):(cfg&&cfg.wa_link)||'#'},
     esc:function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}};
@@ -254,7 +255,7 @@ var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){re
 var enc=function(s){return btoa(unescape(encodeURIComponent(s)))},dec=function(s){return decodeURIComponent(escape(atob(s)))};
 function msg(t,bad){var m=$('msg');m.innerHTML=(bad?'<span class="er" style="color:#ff9a9a">':'')+t+(bad?'</span>':'');m.style.display='block';clearTimeout(msg.t);msg.t=setTimeout(function(){m.style.display='none'},bad?7000:3500)}
 function api(path,o){o=o||{};var w=o.method==='PUT';return fetch('https://api.github.com/repos/'+S.owner+'/'+S.repo+'/contents/'+path+(w?'':'?ref='+encodeURIComponent(S.branch)+'&_='+Date.now()),{method:o.method||'GET',cache:'no-store',headers:{Authorization:'Bearer '+S.token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:o.body}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(r.status===401?'El token no es válido o venció':r.status===404?'No se encontró el repositorio o el archivo (revisa usuario, repositorio y permisos)':r.status===409||r.status===422?'Alguien cambió el archivo. Recarga la página e intenta de nuevo':(j.message||r.status));return j})})}
-function load(){return api('productos.json').then(function(j){SHA=j.sha;DB=JSON.parse(dec(j.content));DB.config=DB.config||{};DB.borradores=DB.borradores||[];DB.config.imgs=DB.config.imgs||{};DB.textos=DB.textos||{}})}
+function load(){return api('productos.json').then(function(j){SHA=j.sha;DB=JSON.parse(dec(j.content));DB.config=DB.config||{};DB.borradores=DB.borradores||[];DB.categorias=DB.categorias||defCats();DB.config.imgs=DB.config.imgs||{};DB.textos=DB.textos||{}})}
 function commit(m,img){var p=Promise.resolve();[].concat(img||[]).forEach(function(im){p=p.then(function(){return api(im.name,{method:'PUT',body:JSON.stringify({message:'Imagen '+im.name,content:im.b64,branch:S.branch})})})});
   return p.then(function(){return api('productos.json',{method:'PUT',body:JSON.stringify({message:m,content:enc(JSON.stringify(DB,null,2)+'\n'),sha:SHA,branch:S.branch})})}).then(function(r){SHA=r.content.sha})}
 
@@ -282,12 +283,12 @@ function tabProd(){return'<div style="display:flex;gap:10px;margin:0 0 14px"><bu
 function tabTxt(){return'<p class="mut" style="margin-bottom:12px">Toca un texto para cambiarlo. Escribes en español y los otros idiomas se traducen solos.</p>'+GR.map(function(g){return'<h3 style="font:600 24px var(--serif);margin:18px 0 8px">'+g[0]+'</h3>'+g[1].map(function(k){var v=plain(val(k,'es'));return'<div class="row" data-k="'+k+'"><div style="min-width:0"><span style="font-size:12px;text-transform:uppercase;letter-spacing:.08em">'+LAB[k]+(DB.textos[k]?' · <b style="color:var(--gold);font:600 12px var(--sans)">editado</b>':'')+'</span><b style="font:500 19px var(--serif);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(v)+'</b></div><i>✎</i></div>'}).join('')}).join('')}
 function tabImg(){return'<p class="mut" style="margin-bottom:12px">Cambia las imágenes de la portada. Se guardan al instante y se reducen solas para que carguen rápido.</p>'+SL.map(function(s){var f=DB.config.imgs[s[0]];return'<div class="box"><h2 style="font-size:24px">'+s[1]+'</h2><p class="mut" style="font-size:13px">'+s[2]+'</p><div class="ph" style="margin-top:10px">'+(f?'<img src="'+esc(f)+'" alt="">':'<div class="mut" style="width:96px;height:120px;border:1px dashed var(--gray2);border-radius:10px;display:grid;place-items:center;text-align:center;font-size:12px;padding:6px">Imagen original</div>')+'<div><button class="btn line s" data-s="'+s[0]+'">Cambiar imagen</button>'+(f?'<button class="btn line s" data-r="'+s[0]+'" style="margin-top:8px">Volver a la original</button>':'')+'<input type="file" accept="image/*" hidden id="f_'+s[0]+'"></div></div></div>'}).join('')}
 function home(){
-  var T=[['prod','Productos'],['txt','Textos'],['img','Imágenes']];
-  $('app').innerHTML='<div class="top"><h1>Panel</h1><button class="btn line s" id="cf">Ajustes</button></div><div class="pills" style="margin-bottom:16px">'+T.map(function(t){return'<button class="pill'+(TAB===t[0]?' on':'')+'" data-t="'+t[0]+'">'+t[1]+'</button>'}).join('')+'</div>'+(TAB==='prod'?tabProd():TAB==='txt'?tabTxt():tabImg())+'<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px"><button class="btn dark s" id="ins">Instalar en este celular</button><button class="btn line s" id="lo">Desconectar</button></div>';
+  var T=[['prod','Productos'],['cat','Categorías'],['txt','Textos'],['img','Imágenes']];
+  $('app').innerHTML='<div class="top"><h1>Panel</h1><button class="btn line s" id="cf">Ajustes</button></div><div class="pills" style="margin-bottom:16px">'+T.map(function(t){return'<button class="pill'+(TAB===t[0]?' on':'')+'" data-t="'+t[0]+'">'+t[1]+'</button>'}).join('')+'</div>'+(TAB==='prod'?tabProd():TAB==='cat'?tabCat():TAB==='txt'?tabTxt():tabImg())+'<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px"><button class="btn dark s" id="ins">Instalar en este celular</button><button class="btn line s" id="lo">Desconectar</button></div>';
   document.querySelectorAll('[data-t]').forEach(function(b){b.onclick=function(){TAB=b.dataset.t;home()}});
   document.querySelectorAll('.row[data-id]').forEach(function(r){r.onclick=function(){form(+r.dataset.id)}});
   document.querySelectorAll('.row[data-k]').forEach(function(r){r.onclick=function(){editText(r.dataset.k)}});
-  var nw=$('nw');if(nw)nw.onclick=function(){form(0)};document.querySelectorAll('.row[data-d]').forEach(function(r){r.onclick=function(){var d=DR.filter(function(x){return x.id===r.dataset.d})[0];if(d)form(null,d)}});var pb=$('pub');if(pb)pb.onclick=publicar;var dc=$('dcl');if(dc)dc.onclick=function(){if(confirm('¿Descartar todas las fotos pendientes?')){DR.forEach(function(d){dbDel(d.id).catch(function(){})});DR=[];home()}};var mu=$('mul');if(mu){mu.onclick=function(){$('mf').click()};$('mf').onchange=function(e){bulk([].slice.call(e.target.files));e.target.value=''}}
+  var nw=$('nw');if(nw)nw.onclick=function(){form(0)};document.querySelectorAll('.row[data-d]').forEach(function(r){r.onclick=function(){var d=DR.filter(function(x){return x.id===r.dataset.d})[0];if(d)form(null,d)}});var pb=$('pub');if(pb)pb.onclick=publicar;var dc=$('dcl');if(dc)dc.onclick=function(){if(confirm('¿Descartar todas las fotos pendientes?')){DR.forEach(function(d){dbDel(d.id).catch(function(){})});DR=[];home()}};document.querySelectorAll('.row[data-c]').forEach(function(r){r.onclick=function(){editCat(r.dataset.c)}});var nc=$('nc');if(nc)nc.onclick=function(){editCat(null)};var mu=$('mul');if(mu){mu.onclick=function(){$('mf').click()};$('mf').onchange=function(e){bulk([].slice.call(e.target.files));e.target.value=''}}
   document.querySelectorAll('[data-s]').forEach(function(b){b.onclick=function(){$('f_'+b.dataset.s).click()};$('f_'+b.dataset.s).onchange=function(e){setImg(b.dataset.s,e.target.files[0])}});
   document.querySelectorAll('[data-r]').forEach(function(b){b.onclick=function(){delete DB.config.imgs[b.dataset.r];commit('Imagen original: '+b.dataset.r).then(function(){home();msg('✓ Listo')}).catch(function(e){msg(e.message,1)})}});
   $('lo').onclick=function(){if(confirm('¿Desconectar?')){localStorage.removeItem(K);S={};login()}};$('cf').onclick=ajustes}
@@ -297,6 +298,8 @@ function setImg(slot,f){if(!f)return;msg('Subiendo…');rs(f,1600,function(u){va
 function idb(){return IDB||(IDB=new Promise(function(res,rej){var r=indexedDB.open('chariana-admin',1);r.onupgradeneeded=function(){r.result.createObjectStore('drafts',{keyPath:'id'})};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}}))}
 function dbx(mode,fn){return idb().then(function(d){return new Promise(function(res,rej){var t=d.transaction('drafts',mode),q=fn(t.objectStore('drafts'));t.oncomplete=function(){res(q&&q.result)};t.onerror=function(){rej(t.error)}})})}
 function dbAll(){return dbx('readonly',function(s){return s.getAll()})}function dbPut(x){return dbx('readwrite',function(s){return s.put(x)})}function dbDel(id){return dbx('readwrite',function(s){return s.delete(id)})}
+function defCats(){return CATS.map(function(k){var o={};LG.forEach(function(l){o[l]=I.D[l]['c_'+k]||k});return{nombre:k,i18n:o}})}
+function catNames(){return DB.categorias.map(function(c){return c.nombre})}
 function idMax(){return Math.max(0,Math.max.apply(null,DB.productos.concat(DB.borradores).map(function(x){return x.id})))}
 function findP(id){return DB.productos.concat(DB.borradores).filter(function(x){return x.id===id})[0]}
 function inBor(id){return DB.borradores.some(function(x){return x.id===id})}
@@ -311,7 +314,7 @@ function bulk(files){
 function subirFotos(items){
   var base,tree,nuevos=[],ent=[];msg('Conectando con GitHub…');
   load().then(function(){var id0=idMax(),ts=Date.now().toString(36);
-    items.forEach(function(it,i){var id=id0+1+i;nuevos.push({id:id,nombre:it.n,col:'tierradentro',cat:'Aretes',precio:0,precioOld:null,img:'prod-'+id+'-'+ts+'.jpg',badge:'nuevo',estrellas:5,stock:5,desc:'',i18n:{}})});
+    items.forEach(function(it,i){var id=id0+1+i;nuevos.push({id:id,nombre:it.n,col:'tierradentro',cat:(catNames()[0]||'Accesorios'),precio:0,precioOld:null,img:'prod-'+id+'-'+ts+'.jpg',badge:'nuevo',estrellas:5,stock:5,desc:'',i18n:{}})});
     return gapi('git/ref/heads/'+encodeURIComponent(S.branch))}).then(function(r){base=r.object.sha;return gapi('git/commits/'+base)}).then(function(c){tree=c.tree.sha;
     return nuevos.reduce(function(p,n,i){return p.then(function(){msg('Subiendo foto '+(i+1)+' de '+nuevos.length+'…');return gapi('git/blobs','POST',{content:items[i].u.split(',')[1],encoding:'base64'}).then(function(b){ent.push({path:n.img,mode:'100644',type:'blob',sha:b.sha})})})},Promise.resolve())})
   .then(function(){DB.borradores=DB.borradores.concat(nuevos);return gapi('git/blobs','POST',{content:JSON.stringify(DB,null,2)+'\n',encoding:'utf-8'})})
@@ -323,6 +326,31 @@ function subirFotos(items){
 function tabDrafts(){var L=DB.borradores;if(!L.length)return'';
   return'<div class="box" style="border-color:var(--gold)"><h2 style="font-size:26px">Por configurar ('+L.length+')</h2><p class="mut" style="font-size:13px;margin-bottom:12px">Estas fotos ya están subidas a GitHub. Toca cada una para ponerle nombre, precio, descripción y traducciones. No se ven en la página hasta que la guardes.</p>'
   +L.map(function(p){return'<div class="row" data-id="'+p.id+'"><img src="'+esc(TH[p.img]||p.img||'')+'" alt=""><div><b>'+esc(p.nombre||'Sin nombre')+'</b><span>Falta configurar</span></div><i>✎</i></div>'}).join('')+'</div>'}
+function usados(n){return DB.productos.concat(DB.borradores).filter(function(p){return p.cat===n}).length}
+function tabCat(){return'<p class="mut" style="margin-bottom:12px">Son las categorías de tu catálogo (Aretes, Anillos…). Aquí puedes agregar, renombrar o quitar las que quieras.</p><button class="btn dark s blk" id="nc" style="margin:0 0 14px">＋ Nueva categoría</button>'
+  +DB.categorias.map(function(c){var n=usados(c.nombre);return'<div class="row" data-c="'+esc(c.nombre)+'"><div style="min-width:0;flex:1"><b>'+esc(c.nombre)+'</b><span>'+n+' producto'+(n===1?'':'s')+' · EN: '+esc((c.i18n||{}).en||'—')+'</span></div><i>✎</i></div>'}).join('')}
+function editCat(nombre){
+  var c=nombre?DB.categorias.filter(function(x){return x.nombre===nombre})[0]:{nombre:'',i18n:{}},T=c.i18n||{};
+  sheet('<h2 style="font-size:30px">'+(nombre?'Editar categoría':'Nueva categoría')+'</h2><label class="fld">Nombre (español)<input id="cn" value="'+esc(c.nombre)+'" autocomplete="off"></label>'
+   +'<button class="btn line s" id="ct" type="button" style="margin-top:14px">✦ Traducir automáticamente</button>'
+   +LG.map(function(l){return'<label class="fld">'+LN[l]+'<input id="c_'+l+'" value="'+esc(T[l]||'')+'" autocomplete="off"></label>'}).join('')
+   +'<button class="btn fill blk" id="sv">Guardar</button>'+(nombre?'<button class="btn red blk" id="rm">Eliminar categoría</button>':'')+'<button class="btn line blk" id="cl">Cancelar</button>');
+  $('cl').onclick=shut;
+  $('ct').onclick=function(){var n=$('cn').value.trim();if(!n)return msg('Escribe primero el nombre',1);var b=$('ct');b.disabled=true;b.textContent='Traduciendo…';
+    LG.reduce(function(p,l){return p.then(function(){return tr1(n,l)}).then(function(t){$('c_'+l).value=t||n})},Promise.resolve()).then(function(){b.disabled=false;b.textContent='✦ Traducir automáticamente'}).catch(function(){b.disabled=false;b.textContent='✦ Traducir automáticamente';msg('No se pudo traducir ahora. Escríbelas a mano.',1)})};
+  $('sv').onclick=function(){var n=$('cn').value.trim();if(!n)return msg('Falta el nombre',1);
+    if(DB.categorias.some(function(x){return x.nombre.toLowerCase()===n.toLowerCase()&&x.nombre!==nombre}))return msg('Ya existe esa categoría',1);
+    var i18n={};LG.forEach(function(l){i18n[l]=$('c_'+l).value.trim()||n});
+    if(nombre){c.nombre=n;c.i18n=i18n;if(n!==nombre)DB.productos.concat(DB.borradores).forEach(function(p){if(p.cat===nombre)p.cat=n})}else DB.categorias.push({nombre:n,i18n:i18n});
+    busy('sv');commit('Categoría: '+n).then(function(){shut();TAB='cat';home();msg('✓ Guardado. Se ve en la página en 1 o 2 minutos.')}).catch(function(e){busy('sv',1);msg(e.message,1);load().then(home).catch(function(){})})};
+  if(nombre)$('rm').onclick=function(){
+    var otras=catNames().filter(function(x){return x!==nombre}),k=usados(nombre);
+    if(!otras.length)return msg('Debe quedar al menos una categoría',1);
+    if(!k){if(!confirm('¿Eliminar la categoría "'+nombre+'"?'))return;DB.categorias=DB.categorias.filter(function(x){return x.nombre!==nombre});busy('rm');
+      return commit('Quitar categoría: '+nombre).then(function(){shut();TAB='cat';home();msg('✓ Categoría eliminada')}).catch(function(e){busy('rm',1);msg(e.message,1);load().then(home).catch(function(){})})}
+    sheet('<h2 style="font-size:28px">Eliminar "'+esc(nombre)+'"</h2><p class="mut">Hay '+k+' producto'+(k===1?'':'s')+' en esta categoría. ¿A cuál categoría los movemos?</p><label class="fld">Mover a<select id="mv">'+otras.map(function(x){return'<option>'+esc(x)+'</option>'}).join('')+'</select></label><button class="btn red blk" id="ok">Mover y eliminar</button><button class="btn line blk" id="cl">Cancelar</button>');
+    $('cl').onclick=shut;$('ok').onclick=function(){var d=$('mv').value;DB.productos.concat(DB.borradores).forEach(function(p){if(p.cat===nombre)p.cat=d});DB.categorias=DB.categorias.filter(function(x){return x.nombre!==nombre});busy('ok');
+      commit('Quitar categoría: '+nombre).then(function(){shut();TAB='cat';home();msg('✓ Categoría eliminada y productos movidos')}).catch(function(e){busy('ok',1);msg(e.message,1);load().then(home).catch(function(){})})}}}
 function editText(k){
   var hasEm=/<em>/.test(I.D.es[k]);
   sheet('<h2 style="font-size:30px">'+LAB[k]+'</h2>'+(hasEm?'<p class="mut" style="font-size:13px">Lo que escribas entre <b>&lt;em&gt;</b> y <b>&lt;/em&gt;</b> sale en cursiva de color.</p>':'')+LG5.map(function(l){return'<label class="fld">'+LN5[l]+'<textarea id="t_'+l+'" style="min-height:'+(l==='es'?'90px':'70px')+'">'+esc(val(k,l))+'</textarea></label>'}).join('')
@@ -340,14 +368,14 @@ function shut(){$('bk').classList.remove('on');document.body.style.overflow='';E
 $('bk').onclick=function(e){if(e.target===$('bk'))shut()};
 function busy(id,off){var b=$(id);if(!b)return;b.disabled=!off;b.style.opacity=off?1:.6;if(!off){b.dataset.t=b.textContent;b.textContent='Guardando…'}else b.textContent=b.dataset.t||b.textContent}
 function form(id,draft){
-  var p=draft?JSON.parse(JSON.stringify(draft.p)):id?JSON.parse(JSON.stringify(findP(id))):{id:idMax()+1,nombre:'',col:'tierradentro',cat:'Aretes',precio:0,precioOld:null,img:'',badge:null,estrellas:5,stock:5,desc:'',i18n:{}};
+  var p=draft?JSON.parse(JSON.stringify(draft.p)):id?JSON.parse(JSON.stringify(findP(id))):{id:idMax()+1,nombre:'',col:'tierradentro',cat:(catNames()[0]||'Accesorios'),precio:0,precioOld:null,img:'',badge:null,estrellas:5,stock:5,desc:'',i18n:{}};
   ED={p:p,img:null,draft:draft||null,bor:!!(id&&inBor(id))};var T=p.i18n||{};
   var opt=function(a,v){return a.map(function(x){return'<option value="'+esc(x[0])+'"'+(x[0]===v?' selected':'')+'>'+esc(x[1])+'</option>'}).join('')};
   sheet('<h2>'+(ED.bor?'Configurar producto':id?'Editar producto':'Nuevo producto')+'</h2>'
   +'<label class="fld">Foto</label><div class="ph"><img id="pv" src="'+esc(TH[p.img]||p.img||'')+'" alt=""><div><button class="btn line s" id="pb" type="button">Elegir foto</button><input type="file" id="pf" accept="image/*" hidden><p class="mut" style="margin-top:8px;font-size:13px">Puedes tomarla con la cámara o elegirla de la galería.</p></div></div>'
   +'<label class="fld">Nombre (español)<input id="n" value="'+esc(p.nombre)+'"></label>'
   +'<label class="fld">Descripción (español)<textarea id="d">'+esc(p.desc)+'</textarea></label>'
-  +'<div class="r2"><label class="fld">Colección<select id="c">'+opt([['tierradentro','Tierradentro'],['contemporanea','Línea Contemporánea']],p.col)+'</select></label><label class="fld">Categoría<select id="k">'+opt(CATS.map(function(c){return[c,c]}),p.cat)+'</select></label></div>'
+  +'<div class="r2"><label class="fld">Colección<select id="c">'+opt([['tierradentro','Tierradentro'],['contemporanea','Línea Contemporánea']],p.col)+'</select></label><label class="fld">Categoría<select id="k">'+opt((function(){var l=catNames();if(p.cat&&l.indexOf(p.cat)<0)l.push(p.cat);return l.map(function(c){return[c,c]})})(),p.cat)+'</select></label></div>'
   +'<div class="r2"><label class="fld">Precio<input id="pr" type="number" inputmode="numeric" value="'+p.precio+'"></label><label class="fld">Precio anterior<input id="po" type="number" inputmode="numeric" value="'+(p.precioOld||'')+'"></label></div>'
   +'<div class="r2"><label class="fld">Unidades disponibles<input id="st" type="number" inputmode="numeric" value="'+p.stock+'"></label><label class="fld">Etiqueta<select id="bd">'+opt([['','Ninguna'],['nuevo','Nuevo'],['oferta','Oferta'],['popular','Popular']],p.badge||'')+'</select></label></div>'
   +'<details open><summary>Traducciones</summary><button class="btn line s" id="tr" type="button" style="margin:12px 0 0">✦ Traducir automáticamente</button><p class="mut" style="font-size:13px;margin-top:8px">Traduce el nombre y la descripción a los 4 idiomas. Puedes corregirlos a mano.</p>'
