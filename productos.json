@@ -614,15 +614,6 @@
       }
     },
     {
-      "nombre": "Cadenas",
-      "i18n": {
-        "en": "Chains",
-        "it": "Catenine",
-        "fr": "Chaînes",
-        "pt": "Correntes"
-      }
-    },
-    {
       "nombre": "Accesorios",
       "i18n": {
         "en": "Accessories",
