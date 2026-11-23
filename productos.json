@@ -256,6 +256,20 @@
           "desc": "Conjunto completo: brincos + colar + pulseira combinando. O presente perfeito para alguém especial."
         }
       }
+    },
+    {
+      "id": 34,
+      "nombre": "Contraste Real",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 40000,
+      "precioOld": 45000,
+      "img": "prod-34-mwsn6xgq.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 2,
+      "desc": "Aretes artesanales elaborados a mano en tono blanco, negro y destellos dorados, con flecos de caída ligera.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -577,20 +591,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-33-mwsn6xgq.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 34,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-34-mwsn6xgq.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
