@@ -41,37 +41,6 @@
       }
     },
     {
-      "id": 2,
-      "nombre": "Aretes Dorados",
-      "col": "contemporanea",
-      "cat": "Aretes",
-      "precio": 25000,
-      "precioOld": null,
-      "img": "3.jpeg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 12,
-      "desc": "Aretes de acabado dorado 18k con diseño contemporáneo. Livianos y cómodos para uso diario.",
-      "i18n": {
-        "en": {
-          "nombre": "Golden Earrings",
-          "desc": "18k gold-finish earrings with a contemporary design. Lightweight and comfortable for everyday wear."
-        },
-        "it": {
-          "nombre": "Orecchini Dorati",
-          "desc": "Orecchini con finitura oro 18k dal design contemporaneo. Leggeri e comodi per l'uso quotidiano."
-        },
-        "fr": {
-          "nombre": "Boucles d'oreilles Dorées",
-          "desc": "Boucles d'oreilles à finition or 18 carats au design contemporain. Légères et confortables au quotidien."
-        },
-        "pt": {
-          "nombre": "Brincos Dourados",
-          "desc": "Brincos com acabamento dourado 18k e design contemporâneo. Leves e confortáveis para o dia a dia."
-        }
-      }
-    },
-    {
       "id": 3,
       "nombre": "Anillo Elegante",
       "col": "contemporanea",
