@@ -450,6 +450,37 @@
           "desc": "Brincos tecidos à mão com delicadas contas brancas, detalhes em vermelho e preto, uma linha central escura que guia a queda e sutis acabamentos dourados nas franjas. Inspirados na identidade cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 10,
+      "nombre": "Lágrima de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 48000,
+      "precioOld": 55000,
+      "img": "prod-10-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano en forma de gota envolvente con cuentas blancas, rojas, negras y delicados detalles dorados. Inspirados en la identidad cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Tear",
+          "desc": "Handwoven hoop earrings in a teardrop shape with white, red, and black beads and delicate gold details. Inspired by the cultural and ancestral identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Lacrima di Tierradentro",
+          "desc": "Orecchini intrecciati a mano a forma di goccia avvolgente con perline bianche, rosse, nere e delicati dettagli dorati. Ispirati all'identità culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Larme de Tierradentro",
+          "desc": "Boucles d’oreilles tissées à la main en forme de goutte enveloppante avec des perles blanches, rouges et noires et de délicats détails dorés. Inspirées de l’identité culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Lágrima de Tierradentro",
+          "desc": "Brincos tecidos à mão em forma de gota envolvente com contas brancas, vermelhas e pretas e delicados detalhes dourados. Inspirados na identidade cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -497,20 +528,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 10,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-10-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 12,
       "nombre": "",
