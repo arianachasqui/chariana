@@ -357,6 +357,37 @@
           "desc": "Brincos tecidos à mão com contas brancas, um losango central em tons de preto e dourado e franjas com caimentos delicados que conferem luz e movimento. Inspirados na identidade cultural e ancestral de Tierradentro, Inzá – Cauca, são uma peça artesanal luminosa e elegante para acompanhar qualquer ocasião."
         }
       }
+    },
+    {
+      "id": 16,
+      "nombre": "Huella Dorada de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 48000,
+      "precioOld": 55000,
+      "img": "prod-16-mvyfkbcm.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con cuentas negras predominantes, detalles geométricos en blanco y franjas con brillo dorado que iluminan la caída de sus flecos. Inspirados en la identidad cultural y ancestral de Tierradentro, Inzá – Cauca, son una pieza artesanal elegante y llena de carácter para acompañar ocasiones especiales.",
+      "i18n": {
+        "en": {
+          "nombre": "Golden Footprint of Tierradentro",
+          "desc": "Handwoven earrings with predominantly black beads, geometric details in white, and stripes with a golden shimmer that illuminate the fall of their fringes. Inspired by the cultural and ancestral identity of Tierradentro, Inzá – Cauca, they are an elegant, character-filled handcrafted piece to complement special occasions."
+        },
+        "it": {
+          "nombre": "Impronta d'Oro di Tierradentro",
+          "desc": "Orecchini tessuti a mano con perline nere predominanti, dettagli geometrici bianchi e strisce con brillantini dorati che illuminano la caduta delle loro frange. Ispirati all'identità culturale e ancestrale di Tierradentro, Inzá – Cauca, sono un pezzo artigianale elegante e ricco di carattere per accompagnare le occasioni speciali."
+        },
+        "fr": {
+          "nombre": "Empreinte dorée de Tierradentro",
+          "desc": "Boucles d’oreilles tissées à la main avec des perles noires prédominantes, des détails géométriques blancs et des franges à l’éclat doré qui illuminent le tombé de leurs pampilles. Inspirées de l’identité culturelle et ancestrale de Tierradentro, Inzá – Cauca, elles constituent une pièce artisanale élégante et pleine de caractère pour accompagner les occasions spéciales."
+        },
+        "pt": {
+          "nombre": "Pegada Dourada de Tierradentro",
+          "desc": "Brincos tecidos à mão com contas pretas predominantes, detalhes geométricos brancos e faixas com brilho dourado que iluminam a queda das franjas. Inspirados na identidade cultural e ancestral de Tierradentro, Inzá – Cauca, são uma peça artesanal elegante e cheia de personalidade para acompanhar ocasiões especiais."
+        }
+      }
     }
   ],
   "textos": {
@@ -454,20 +485,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-14-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 16,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-16-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
