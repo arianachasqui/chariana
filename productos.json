@@ -574,6 +574,37 @@
           "desc": "Conjunto artesanal tecido à mão composto por uma pulseira larga e pompons romboidais com contas brancas, pretas, vermelhas e detalhes dourados, com bordas de contas brancas que conferem textura e harmonia. Inspirado na riqueza cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 19,
+      "nombre": "Sendero de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 45000,
+      "precioOld": 50000,
+      "img": "prod-19-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano en forma triangular con cuentas negras predominantes, líneas rojas y blancas que marcan su estructura y sutiles destellos dorados en sus flecos con caída fluida. Inspirados en la identidad cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Trail",
+          "desc": "Handwoven triangular earrings with predominantly black beads, red and white lines that define their structure, and subtle golden accents in their gracefully flowing fringes. Inspired by the cultural and ancestral identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Sentiero di Tierradentro",
+          "desc": "Orecchini intrecciati a mano a forma triangolare con perline nere predominanti, linee rosse e bianche che ne definiscono la struttura e sottili bagliori dorati nelle frange dal movimento fluido. Ispirati all'identità culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Sentier de Tierradentro",
+          "desc": "Boucles d’oreilles tissées à la main de forme triangulaire avec des perles noires prédominantes, des lignes rouges et blanches qui marquent leur structure et de subtils éclats dorés sur leurs franges au tombé fluide. Inspirées de l’identité culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Trilha de Tierradentro",
+          "desc": "Brincos tecidos à mão em forma triangular com contas pretas predominantes, linhas vermelhas e brancas que marcam sua estrutura e sutis brilhos dourados em suas franjas com caimento fluido. Inspirados na identidade cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -643,20 +674,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-18-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 19,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-19-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
