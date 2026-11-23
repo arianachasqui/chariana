@@ -498,6 +498,37 @@
           "desc": "Brincos artesanais tecidos à mão com contas brancas, vermelhas, pretas e douradas, com trama geométrica de losangos e acabamentos dourados nas franjas, inspirados na riqueza cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 12,
+      "nombre": "Brisa Dorada de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 48000,
+      "precioOld": 55000,
+      "img": "prod-12-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con cuentas blancas luminosas, franja horizontal dorada, detalles geométricos en negro y flecos escalonados rematados con destellos dorados. Inspirados en la identidad cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Golden Breeze of Tierradentro",
+          "desc": "Handwoven earrings with luminous white beads, a horizontal gold band, black geometric details, and staggered fringes finished with gold accents. Inspired by the cultural and ancestral identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Brezza Dorata di Tierradentro",
+          "desc": "Orecchini tessuti a mano con perline bianche luminose, striscia orizzontale dorata, dettagli geometrici neri e frange sfalsate rifinite con bagliori dorati. Ispirati all'identità culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Brise Dorée de Tierradentro",
+          "desc": "Boucles d'oreilles tissées à la main avec des perles blanches lumineuses, une bande horizontale dorée, des détails géométriques noirs et des franges dégradées ornées de reflets dorés. Inspirées de l’identité culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brisa Dourada de Tierradentro",
+          "desc": "Brincos tecidos à mão com contas brancas brilhantes, faixa horizontal dourada, detalhes geométricos em preto e franjas escalonadas finalizadas com toques dourados. Inspirados na identidade cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -544,22 +575,7 @@
       "pt": "Chariana Nova"
     }
   },
-  "borradores": [
-    {
-      "id": 12,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-12-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    }
-  ],
+  "borradores": [],
   "categorias": [
     {
       "nombre": "Aretes",
