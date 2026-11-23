@@ -41,37 +41,6 @@
       }
     },
     {
-      "id": 8,
-      "nombre": "Set Accesorios",
-      "col": "contemporanea",
-      "cat": "Sets",
-      "precio": 28000,
-      "precioOld": 35000,
-      "img": "9.jpeg",
-      "badge": "oferta",
-      "estrellas": 5,
-      "stock": 2,
-      "desc": "Set completo: aretes + collar + pulsera a juego. El regalo perfecto para alguien especial.",
-      "i18n": {
-        "en": {
-          "nombre": "Accessories Set",
-          "desc": "Complete set: earrings + necklace + bracelet to match. The perfect gift for someone special."
-        },
-        "it": {
-          "nombre": "Set di Accessori",
-          "desc": "Set completo: orecchini + collana + braccialetto coordinati. Il regalo perfetto per una persona speciale."
-        },
-        "fr": {
-          "nombre": "Parure d'Accessoires",
-          "desc": "Parure complète : boucles d'oreilles + collier + bracelet assortis. Le cadeau parfait pour une personne spéciale."
-        },
-        "pt": {
-          "nombre": "Conjunto de Acessórios",
-          "desc": "Conjunto completo: brincos + colar + pulseira combinando. O presente perfeito para alguém especial."
-        }
-      }
-    },
-    {
       "id": 34,
       "nombre": "Contraste Real",
       "col": "tierradentro",
