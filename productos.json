@@ -388,6 +388,37 @@
           "desc": "Brincos tecidos à mão com contas pretas predominantes, detalhes geométricos brancos e faixas com brilho dourado que iluminam a queda das franjas. Inspirados na identidade cultural e ancestral de Tierradentro, Inzá – Cauca, são uma peça artesanal elegante e cheia de personalidade para acompanhar ocasiões especiais."
         }
       }
+    },
+    {
+      "id": 17,
+      "nombre": "Geometría Ancestral de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 65000,
+      "precioOld": 69989,
+      "img": "prod-17-mvyfkbcm.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con delicadas cuentas blancas, acentos rojos y negros, una línea central oscura que guía la caída y sutiles remates dorados en sus flecos. Inspirados en la identidad cultural y ancestral de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Ancestral Geometry of Tierradentro",
+          "desc": "Handwoven earrings with delicate white beads, red and black accents, a dark central line that guides the drape, and subtle gold finishes on the fringes. Inspired by the cultural and ancestral identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Geometria ancestrale di Tierradentro",
+          "desc": "Orecchini tessuti a mano con delicate perline bianche, dettagli rossi e neri, una linea centrale scura che guida la caduta e sottili rifiniture dorate sulle frange. Ispirati all'identità culturale e ancestrale di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Géométrie ancestrale de Tierradentro",
+          "desc": "Boucles d’oreilles tissées à la main avec de délicates perles blanches, des touches de rouge et de noir, une ligne centrale sombre qui guide la chute et de subtils finitions dorées sur les franges. Inspirées de l’identité culturelle et ancestrale de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Geometria ancestral de Tierradentro",
+          "desc": "Brincos tecidos à mão com delicadas contas brancas, toques em vermelho e preto, uma linha central escura que orienta a queda e sutis acabamentos dourados nas franjas. Inspirados na identidade cultural e ancestral de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -485,20 +516,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-14-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 17,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-17-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
