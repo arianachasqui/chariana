@@ -298,6 +298,20 @@
       "stock": 1,
       "desc": "Gargantilla tejida a mano con diseño geométrico en blanco, rojo y negro, acabados dorados y cordones blancos con borlas. Un accesorio artesanal con presencia y delicadeza.",
       "i18n": {}
+    },
+    {
+      "id": 15,
+      "nombre": "Gotas de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 48000,
+      "precioOld": null,
+      "img": "prod-15-mvyfkbcm.jpg",
+      "badge": "popular",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes tejidos a mano con mostacillas blancas, rojas y destellos dorados en forma de gota alargada, inspirados en la riqueza cultural y ancestral.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -395,20 +409,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-14-mvyfkbcm.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 15,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-15-mvyfkbcm.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
