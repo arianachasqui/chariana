@@ -738,6 +738,20 @@
       "stock": 5,
       "desc": "",
       "i18n": {}
+    },
+    {
+      "id": 36,
+      "nombre": "",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 0,
+      "precioOld": null,
+      "img": "prod-36-mwsqu5vs.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "",
+      "i18n": {}
     }
   ]
 }
