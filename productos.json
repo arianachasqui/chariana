@@ -766,6 +766,37 @@
           "desc": "Brincos artesanais tecidos à mão com miçangas em tons de azul, verde e azul-celeste, inspirados no pássaro barranqueiro e na biodiversidade de Tierradentro."
         }
       }
+    },
+    {
+      "id": 44,
+      "nombre": "Aretes Chamón",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-44-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en mostacillas negras con destellos azules, turquesas y plateados en movimiento, inspirados en el ave chamón y en la naturaleza de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Chamón Earrings",
+          "desc": "Handwoven artisan earrings made with black seed beads with blue, turquoise, and silver sparkles that shimmer in motion, inspired by the rufous-collared sparrow and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Orecchini Chamón",
+          "desc": "Orecchini artigianali tessuti a mano con perline nere con riflessi blu, turchesi e argentati in movimento, ispirati all'uccello chamón e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Boucles d’oreilles Chamón",
+          "desc": "Boucles d’oreilles artisanales tissées à la main en perles de rocaille noires avec des reflets bleus, turquoises et argentés qui scintillent au mouvement, inspirées par le pinson et par la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brincos Chamón",
+          "desc": "Brincos artesanais tecidos à mão com miçangas pretas e brilhos azuis, turquesas e prateados em movimento, inspirados no pássaro chamón e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -813,20 +844,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 44,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-44-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 46,
       "nombre": "",
