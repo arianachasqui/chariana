@@ -828,6 +828,20 @@
           "desc": "Conjunto artesanal de colar e brincos tecidos à mão com miçangas vermelhas, brancas, pretas e douradas, inspirado no pássaro pica-pau e na biodiversidade de Tierradentro."
         }
       }
+    },
+    {
+      "id": 48,
+      "nombre": "Conjunto Aves de Tierradentro",
+      "col": "tierradentro",
+      "cat": "Sets",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-48-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Juego artesanal compuesto por collar rígido dorado con dije en forma de gota o pluma y par de aretes tejidos a mano en mostacillas multicolor (rojos, fucsias, azules, dorados y blancos), inspirado en la colección Aves de Tierradentro y en la naturaleza de Tierradentro.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -883,20 +897,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-46-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 48,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-48-mwu2gy7k.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
