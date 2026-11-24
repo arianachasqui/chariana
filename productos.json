@@ -577,20 +577,6 @@
   },
   "borradores": [
     {
-      "id": 38,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-38-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
       "id": 39,
       "nombre": "",
       "col": "tierradentro",
