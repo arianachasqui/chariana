@@ -80,7 +80,24 @@
       "estrellas": 5,
       "stock": 1,
       "desc": "Gargantilla tejida a mano con diseño geométrico en blanco, rojo y negro, acabados dorados y cordones blancos con borlas. Un accesorio artesanal con presencia y delicadeza.",
-      "i18n": {}
+      "i18n": {
+        "en": {
+          "nombre": "Magical Tierradentro",
+          "desc": "Handwoven choker with a geometric design in white, red, and black, gold-tone finishes, and white cords with tassels. A handcrafted accessory with presence and delicacy."
+        },
+        "it": {
+          "nombre": "Tierradentro Magico",
+          "desc": "Girocollo intrecciato a mano con motivo geometrico bianco, rosso e nero, finiture dorate e cordoncini bianchi con nappine. Un accessorio artigianale di grande impatto e delicatezza."
+        },
+        "fr": {
+          "nombre": "Tierradentro magique",
+          "desc": "Collier ras du cou tissé à la main avec motif géométrique blanc, rouge et noir, finitions dorées et cordons blancs à pompons. Un accessoire artisanal alliant présence et délicatesse."
+        },
+        "pt": {
+          "nombre": "Tierradentro Mágico",
+          "desc": "Gargantilha tecida à mão com design geométrico em branco, vermelho e preto, acabamentos dourados e cordões brancos com borlas. Um acessório artesanal com presença e delicadeza."
+        }
+      }
     },
     {
       "id": 15,
