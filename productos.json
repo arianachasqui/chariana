@@ -529,6 +529,37 @@
           "desc": "Brincos tecidos à mão com contas brancas brilhantes, faixa horizontal dourada, detalhes geométricos em preto e franjas escalonadas finalizadas com toques dourados. Inspirados na identidade cultural e ancestral de Tierradentro."
         }
       }
+    },
+    {
+      "id": 39,
+      "nombre": "Conjunto Cardenal",
+      "col": "tierradentro",
+      "cat": "Sets",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-39-mwu2gy7k.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Juego artesanal de collar y aretes tejidos a mano en cuentas rojas y negras con diseño de pluma, inspirado en el ave cardenal y en la naturaleza de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Cardinal Set",
+          "desc": "Handcrafted necklace and earring set woven by hand with red and black beads and a feather design, inspired by the cardinal bird and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Completo Cardinal",
+          "desc": "Set artigianale composto da collana e orecchini realizzati a mano con perline rosse e nere, con un motivo a piume ispirato all'uccello cardinale e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Ensemble Cardinal",
+          "desc": "Parure artisanale composée d’un collier et de boucles d’oreilles tissés à la main avec des perles rouges et noires et un motif de plume, inspirée du cardinal et de la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Conjunto Cardenal",
+          "desc": "Conjunto artesanal de colar e brincos tecidos à mão com contas vermelhas e pretas e design de penas, inspirado no pássaro cardeal e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -576,20 +607,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 39,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-39-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 40,
       "nombre": "",
