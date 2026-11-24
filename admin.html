@@ -192,6 +192,28 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r
   R('announce_link','Ver catálogo →','View catalogue →','Vedi il catalogo →','Voir le catalogue →','Ver catálogo →');
   R('col_lbl_1','Colección 01','Collection 01','Collezione 01','Collection 01','Coleção 01');R('col_lbl_2','Colección 02','Collection 02','Collezione 02','Collection 02','Coleção 02');
   R('scroll','Desliza','Scroll','Scorri','Défiler','Role');R('stat_p','Piezas','Pieces','Pezzi','Pièces','Peças');R('stat_c','Colecciones','Collections','Collezioni','Collections','Coleções');R('stat_h','Artesanal','Handmade','Artigianale','Artisanal','Artesanal');
+  R('cart_btn','Carrito','Cart','Carrello','Panier','Carrinho');
+  R('cart_add','Agregar al carrito','Add to cart','Aggiungi al carrello','Ajouter au panier','Adicionar ao carrinho');
+  R('cart_added','✓ Agregado al carrito','✓ Added to cart','✓ Aggiunto al carrello','✓ Ajouté au panier','✓ Adicionado ao carrinho');
+  R('cart_title','Tu pedido','Your order','Il tuo ordine','Votre commande','Seu pedido');
+  R('cart_empty','Tu carrito está vacío.','Your cart is empty.','Il tuo carrello è vuoto.','Votre panier est vide.','Seu carrinho está vazio.');
+  R('cart_total','Total','Total','Totale','Total','Total');
+  R('cart_clear','Vaciar carrito','Empty cart','Svuota carrello','Vider le panier','Esvaziar carrinho');
+  R('cart_send','Enviar pedido por WhatsApp','Send order on WhatsApp','Invia ordine su WhatsApp','Envoyer la commande sur WhatsApp','Enviar pedido pelo WhatsApp');
+  R('cart_need','Completa nombre, teléfono, ciudad y dirección.','Please fill in name, phone, city and address.','Compila nome, telefono, città e indirizzo.','Renseignez nom, téléphone, ville et adresse.','Preencha nome, telefone, cidade e endereço.');
+  R('cart_data','Tus datos','Your details','I tuoi dati','Vos informations','Seus dados');
+  R('f_name','Nombre','Name','Nome','Nom','Nome');R('f_phone','Teléfono','Phone','Telefono','Téléphone','Telefone');R('f_city','Ciudad','City','Città','Ville','Cidade');
+  R('f_addr','Dirección de entrega','Delivery address','Indirizzo di consegna','Adresse de livraison','Endereço de entrega');
+  R('f_notes','Notas (opcional)','Notes (optional)','Note (facoltative)','Remarques (facultatif)','Observações (opcional)');
+  R('m_head','Hola Chariana, quiero hacer este pedido:','Hello Chariana, I would like to place this order:','Ciao Chariana, vorrei fare questo ordine:','Bonjour Chariana, je souhaite passer cette commande :','Olá Chariana, quero fazer este pedido:');
+  R('m_data','Mis datos:','My details:','I miei dati:','Mes informations :','Meus dados:');
+  R('m_opened','Se abrió WhatsApp con tu pedido.','WhatsApp opened with your order.','WhatsApp si è aperto con il tuo ordine.','WhatsApp s\'est ouvert avec votre commande.','O WhatsApp abriu com o seu pedido.');
+  R('m_copied','Pedido copiado. Pégalo en el chat de WhatsApp.','Order copied. Paste it in the WhatsApp chat.','Ordine copiato. Incollalo nella chat di WhatsApp.','Commande copiée. Collez-la dans le chat WhatsApp.','Pedido copiado. Cole no chat do WhatsApp.');
+  R('sold','Agotado','Sold out','Esaurito','Épuisé','Esgotado');
+  R('order1','Pedir solo este por WhatsApp','Order only this one on WhatsApp','Ordina solo questo su WhatsApp','Commander seulement celui-ci','Pedir só este pelo WhatsApp');
+  R('follow','Síguenos','Follow us','Seguici','Suivez-nous','Siga-nos');
+  R('fx_note','Precios en pesos colombianos (COP).','Prices are in Colombian pesos (COP). Amounts shown in {cur} are approximate, based on today\'s exchange rate.','I prezzi sono in pesos colombiani (COP). Gli importi in {cur} sono indicativi, in base al cambio del giorno.','Les prix sont en pesos colombiens (COP). Les montants en {cur} sont approximatifs, selon le taux du jour.','Os preços são em pesos colombianos (COP). Os valores em {cur} são aproximados, conforme a cotação do dia.');
+  R('fx_cart','Se cobra en pesos colombianos: {cop}.','Charged in Colombian pesos: {cop}.','Addebitato in pesos colombiani: {cop}.','Facturé en pesos colombiens : {cop}.','Cobrado em pesos colombianos: {cop}.');
   /* ---- Catálogo ---- */
   R('cat_title','Catálogo','Catalogue','Catalogo','Catalogue','Catálogo');
   R('cat_sub','Explora nuestras dos colecciones y escríbenos para pedir la pieza que te guste.','Explore our two collections and message us to order the piece you love.','Esplora le nostre due collezioni e scrivici per ordinare il pezzo che ami.','Découvrez nos deux collections et écrivez-nous pour commander la pièce qui vous plaît.','Explore nossas duas coleções e fale conosco para pedir a peça que você amar.');
@@ -212,6 +234,10 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r
 
   function detect(){var s;try{s=localStorage.getItem(KEY)}catch(e){}
     if(s&&D[s])return s;var n=((navigator.languages&&navigator.languages[0])||navigator.language||'es').slice(0,2).toLowerCase();return D[n]?n:'es'}
+var DEF={whatsapp:'573113163434',instagram:'https://www.instagram.com/chariana_accesorios_artesanal?igsh=bm4zNDNzeGhjNDhw',facebook:'https://www.facebook.com/share/16LKqij1uk/',tiktok:'https://tiktok.com/@chariana.accesorios'};
+  var CUR={es:{c:'COP',loc:'es-CO'},en:{c:'USD',loc:'en-US'},it:{c:'EUR',loc:'it-IT'},fr:{c:'EUR',loc:'fr-FR'},pt:{c:'BRL',loc:'pt-BR'}},FXK='chariana-fx',RT={USD:1/3327,EUR:1/3684,BRL:1/561},FXT=0;
+  try{var fxs=JSON.parse(localStorage.getItem(FXK)||'null');if(fxs&&fxs.r&&fxs.r.USD){RT=fxs.r;FXT=fxs.t}}catch(e){}
+  function fxLoad(){if(Date.now()-FXT<6*36e5)return;fetch('https://open.er-api.com/v6/latest/COP').then(function(r){return r.json()}).then(function(j){if(j&&j.rates&&j.rates.USD&&j.rates.EUR&&j.rates.BRL){RT={USD:j.rates.USD,EUR:j.rates.EUR,BRL:j.rates.BRL};FXT=Date.now();try{localStorage.setItem(FXK,JSON.stringify({r:RT,t:FXT}))}catch(e){}window.dispatchEvent(new Event('langchange'))}}).catch(function(){})}
   var CR={},cur=detect(),OV={};try{OV=JSON.parse(localStorage.getItem('chariana-ov')||'{}')}catch(e){}
   function t(k,v){var s=(OV[k]&&OV[k][cur])||(D[cur]&&D[cur][k]);if(s==null)s=D.es[k];if(s==null)return k;if(v)s=s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!=null?v[x]:m});return s}
   function qa(s){return[].slice.call(document.querySelectorAll(s))}
@@ -228,13 +254,15 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r
   var PH='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><rect width="100" height="125" fill="#efe6d8"/><path d="M50 40 72 62 50 84 28 62Z" fill="none" stroke="#c9a84c" stroke-width="2"/><path d="M38 40h24l10 22H28Z" fill="none" stroke="#c9a84c" stroke-width="1.5"/></svg>');
   document.addEventListener('error',function(e){var i=e.target;if(i&&i.tagName==='IMG'&&!i.dataset.f){i.dataset.f=1;i.src=PH}},true);
   function setOv(o){OV=o||{};try{localStorage.setItem('chariana-ov',JSON.stringify(OV))}catch(e){}apply()}
-  window.I={D:D,setOv:setOv,t:t,get lang(){return cur},set:set,apply:apply,PH:PH,
+  window.I={DEF:DEF,D:D,setOv:setOv,t:t,get lang(){return cur},set:set,apply:apply,PH:PH,
     pick:function(p){var x=p.i18n&&p.i18n[cur]||{};return{nombre:x.nombre||p.nombre,desc:x.desc||p.desc}},
-    money:function(n){try{return new Intl.NumberFormat(LOC[cur],{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n)}catch(e){return'$'+n}},
+    money:function(n){var c=CUR[cur];try{if(c.c==='COP')return new Intl.NumberFormat(c.loc,{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n);return new Intl.NumberFormat(c.loc,{style:'currency',currency:c.c,minimumFractionDigits:2,maximumFractionDigits:2}).format(n*RT[c.c])}catch(e){return'$'+n}},
+    cop:function(n){return new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n)+' COP'},
+    cur:function(){return CUR[cur].c},
     img:function(p){return p.img||PH},
     setCats:function(a){CR={};(a||[]).forEach(function(x){CR[x.nombre]=x.i18n||{}})},
     cat:function(c){var x=CR[c];if(x&&x[cur])return x[cur];return D.es['c_'+c]?t('c_'+c):c},
-    load:function(){return fetch('productos.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){if(window.__DATA)return window.__DATA;throw 0})},
+    load:function(){return fetch('productos.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){if(window.__DATA)return window.__DATA;throw 0}).then(function(d){var c=d.config=d.config||{};Object.keys(DEF).forEach(function(k){if(k==='whatsapp'?!c[k]:c[k]===undefined)c[k]=DEF[k]});return d})},
     wa:function(cfg,text){var n=(cfg&&cfg.whatsapp||'').replace(/\D/g,'');return n?'https://wa.me/'+n+(text?'?text='+encodeURIComponent(text):''):(cfg&&cfg.wa_link)||'#'},
     esc:function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}};
   function mk(c,h){var e=document.createElement('div');e.className=c;if(h)e.innerHTML=h;document.body.appendChild(e);return e}
@@ -244,6 +272,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}.r
       document.addEventListener('mousemove',function(e){d.style.left=e.clientX+'px';d.style.top=e.clientY+'px';r.style.left=e.clientX+'px';r.style.top=e.clientY+'px'});
       document.addEventListener('mouseover',function(e){var b=!!e.target.closest('a,button,.card,.col');d.classList.toggle('big',b);r.classList.toggle('big',b)})}}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',extras);else extras();
+  if(!document.documentElement.hasAttribute('data-adm'))fxLoad();
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
 })();
 </script>
@@ -361,8 +390,14 @@ function editText(k){
     busy('sv');var esChanged=nv.es!==orig.es,todo=esChanged?LG.filter(function(l){return nv[l]===orig[l]}):[];
     todo.reduce(function(p,l){return p.then(function(){return tr1(nv.es,l).then(function(t){if(t)nv[l]=t}).catch(function(){})})},Promise.resolve()).then(function(){
       DB.textos[k]=nv;return commit('Texto: '+k)}).then(function(){shut();home();msg('✓ Guardado. Se ve en la página en 1 o 2 minutos.')}).catch(function(e){busy('sv',1);msg(e.message,1)})}}
-function ajustes(){sheet('<h2>Ajustes</h2><p class="mut">Número de WhatsApp para recibir pedidos (con código de país, sin + ni espacios). Ej: 573001234567</p><label class="fld">WhatsApp<input id="wn" inputmode="numeric" value="'+esc(DB.config.whatsapp||'')+'"></label><button class="btn fill blk" id="sv">Guardar</button><button class="btn line blk" id="cl">Cancelar</button>');
-  $('cl').onclick=shut;$('sv').onclick=function(){DB.config.whatsapp=$('wn').value.replace(/\D/g,'');busy('sv');commit('Ajustes de WhatsApp').then(function(){shut();msg('<span class="ok" style="color:#9be0a6">✓ Guardado</span>')}).catch(function(e){busy('sv',1);msg(e.message,1)})}}
+function ajustes(){var C=DB.config,V=function(k){return k==='whatsapp'?(C[k]||I.DEF[k]):((C[k]===undefined?I.DEF[k]:C[k])||'')},F=function(id,lab,k,extra){return'<label class="fld">'+lab+'<input id="'+id+'" '+(extra||'')+' value="'+esc(V(k))+'"></label>'};
+  sheet('<h2>Ajustes</h2><p class="mut" style="font-size:14px">El WhatsApp recibe los pedidos del carrito: con código de país, sin + ni espacios (ej. 573001234567). Las redes aparecen como íconos en la página; deja vacío el que no quieras mostrar.</p>'
+   +F('wn','WhatsApp para pedidos','whatsapp','inputmode="numeric"')+F('ig','Instagram (enlace)','instagram','autocapitalize="none"')+F('fbk','Facebook (enlace)','facebook','autocapitalize="none"')+F('tk','TikTok (enlace)','tiktok','autocapitalize="none"')
+   +'<button class="btn fill blk" id="sv">Guardar</button><button class="btn line blk" id="cl">Cancelar</button>');
+  $('cl').onclick=shut;$('sv').onclick=function(){var w=$('wn').value.replace(/\D/g,'');if(w.length<10)return msg('El WhatsApp debe incluir el código de país',1);
+    DB.config.whatsapp=w;DB.config.instagram=$('ig').value.trim();DB.config.facebook=$('fbk').value.trim();DB.config.tiktok=$('tk').value.trim();
+    ['instagram','facebook','tiktok'].forEach(function(k){if(!DB.config[k])DB.config[k]=''});
+    busy('sv');commit('Ajustes: WhatsApp y redes').then(function(){shut();msg('✓ Guardado. Se ve en la página en 1 o 2 minutos.')}).catch(function(e){busy('sv',1);msg(e.message,1)})}}
 function sheet(h){$('sh').innerHTML='<div class="in">'+h+'</div>';$('bk').classList.add('on');document.body.style.overflow='hidden'}
 function shut(){$('bk').classList.remove('on');document.body.style.overflow='';ED=null}
 $('bk').onclick=function(e){if(e.target===$('bk'))shut()};
