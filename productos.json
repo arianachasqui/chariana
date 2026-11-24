@@ -890,6 +890,37 @@
           "desc": "Brincos artesanais tecidos à mão com miçangas em tons de branco, cinza, preto e azul-celeste, em forma de pena ou cauda bífida, inspirados no pássaro tesoura e na natureza, cultura e identidade de Tierradentro."
         }
       }
+    },
+    {
+      "id": 50,
+      "nombre": "Conjunto Cardenal",
+      "col": "tierradentro",
+      "cat": "Sets",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-50-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "uego artesanal compuesto por collar rígido dorado con dije tejido en mostacillas rojas y negras con caída de flecos y par de aretes en cuentas rojas con detalles negros, inspirado en el ave cardenal y en la naturaleza de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Cardinal Set",
+          "desc": "Handcrafted set consisting of a gold-tone rigid necklace with a charm woven from red and black seed beads and featuring fringed tassels, plus a pair of earrings made from red beads with black details, inspired by the cardinal bird and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Completo Cardinal",
+          "desc": "Set artigianale composto da una collana rigida dorata con ciondolo intrecciato in perline rosse e nere con frange pendenti e un paio di orecchini con perline rosse e dettagli neri, ispirato all'uccello cardinale e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Ensemble Cardinal",
+          "desc": "Parure artisanale composée d’un collier rigide doré avec un pendentif tissé en perles de rocaille rouges et noires avec des franges tombantes et d’une paire de boucles d’oreilles en perles rouges avec des détails noirs, inspirée du cardinal et de la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Conjunto Cardenal",
+          "desc": "Conjunto artesanal composto por um colar rígido dourado com pingente tecido em miçangas vermelhas e pretas com franjas e um par de brincos de contas vermelhas com detalhes pretos, inspirado no pássaro cardeal e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -937,20 +968,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 50,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-50-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 51,
       "nombre": "",
