@@ -682,9 +682,9 @@
       "precio": 55000,
       "precioOld": 60000,
       "img": "prod-42-mwu2gy7k.jpg",
-      "badge": "nuevo",
+      "badge": null,
       "estrellas": 5,
-      "stock": 5,
+      "stock": 1,
       "desc": "Juego de collar y aretes artesanales tejidos a mano en mostacillas verdes y doradas, inspirado en el ave barranquero y en la naturaleza de Tierradentro.",
       "i18n": {
         "en": {
