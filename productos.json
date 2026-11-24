@@ -673,6 +673,37 @@
           "desc": "Brincos artesanais tecidos à mão com miçangas e franjas em tons de vermelho, preto e brilhos claros, inspirados no pássaro cardeal e na natureza de Tierradentro."
         }
       }
+    },
+    {
+      "id": 42,
+      "nombre": "Conjunto Barranquero",
+      "col": "tierradentro",
+      "cat": "Sets",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-42-mwu2gy7k.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Juego de collar y aretes artesanales tejidos a mano en mostacillas verdes y doradas, inspirado en el ave barranquero y en la naturaleza de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Barranquero Set",
+          "desc": "Handcrafted necklace and earring set woven from green and gold seed beads, inspired by the barranquero bird and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Completo Barranquero",
+          "desc": "Parure di collana e orecchini artigianali tessuti a mano con perline verdi e dorate, ispirata all'uccello barranquero e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Ensemble Barranquero",
+          "desc": "Ensemble collier et boucles d’oreilles artisanales tissées à la main en perles de rocaille vertes et dorées, inspiré de l’oiseau barrancuero et de la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Conjunto Barranquero",
+          "desc": "Conjunto de colar e brincos artesanais tecidos à mão com miçangas verdes e douradas, inspirado no pássaro barranqueiro e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -720,20 +751,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 42,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-42-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 43,
       "nombre": "",
