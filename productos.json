@@ -611,6 +611,37 @@
           "desc": "Conjunto artesanal de colar e brincos tecidos à mão com contas vermelhas e pretas e design de penas, inspirado no pássaro cardeal e na natureza de Tierradentro."
         }
       }
+    },
+    {
+      "id": 40,
+      "nombre": "Aretes Toreador",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-40-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en cuentas con flecos y contrastes de tonos blancos, amarillos, negros, naranjas y rosados, inspirados en el ave toreador y en la naturaleza de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Toreador Earrings",
+          "desc": "Handwoven beaded earrings with fringes and contrasting shades of white, yellow, black, orange, and pink, inspired by the toreador bird and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Orecchini Toreador",
+          "desc": "Orecchini artigianali realizzati a mano con perline, frange e contrasti di tonalità bianche, gialle, nere, arancioni e rosa, ispirati all'uccello toreador e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Boucles d’oreilles Toreador",
+          "desc": "Boucles d’oreilles artisanales tissées à la main en perles avec des franges et des contrastes de tons blancs, jaunes, noirs, oranges et roses, inspirées de l’oiseau toreador et de la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brincos Toreador",
+          "desc": "Brincos artesanais tecidos à mão com contas, franjas e contrastes de tons brancos, amarelos, pretos, laranjas e rosas, inspirados no pássaro toreador e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -658,20 +689,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 40,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-40-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 41,
       "nombre": "",
