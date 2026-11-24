@@ -60,13 +60,30 @@
       "col": "tierradentro",
       "cat": "Aretes",
       "precio": 60000,
-      "precioOld": null,
+      "precioOld": 65000,
       "img": "prod-33-mwsn6xgq.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 1,
       "desc": "Aretes tejidos a mano con patrones geometricos en rojo, blanco y dorados y mostacillas de caída suave. Una pieza artesanal llena de carácter y elegancia para destacar en cualquier ocasión.",
-      "i18n": {}
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Rhombuses",
+          "desc": "Handwoven earrings with geometric patterns in red, white and gold and soft-draping beads. A handcrafted piece full of character and elegance to stand out on any occasion."
+        },
+        "it": {
+          "nombre": "Rombi Tierradentro",
+          "desc": "Orecchini tessuti a mano con motivi geometrici in rosso, bianco e oro e perline con una leggera caduta. Un pezzo artigianale ricco di carattere ed eleganza per distinguersi in ogni occasione."
+        },
+        "fr": {
+          "nombre": "Rhomboïdes de Tierradentro",
+          "desc": "Boucles d’oreilles tissées à la main avec des motifs géométriques rouges, blancs et dorés et des perles de rocaille au tombé fluide. Une pièce artisanale pleine de caractère et d’élégance pour se démarquer en toute occasion."
+        },
+        "pt": {
+          "nombre": "Rombos de Tierradentro",
+          "desc": "Brincos tecidos à mão com padrões geométricos em vermelho, branco e dourado e miçangas com caimento suave. Uma peça artesanal cheia de personalidade e elegância para se destacar em qualquer ocasião."
+        }
+      }
     },
     {
       "id": 30,
