@@ -735,6 +735,37 @@
           "desc": "Conjunto artesanal de pulseira e brincos tecidos à mão com miçangas em tons de creme, preto, marrom e dourado, inspirado no pássaro trespiés e na natureza de Tierradentro."
         }
       }
+    },
+    {
+      "id": 45,
+      "nombre": "Aretes Barranquero",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-45-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en mostacillas en tonos azules, verdes y celestes, inspirados en el ave barranquero y en la biodiversidad de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Barranquero Earrings",
+          "desc": "Handwoven beaded earrings in shades of blue, green, and light blue, inspired by the rufous-capped honeyeater and the biodiversity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Orecchini Barranquero",
+          "desc": "Orecchini artigianali realizzati a mano con perline in tonalità blu, verde e azzurro, ispirati all'uccello barranquero e alla biodiversità di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Boucles d’oreilles Barranquero",
+          "desc": "Boucles d’oreilles artisanales tissées à la main en perles de rocaille dans des tons bleus, verts et bleu ciel, inspirées du martin-pêcheur et de la biodiversité de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brincos Barranquero",
+          "desc": "Brincos artesanais tecidos à mão com miçangas em tons de azul, verde e azul-celeste, inspirados no pássaro barranqueiro e na biodiversidade de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -790,20 +821,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-44-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 45,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-45-mwu2gy7k.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
