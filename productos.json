@@ -921,6 +921,37 @@
           "desc": "Brincos artesanais tecidos à mão com miçangas em tons de vermelho, branco, preto e pequenos toques dourados, inspirados no pássaro pica-pau e na natureza, cultura e identidade de Tierradentro."
         }
       }
+    },
+    {
+      "id": 52,
+      "nombre": "Aretes Carpintero",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-52-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en mostacillas con caída de flecos en tonos blancos, negros, rojos, grises y destellos dorados, inspirados en el ave carpintero y en la naturaleza, cultura e identidad de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Carpintero Earrings",
+          "desc": "Handwoven beaded earrings with fringe drops in shades of white, black, red, gray, and golden sparkles, inspired by the woodpecker and by the nature, culture, and identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Orecchini Carpintero",
+          "desc": "Orecchini artigianali realizzati a mano con perline e frange pendenti nei toni del bianco, del nero, del rosso, del grigio e con riflessi dorati, ispirati al picchio e alla natura, alla cultura e all'identità di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Boucles d’oreilles Carpintero",
+          "desc": "Boucles d'oreilles artisanales tissées à la main en perles de rocaille avec des franges tombantes dans des tons blancs, noirs, rouges, gris et des reflets dorés, inspirées du pic et de la nature, de la culture et de l'identité de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brincos Carpintero",
+          "desc": "Brincos artesanais tecidos à mão com miçangas e franjas pendentes nos tons branco, preto, vermelho, cinza e dourado brilhante, inspirados no pássaro pica-pau e na natureza, cultura e identidade de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -976,20 +1007,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-51-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 52,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-52-mwu2gy7k.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
