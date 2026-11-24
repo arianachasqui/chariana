@@ -841,7 +841,24 @@
       "estrellas": 5,
       "stock": 1,
       "desc": "Juego artesanal compuesto por collar rígido dorado con dije en forma de gota o pluma y par de aretes tejidos a mano en mostacillas multicolor (rojos, fucsias, azules, dorados y blancos), inspirado en la colección Aves de Tierradentro y en la naturaleza de Tierradentro.",
-      "i18n": {}
+      "i18n": {
+        "en": {
+          "nombre": "Tierradentro Birds Set",
+          "desc": "Handcrafted set consisting of a gold-tone choker with a teardrop or feather-shaped pendant and a pair of handmade earrings woven with multicolored seed beads (red, fuchsia, blue, gold and white), inspired by the Aves de Tierradentro collection and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Complesso degli Uccelli di Tierradentro",
+          "desc": "Set artigianale composto da una collana rigida dorata con ciondolo a forma di goccia o di piuma e da un paio di orecchini intrecciati a mano con perline multicolori (rosse, fucsia, blu, dorate e bianche), ispirati alla collezione Uccelli di Tierradentro e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Ensemble Oiseaux de Tierradentro",
+          "desc": "Parure artisanale composée d’un collier rigide doré avec un pendentif en forme de goutte ou de plume et d’une paire de boucles d’oreilles tissées à la main en perles multicolores (rouges, fuchsia, bleues, dorées et blanches), inspirée de la collection Oiseaux de Tierradentro et de la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Conjunto Aves de Tierradentro",
+          "desc": "Conjunto artesanal composto por colar rígido dourado com pingente em forma de gota ou pena e par de brincos tecidos à mão com miçangas multicoloridas (vermelhas, fúcsias, azuis, douradas e brancas), inspirado na coleção Aves de Tierradentro e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
