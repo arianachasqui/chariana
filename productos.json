@@ -704,6 +704,37 @@
           "desc": "Conjunto de colar e brincos artesanais tecidos à mão com miçangas verdes e douradas, inspirado no pássaro barranqueiro e na natureza de Tierradentro."
         }
       }
+    },
+    {
+      "id": 43,
+      "nombre": "Conjunto Trespiés",
+      "col": "tierradentro",
+      "cat": "Pulseras",
+      "precio": 45000,
+      "precioOld": 50000,
+      "img": "prod-43-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Juego artesanal de pulsera y aretes tejidos a mano en mostacillas en tonos crema, negros, marrones y dorados, inspirado en el ave trespiés y en la naturaleza de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Tripod Assembly",
+          "desc": "Handcrafted set of bracelet and earrings woven by hand from seed beads in shades of cream, black, brown and gold, inspired by the three-toed sloth and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Set Treppiede",
+          "desc": "Set composto da bracciale e orecchini realizzati a mano con perline nei toni del crema, del nero, del marrone e dell'oro, ispirato all'uccello treppiedi e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Ensemble Trespiés",
+          "desc": "Parure artisanale composée d’un bracelet et de boucles d’oreilles tissés à la main avec des perles de rocaille dans des tons crème, noirs, marron et dorés, inspirée de l’oiseau à trois pattes et de la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Conjunto de tripé",
+          "desc": "Conjunto artesanal de pulseira e brincos tecidos à mão com miçangas em tons de creme, preto, marrom e dourado, inspirado no pássaro trespiés e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -751,20 +782,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 43,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-43-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 44,
       "nombre": "",
