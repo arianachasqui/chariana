@@ -52,7 +52,24 @@
       "estrellas": 5,
       "stock": 2,
       "desc": "Aretes artesanales elaborados a mano en tono blanco, negro y destellos dorados, con flecos de caída ligera.",
-      "i18n": {}
+      "i18n": {
+        "en": {
+          "nombre": "True Contrast",
+          "desc": "Handcrafted earrings in white, black and shimmering gold, with lightweight fringe."
+        },
+        "it": {
+          "nombre": "Contrasto reale",
+          "desc": "Orecchini artigianali realizzati a mano in tonalità bianca, nera e con riflessi dorati, con frange dalla caduta leggera."
+        },
+        "fr": {
+          "nombre": "Contraste réel",
+          "desc": "Boucles d’oreilles artisanales fabriquées à la main dans des tons blancs, noirs et dorés scintillants, avec des franges légères."
+        },
+        "pt": {
+          "nombre": "Contraste real",
+          "desc": "Brincos artesanais feitos à mão em tons de branco, preto e dourado brilhante, com franjas de queda leve."
+        }
+      }
     },
     {
       "id": 33,
