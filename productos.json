@@ -797,6 +797,37 @@
           "desc": "Brincos artesanais tecidos à mão com miçangas pretas e brilhos azuis, turquesas e prateados em movimento, inspirados no pássaro chamón e na natureza de Tierradentro."
         }
       }
+    },
+    {
+      "id": 47,
+      "nombre": "Conjunto Carpintero",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-47-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Juego artesanal de collar y aretes tejidos a mano en mostacillas rojas, blancas, negras y doradas, inspirado en el ave carpintero y en la biodiversidad de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Carpenter Set",
+          "desc": "Handcrafted set of necklace and earrings woven by hand from red, white, black and gold seed beads, inspired by the woodpecker and the biodiversity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Completo da falegname",
+          "desc": "Parure artigianale composta da collana e orecchini tessuti a mano con perline rosse, bianche, nere e dorate, ispirata al picchio e alla biodiversità di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Ensemble Charpentier",
+          "desc": "Parure artisanale composée d’un collier et de boucles d’oreilles tissés à la main avec des perles rouges, blanches, noires et dorées, inspirée du pic et de la biodiversité de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Conjunto de carpinteiro",
+          "desc": "Conjunto artesanal de colar e brincos tecidos à mão com miçangas vermelhas, brancas, pretas e douradas, inspirado no pássaro pica-pau e na biodiversidade de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -852,20 +883,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-46-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 47,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-47-mwu2gy7k.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
