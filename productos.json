@@ -859,6 +859,37 @@
           "desc": "Conjunto artesanal composto por colar rígido dourado com pingente em forma de gota ou pena e par de brincos tecidos à mão com miçangas multicoloridas (vermelhas, fúcsias, azuis, douradas e brancas), inspirado na coleção Aves de Tierradentro e na natureza de Tierradentro."
         }
       }
+    },
+    {
+      "id": 49,
+      "nombre": "Aretes Tijereta",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 45000,
+      "precioOld": 50000,
+      "img": "prod-49-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en mostacillas en tonos blancos, grises, negros y celestes con forma de pluma o cola bífida, inspirados en el ave tijereta y en la naturaleza, cultura e identidad de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Earwig Earrings",
+          "desc": "Handwoven artisan earrings made of seed beads in shades of white, gray, black, and light blue, shaped like a feather or bifurcated tail, inspired by the scissor-tailed flycatcher and by the nature, culture, and identity of Tierradentro."
+        },
+        "it": {
+          "nombre": "Orecchini Forbicina",
+          "desc": "Orecchini artigianali realizzati a mano con perline in tonalità bianche, grigie, nere e azzurre, a forma di piuma o di coda biforcuta, ispirati all'uccello forbice e alla natura, alla cultura e all'identità di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Boucles d’oreilles Perce-oreille",
+          "desc": "Boucles d’oreilles artisanales tissées à la main en perles de rocaille dans des tons blancs, gris, noirs et bleu ciel, en forme de plume ou de queue fendue, inspirées de l’oiseau tijereta et de la nature, de la culture et de l’identité de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brincos Tijereta",
+          "desc": "Brincos artesanais tecidos à mão com miçangas em tons de branco, cinza, preto e azul-celeste, em forma de pena ou cauda bífida, inspirados no pássaro tesoura e na natureza, cultura e identidade de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -914,20 +945,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-46-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 49,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-49-mwu2gy7k.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
