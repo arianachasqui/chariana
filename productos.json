@@ -642,6 +642,37 @@
           "desc": "Brincos artesanais tecidos à mão com contas, franjas e contrastes de tons brancos, amarelos, pretos, laranjas e rosas, inspirados no pássaro toreador e na natureza de Tierradentro."
         }
       }
+    },
+    {
+      "id": 41,
+      "nombre": "Aretes Cardenal",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 48000,
+      "precioOld": 55000,
+      "img": "prod-41-mwu2gy7k.jpg",
+      "badge": null,
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en mostacillas con flecos en tonos rojos, negros y destellos claros, inspirados en el ave cardenal y en la naturaleza de Tierradentro.",
+      "i18n": {
+        "en": {
+          "nombre": "Cardinal Earrings",
+          "desc": "Handwoven beaded earrings with fringes in shades of red, black and light sparkles, inspired by the cardinal bird and the nature of Tierradentro."
+        },
+        "it": {
+          "nombre": "Orecchini Cardinale",
+          "desc": "Orecchini artigianali realizzati a mano con perline e frange nei toni del rosso, del nero e con riflessi chiari, ispirati al cardinale e alla natura di Tierradentro."
+        },
+        "fr": {
+          "nombre": "Boucles d'oreilles Cardinal",
+          "desc": "Boucles d’oreilles artisanales tissées à la main en perles de rocaille avec des franges dans des tons rouges, noirs et des éclats clairs, inspirées de l’oiseau cardinal et de la nature de Tierradentro."
+        },
+        "pt": {
+          "nombre": "Brincos Cardenal",
+          "desc": "Brincos artesanais tecidos à mão com miçangas e franjas em tons de vermelho, preto e brilhos claros, inspirados no pássaro cardeal e na natureza de Tierradentro."
+        }
+      }
     }
   ],
   "textos": {
@@ -689,20 +720,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 41,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-41-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 42,
       "nombre": "",
