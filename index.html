@@ -124,6 +124,16 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
 .cur-d,.cur-r{position:fixed;pointer-events:none;z-index:9999;border-radius:50%;transform:translate(-50%,-50%);display:none}
 @media(pointer:fine){.cur-d,.cur-r{display:block}html:not([data-adm]) body,html:not([data-adm]) a,html:not([data-adm]) button{cursor:none}.cur-d{width:8px;height:8px;background:var(--gold);transition:transform .08s}.cur-r{width:30px;height:30px;border:1.5px solid rgba(201,168,76,.55);transition:left .12s,top .12s,width .2s,height .2s,background .2s}.cur-d.big{transform:translate(-50%,-50%) scale(2.5)}.cur-r.big{width:48px;height:48px;background:rgba(201,168,76,.07);border-color:var(--gold)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+.soc{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.soc a{width:46px;height:46px;border-radius:50%;border:1px solid rgba(201,168,76,.4);display:grid;place-items:center;color:var(--gold);transition:.2s}.soc a:hover{background:var(--gold);color:var(--black);transform:translateY(-3px)}.soc svg{width:20px;height:20px;fill:currentColor}
+.cartfab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:95;display:none;align-items:center;gap:10px;background:var(--black);color:var(--gold2);border:1px solid var(--gold);border-radius:999px;padding:13px 20px;font:600 12px var(--sans);letter-spacing:1.5px;text-transform:uppercase;box-shadow:0 10px 30px rgba(0,0,0,.35)}.cartfab.on{display:flex}.cartfab b{background:var(--gold);color:var(--black);border-radius:999px;min-width:22px;height:22px;display:grid;place-items:center;font-size:12px;padding:0 6px}
+.qty{display:flex;align-items:center;gap:6px}.qty button{width:38px;height:38px;border-radius:50%;border:1px solid var(--cream2);background:var(--white);font-size:20px;line-height:1}.qty b{min-width:28px;text-align:center;font:600 18px var(--serif)}
+.sheet.cart{display:block;max-width:560px}.crow{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--cream2)}.crow img{width:60px;height:72px;object-fit:cover;border-radius:8px;background:var(--cream);flex:none}.crow .ci{flex:1;min-width:0}.crow .ci b{display:block;font:500 18px var(--serif)}.crow .ci span{font-size:12px;color:var(--gray)}.crow .cs{font:600 17px var(--serif)}
+.crow .qty{margin-top:6px}.crow .qty button{width:30px;height:30px;font-size:16px}.crow .rm{margin-left:6px;border:0;background:none;color:var(--crimson);font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.ctot{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0 6px;font:600 28px var(--serif)}
+.cf label{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray);font-weight:600;margin:12px 0 5px}.cf input,.cf textarea{width:100%;padding:12px;border:1px solid var(--cream2);border-radius:8px;background:var(--cream);font:400 16px var(--sans);color:var(--black)}.cf input:focus,.cf textarea:focus{outline:none;border-color:var(--gold)}.cf textarea{min-height:64px;resize:vertical}
+.cf h3{font:500 22px var(--serif);margin-top:18px}.btn.alt{border-color:var(--gold);color:var(--black)}
+.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--black);color:var(--gold2);border:1px solid var(--gold);padding:11px 18px;border-radius:999px;z-index:400;font-size:13px;opacity:0;pointer-events:none;transition:.25s;max-width:90vw;text-align:center}.toast.on{opacity:1}
 </style>
 </head><body>
 <div class="announce"><span data-i="announce">✦ Envíos a todo Colombia ✦ Accesorios 100% artesanales</span><a href="catalogo.html" data-i="announce_link">Ver catálogo →</a></div>
@@ -160,7 +170,8 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
 <section class="sec" id="destacados" style="padding-top:0"><div class="wrap">
   <div class="center sechd rv"><span class="tag" data-i="feat_tag">Favoritos</span><h2 class="title" data-ih="feat_title">Piezas <em>destacadas</em></h2><div class="rule"></div></div>
   <div class="grid" id="fg"></div>
-  <div class="center" style="margin-top:38px"><a href="catalogo.html" class="btn dark" data-i="feat_all">Ver todo el catálogo</a></div>
+  <p id="fxn" style="text-align:center;font-size:11px;color:var(--gray);margin-top:20px"></p>
+  <div class="center" style="margin-top:20px"><a href="catalogo.html" class="btn dark" data-i="feat_all">Ver todo el catálogo</a></div>
 </div></section>
 
 <section class="sec proceso" id="nosotros"><div class="wrap rv">
@@ -176,6 +187,7 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
 <section class="sec contact" id="contacto"><div class="wrap rv">
   <span class="tag" data-i="ct_tag">Contacto</span><h2 class="title" data-i="ct_title">Hablemos</h2><div class="rule"></div>
   <p data-i="ct_desc"></p><a class="btn wab" id="wa1" href="#" target="_blank" rel="noopener" data-i="ct_btn">Escribir por WhatsApp</a>
+  <div class="soc" id="soc" style="margin-top:34px"></div>
   <div class="flogo"><span>C</span>hariana</div>
 </div></section>
 <footer data-i="copy"></footer>
@@ -234,6 +246,28 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
   R('announce_link','Ver catálogo →','View catalogue →','Vedi il catalogo →','Voir le catalogue →','Ver catálogo →');
   R('col_lbl_1','Colección 01','Collection 01','Collezione 01','Collection 01','Coleção 01');R('col_lbl_2','Colección 02','Collection 02','Collezione 02','Collection 02','Coleção 02');
   R('scroll','Desliza','Scroll','Scorri','Défiler','Role');R('stat_p','Piezas','Pieces','Pezzi','Pièces','Peças');R('stat_c','Colecciones','Collections','Collezioni','Collections','Coleções');R('stat_h','Artesanal','Handmade','Artigianale','Artisanal','Artesanal');
+  R('cart_btn','Carrito','Cart','Carrello','Panier','Carrinho');
+  R('cart_add','Agregar al carrito','Add to cart','Aggiungi al carrello','Ajouter au panier','Adicionar ao carrinho');
+  R('cart_added','✓ Agregado al carrito','✓ Added to cart','✓ Aggiunto al carrello','✓ Ajouté au panier','✓ Adicionado ao carrinho');
+  R('cart_title','Tu pedido','Your order','Il tuo ordine','Votre commande','Seu pedido');
+  R('cart_empty','Tu carrito está vacío.','Your cart is empty.','Il tuo carrello è vuoto.','Votre panier est vide.','Seu carrinho está vazio.');
+  R('cart_total','Total','Total','Totale','Total','Total');
+  R('cart_clear','Vaciar carrito','Empty cart','Svuota carrello','Vider le panier','Esvaziar carrinho');
+  R('cart_send','Enviar pedido por WhatsApp','Send order on WhatsApp','Invia ordine su WhatsApp','Envoyer la commande sur WhatsApp','Enviar pedido pelo WhatsApp');
+  R('cart_need','Completa nombre, teléfono, ciudad y dirección.','Please fill in name, phone, city and address.','Compila nome, telefono, città e indirizzo.','Renseignez nom, téléphone, ville et adresse.','Preencha nome, telefone, cidade e endereço.');
+  R('cart_data','Tus datos','Your details','I tuoi dati','Vos informations','Seus dados');
+  R('f_name','Nombre','Name','Nome','Nom','Nome');R('f_phone','Teléfono','Phone','Telefono','Téléphone','Telefone');R('f_city','Ciudad','City','Città','Ville','Cidade');
+  R('f_addr','Dirección de entrega','Delivery address','Indirizzo di consegna','Adresse de livraison','Endereço de entrega');
+  R('f_notes','Notas (opcional)','Notes (optional)','Note (facoltative)','Remarques (facultatif)','Observações (opcional)');
+  R('m_head','Hola Chariana, quiero hacer este pedido:','Hello Chariana, I would like to place this order:','Ciao Chariana, vorrei fare questo ordine:','Bonjour Chariana, je souhaite passer cette commande :','Olá Chariana, quero fazer este pedido:');
+  R('m_data','Mis datos:','My details:','I miei dati:','Mes informations :','Meus dados:');
+  R('m_opened','Se abrió WhatsApp con tu pedido.','WhatsApp opened with your order.','WhatsApp si è aperto con il tuo ordine.','WhatsApp s\'est ouvert avec votre commande.','O WhatsApp abriu com o seu pedido.');
+  R('m_copied','Pedido copiado. Pégalo en el chat de WhatsApp.','Order copied. Paste it in the WhatsApp chat.','Ordine copiato. Incollalo nella chat di WhatsApp.','Commande copiée. Collez-la dans le chat WhatsApp.','Pedido copiado. Cole no chat do WhatsApp.');
+  R('sold','Agotado','Sold out','Esaurito','Épuisé','Esgotado');
+  R('order1','Pedir solo este por WhatsApp','Order only this one on WhatsApp','Ordina solo questo su WhatsApp','Commander seulement celui-ci','Pedir só este pelo WhatsApp');
+  R('follow','Síguenos','Follow us','Seguici','Suivez-nous','Siga-nos');
+  R('fx_note','Precios en pesos colombianos (COP).','Prices are in Colombian pesos (COP). Amounts shown in {cur} are approximate, based on today\'s exchange rate.','I prezzi sono in pesos colombiani (COP). Gli importi in {cur} sono indicativi, in base al cambio del giorno.','Les prix sont en pesos colombiens (COP). Les montants en {cur} sont approximatifs, selon le taux du jour.','Os preços são em pesos colombianos (COP). Os valores em {cur} são aproximados, conforme a cotação do dia.');
+  R('fx_cart','Se cobra en pesos colombianos: {cop}.','Charged in Colombian pesos: {cop}.','Addebitato in pesos colombiani: {cop}.','Facturé en pesos colombiens : {cop}.','Cobrado em pesos colombianos: {cop}.');
   /* ---- Catálogo ---- */
   R('cat_title','Catálogo','Catalogue','Catalogo','Catalogue','Catálogo');
   R('cat_sub','Explora nuestras dos colecciones y escríbenos para pedir la pieza que te guste.','Explore our two collections and message us to order the piece you love.','Esplora le nostre due collezioni e scrivici per ordinare il pezzo che ami.','Découvrez nos deux collections et écrivez-nous pour commander la pièce qui vous plaît.','Explore nossas duas coleções e fale conosco para pedir a peça que você amar.');
@@ -254,6 +288,10 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
 
   function detect(){var s;try{s=localStorage.getItem(KEY)}catch(e){}
     if(s&&D[s])return s;var n=((navigator.languages&&navigator.languages[0])||navigator.language||'es').slice(0,2).toLowerCase();return D[n]?n:'es'}
+var DEF={whatsapp:'573113163434',instagram:'https://www.instagram.com/chariana_accesorios_artesanal?igsh=bm4zNDNzeGhjNDhw',facebook:'https://www.facebook.com/share/16LKqij1uk/',tiktok:'https://tiktok.com/@chariana.accesorios'};
+  var CUR={es:{c:'COP',loc:'es-CO'},en:{c:'USD',loc:'en-US'},it:{c:'EUR',loc:'it-IT'},fr:{c:'EUR',loc:'fr-FR'},pt:{c:'BRL',loc:'pt-BR'}},FXK='chariana-fx',RT={USD:1/3327,EUR:1/3684,BRL:1/561},FXT=0;
+  try{var fxs=JSON.parse(localStorage.getItem(FXK)||'null');if(fxs&&fxs.r&&fxs.r.USD){RT=fxs.r;FXT=fxs.t}}catch(e){}
+  function fxLoad(){if(Date.now()-FXT<6*36e5)return;fetch('https://open.er-api.com/v6/latest/COP').then(function(r){return r.json()}).then(function(j){if(j&&j.rates&&j.rates.USD&&j.rates.EUR&&j.rates.BRL){RT={USD:j.rates.USD,EUR:j.rates.EUR,BRL:j.rates.BRL};FXT=Date.now();try{localStorage.setItem(FXK,JSON.stringify({r:RT,t:FXT}))}catch(e){}window.dispatchEvent(new Event('langchange'))}}).catch(function(){})}
   var CR={},cur=detect(),OV={};try{OV=JSON.parse(localStorage.getItem('chariana-ov')||'{}')}catch(e){}
   function t(k,v){var s=(OV[k]&&OV[k][cur])||(D[cur]&&D[cur][k]);if(s==null)s=D.es[k];if(s==null)return k;if(v)s=s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!=null?v[x]:m});return s}
   function qa(s){return[].slice.call(document.querySelectorAll(s))}
@@ -270,13 +308,15 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
   var PH='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><rect width="100" height="125" fill="#efe6d8"/><path d="M50 40 72 62 50 84 28 62Z" fill="none" stroke="#c9a84c" stroke-width="2"/><path d="M38 40h24l10 22H28Z" fill="none" stroke="#c9a84c" stroke-width="1.5"/></svg>');
   document.addEventListener('error',function(e){var i=e.target;if(i&&i.tagName==='IMG'&&!i.dataset.f){i.dataset.f=1;i.src=PH}},true);
   function setOv(o){OV=o||{};try{localStorage.setItem('chariana-ov',JSON.stringify(OV))}catch(e){}apply()}
-  window.I={D:D,setOv:setOv,t:t,get lang(){return cur},set:set,apply:apply,PH:PH,
+  window.I={DEF:DEF,D:D,setOv:setOv,t:t,get lang(){return cur},set:set,apply:apply,PH:PH,
     pick:function(p){var x=p.i18n&&p.i18n[cur]||{};return{nombre:x.nombre||p.nombre,desc:x.desc||p.desc}},
-    money:function(n){try{return new Intl.NumberFormat(LOC[cur],{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n)}catch(e){return'$'+n}},
+    money:function(n){var c=CUR[cur];try{if(c.c==='COP')return new Intl.NumberFormat(c.loc,{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n);return new Intl.NumberFormat(c.loc,{style:'currency',currency:c.c,minimumFractionDigits:2,maximumFractionDigits:2}).format(n*RT[c.c])}catch(e){return'$'+n}},
+    cop:function(n){return new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n)+' COP'},
+    cur:function(){return CUR[cur].c},
     img:function(p){return p.img||PH},
     setCats:function(a){CR={};(a||[]).forEach(function(x){CR[x.nombre]=x.i18n||{}})},
     cat:function(c){var x=CR[c];if(x&&x[cur])return x[cur];return D.es['c_'+c]?t('c_'+c):c},
-    load:function(){return fetch('productos.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){if(window.__DATA)return window.__DATA;throw 0})},
+    load:function(){return fetch('productos.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){if(window.__DATA)return window.__DATA;throw 0}).then(function(d){var c=d.config=d.config||{};Object.keys(DEF).forEach(function(k){if(k==='whatsapp'?!c[k]:c[k]===undefined)c[k]=DEF[k]});return d})},
     wa:function(cfg,text){var n=(cfg&&cfg.whatsapp||'').replace(/\D/g,'');return n?'https://wa.me/'+n+(text?'?text='+encodeURIComponent(text):''):(cfg&&cfg.wa_link)||'#'},
     esc:function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}};
   function mk(c,h){var e=document.createElement('div');e.className=c;if(h)e.innerHTML=h;document.body.appendChild(e);return e}
@@ -286,6 +326,7 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
       document.addEventListener('mousemove',function(e){d.style.left=e.clientX+'px';d.style.top=e.clientY+'px';r.style.left=e.clientX+'px';r.style.top=e.clientY+'px'});
       document.addEventListener('mouseover',function(e){var b=!!e.target.closest('a,button,.card,.col');d.classList.toggle('big',b);r.classList.toggle('big',b)})}}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',extras);else extras();
+  if(!document.documentElement.hasAttribute('data-adm'))fxLoad();
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
 })();
 </script>
@@ -298,13 +339,15 @@ footer{background:var(--black);color:rgba(255,255,255,.3);text-align:center;font
   var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12}):null;
   document.querySelectorAll('.rv').forEach(function(e){io?io.observe(e):e.classList.add('in')});
   var data=null;
-  function draw(){
+  function socials(cfg){var ic={instagram:'M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88',facebook:'M24 12.07C24 5.44 18.63.07 12 .07S0 5.44 0 12.07c0 5.99 4.39 10.95 10.13 11.85v-8.39H7.08v-3.47h3.05V9.43c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.23 2.69.23v2.95h-1.52c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.39C19.61 23.03 24 18.06 24 12.07',tiktok:'M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07'},nm={instagram:'Instagram',facebook:'Facebook',tiktok:'TikTok'},e=document.getElementById('soc');if(!e||!cfg)return;
+  e.innerHTML=['instagram','facebook','tiktok'].filter(function(k){return cfg[k]}).map(function(k){return'<a href="'+I.esc(cfg[k])+'" target="_blank" rel="noopener" aria-label="'+nm[k]+'"><svg viewBox="0 0 24 24"><path d="'+ic[k]+'"/></svg></a>'}).join('')}
+  function draw(){var fe=document.getElementById('fxn');if(fe)fe.textContent=I.cur()==='COP'?'':I.t('fx_note',{cur:I.cur()});
     if(!data)return;var P=data.productos,t=I.t,n=function(c){var k=P.filter(function(p){return p.col===c}).length;return t(k===1?'n_one':'n_many',{n:k})};
     document.getElementById('nt').textContent=n('tierradentro');document.getElementById('nc').textContent=n('contemporanea');
     document.getElementById('st').innerHTML=[[P.length,'stat_p'],[2,'stat_c'],['100%','stat_h']].map(function(s){return'<div class="stat"><b>'+s[0]+'</b><span>'+t(s[1])+'</span></div>'}).join('');
     var f=P.filter(function(p){return p.badge}).concat(P.filter(function(p){return!p.badge})).slice(0,4);
     document.getElementById('fg').innerHTML=f.map(function(p){var x=I.pick(p),s=p.estrellas||5;return'<a class="card" href="catalogo.html#p'+p.id+'"><div class="im">'+(p.badge?'<span class="bd '+p.badge+'">'+t('b_'+p.badge)+'</span>':'')+'<img src="'+I.esc(I.img(p))+'" alt="'+I.esc(x.nombre)+'" loading="lazy"></div><div class="tx"><div class="ct">'+I.esc(I.cat(p.cat))+'</div><h3>'+I.esc(x.nombre)+'</h3><div class="stars">'+'★'.repeat(s)+'<span style="opacity:.3">'+'★'.repeat(5-s)+'</span></div><div class="pr"><b>'+I.money(p.precio)+'</b>'+(p.precioOld?'<s>'+I.money(p.precioOld)+'</s>':'')+'</div></div></a>'}).join('');
-    var w=I.wa(data.config,'');document.getElementById('wa1').href=w;document.getElementById('wa2').href=w;
+    var w=I.wa(data.config,'');socials(data.config);document.getElementById('wa1').href=w;document.getElementById('wa2').href=w;
   }
   I.load().then(function(d){data=d;I.setOv(d.textos);I.setCats(d.categorias);var im=(d.config&&d.config.imgs)||{},bg=function(id,f,g){var e=document.getElementById(id);if(f)e.style.cssText+=';background-image:'+(g?'linear-gradient(to top,rgba(0,0,0,.8),rgba(0,0,0,.25)),':'')+'url('+f+');background-size:cover;background-position:center'};bg('hb',im.hero);bg('ct',im.col_t,1);bg('cc',im.col_c,1);draw()}).catch(function(){});
   window.addEventListener('langchange',draw);
