@@ -592,23 +592,23 @@
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
-      "desc": "Juego artesanal de collar y aretes tejidos a mano en cuentas rojas y negras con diseño de pluma, inspirado en el ave cardenal y en la naturaleza de Tierradentro.",
+      "desc": "Juego artesanal de collar y aretes tejidos a mano en mostacillas rojas y negras con diseño de pluma, inspirado en el ave cardenal y en la naturaleza de Tierradentro.",
       "i18n": {
         "en": {
           "nombre": "Cardinal Set",
-          "desc": "Handcrafted necklace and earring set woven by hand with red and black beads and a feather design, inspired by the cardinal bird and the nature of Tierradentro."
+          "desc": "Handcrafted set of necklace and earrings woven by hand from red and black seed beads with a feather design, inspired by the cardinal bird and the nature of Tierradentro."
         },
         "it": {
           "nombre": "Completo Cardinal",
-          "desc": "Set artigianale composto da collana e orecchini realizzati a mano con perline rosse e nere, con un motivo a piume ispirato all'uccello cardinale e alla natura di Tierradentro."
+          "desc": "Parure artigianale composta da collana e orecchini tessuti a mano con perline rosse e nere, con un motivo a piume ispirato all'uccello cardinale e alla natura di Tierradentro."
         },
         "fr": {
           "nombre": "Ensemble Cardinal",
-          "desc": "Parure artisanale composée d’un collier et de boucles d’oreilles tissés à la main avec des perles rouges et noires et un motif de plume, inspirée du cardinal et de la nature de Tierradentro."
+          "desc": "Parure artisanale composée d’un collier et de boucles d’oreilles tissés à la main en perles de rocaille rouges et noires, avec un motif de plumes inspiré du cardinal et de la nature de Tierradentro."
         },
         "pt": {
           "nombre": "Conjunto Cardenal",
-          "desc": "Conjunto artesanal de colar e brincos tecidos à mão com contas vermelhas e pretas e design de penas, inspirado no pássaro cardeal e na natureza de Tierradentro."
+          "desc": "Conjunto artesanal de colar e brincos tecidos à mão com miçangas vermelhas e pretas, com design de penas inspirado no pássaro cardeal e na natureza de Tierradentro."
         }
       }
     },
