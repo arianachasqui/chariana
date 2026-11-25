@@ -1064,6 +1064,20 @@
       "stock": 2,
       "desc": "Topos artesanales con relieve tipo flor tejidos a mano en mostacillas blancas con un centro de mostacillas doradas. Chariana",
       "i18n": {}
+    },
+    {
+      "id": 62,
+      "nombre": "Topos Flores 3D en otros colored",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 30000,
+      "precioOld": 35000,
+      "img": "prod-62-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Topos artesanales con relieve tipo flor tejidos a mano en mostacillas con un centro de mostacillas doradas. Chariana",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1111,20 +1125,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 62,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-62-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 63,
       "nombre": "",
