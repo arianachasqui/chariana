@@ -1148,6 +1148,20 @@
       "stock": 5,
       "desc": "Aretes artesanales tejidos a mano con un topo superior en mostacilla dorada y un colgante calado con puntas, combinando murano y mostacillas en tono verde claro con detalles en mostacilla dorada. Chariana Artesanal",
       "i18n": {}
+    },
+    {
+      "id": 68,
+      "nombre": "Aretes artesanales tejidos a mano con un topo superior en mostacilla dorada y un colgante calado con puntas, combinando cuentas facetadas y mostacillas en tono verde agua con detalles en mostacilla dorada. Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 38000,
+      "precioOld": 43000,
+      "img": "prod-68-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Aretes artesanales tejidos a mano con un topo superior en mostacilla negra y un colgante calado con puntas, elaborados con murano y mostacilla gris oscura y cuentas facetadas con destellos tornasolados",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1231,20 +1245,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-67-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 68,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-68-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
