@@ -1134,6 +1134,20 @@
       "stock": 1,
       "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con topo superior calado en tono negro y un collar con cadena delgada dorada y dije central en forma de rombo; todas las piezas combinan cuentas rojas, cristales facetados en tonos rojos  y bordes tejidos en mostacilla dorada. Chariana Artesanal",
       "i18n": {}
+    },
+    {
+      "id": 63,
+      "nombre": "Brillos de Estrellas — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 38000,
+      "precioOld": 45000,
+      "img": "prod-63-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Aretes artesanales tejidos a mano con un topo superior en mostacilla dorada y un colgante calado con puntas, combinando murano y mostacillas en tono verde claro con detalles en mostacilla dorada. Chariana Artesanal",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1181,20 +1195,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 63,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-63-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 64,
       "nombre": "",
