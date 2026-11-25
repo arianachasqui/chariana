@@ -952,6 +952,20 @@
           "desc": "Brincos artesanais tecidos à mão com miçangas e franjas pendentes nos tons branco, preto, vermelho, cinza e dourado brilhante, inspirados no pássaro pica-pau e na natureza, cultura e identidade de Tierradentro."
         }
       }
+    },
+    {
+      "id": 56,
+      "nombre": "Aretes Colgantes Carmesí y Negro — Chariana Artesanal",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 35000,
+      "precioOld": 40000,
+      "img": "prod-56-mwvixfcv.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 3,
+      "desc": "Aretes artesanales tejidos a mano con mostacillas en tonos rojos intensos y negros que delinean su silueta alargada con un topo superior a juego. Un diseño de contraste marcado y tejido detallado que aporta presencia y carácter a cualquier look. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1021,20 +1035,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-55-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 56,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-56-mwvixfcv.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
