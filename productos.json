@@ -1022,6 +1022,20 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano en cuentas con caída de flecos en tonos blancos, negros, grises y destellos celestes, inspirados en el ave tijereta y en la naturaleza, cultura e identidad de Tierradentro, Inzá – Cauca. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 59,
+      "nombre": "Topos Destellos Cuadrados — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 25000,
+      "precioOld": 30000,
+      "img": "prod-59-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Topos artesanales de silueta cuadrada tejidos a mano con cuatro cristales centrales en tonos rosados y cobrizos, enmarcados con mostacillas doradas y un borde exterior en tonos calidos. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1069,20 +1083,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 59,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-59-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 60,
       "nombre": "",
