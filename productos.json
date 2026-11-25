@@ -966,6 +966,20 @@
       "stock": 3,
       "desc": "Aretes artesanales tejidos a mano con mostacillas en tonos rojos intensos y negros que delinean su silueta alargada con un topo superior a juego. Un diseño de contraste marcado y tejido detallado que aporta presencia y carácter a cualquier look. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 58,
+      "nombre": "Aretes Colgantes Plumas Toreador — Chariana Artesanal",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 35000,
+      "precioOld": 40000,
+      "img": "prod-58-mwvixfcv.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales con topo triangular en madera marrón oscuro y tejido colgante en forma de gota elaborado con cuentas crema en el centro y bordes en tonos café y ámbar dorado. Una pieza de acabado tejido a mano con estética limpia y cálida. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1049,20 +1063,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-57-mwvixfcv.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 58,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-58-mwvixfcv.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
