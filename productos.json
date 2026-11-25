@@ -1092,6 +1092,20 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano con un topo superior en mostacillas blancas y doradas, unidos a una flor grande con relieve en mostacillas blancas y doradas y una cuenta central blanca con detalle de rosa. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 88,
+      "nombre": "Set Perlado — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-88-mwvjw5w9.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con base dorada circular y un collar con cadena dorada de esferas pequeñas y dije central calado; ambas piezas combinan cuentas blancas perladas con destellos iridiscentes, mostacillas doradas y borde en mostacillas blancas. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1469,20 +1483,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-87-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 88,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-88-mwvjw5w9.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
