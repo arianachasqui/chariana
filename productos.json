@@ -1036,6 +1036,20 @@
       "stock": 5,
       "desc": "Topos artesanales de silueta cuadrada tejidos a mano con cuatro cristales centrales en tonos rosados y cobrizos, enmarcados con mostacillas doradas y un borde exterior en tonos calidos. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 60,
+      "nombre": "Topos Destellos Cuadrados en otros Colores",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 30000,
+      "precioOld": 35000,
+      "img": "prod-60-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Topos artesanales de silueta cuadrada tejidos a mano con cuatro cristales centrales , enmarcados con mostacillas doradas y un borde exterior. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1083,20 +1097,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 60,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-60-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 61,
       "nombre": "",
