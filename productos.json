@@ -1078,6 +1078,20 @@
       "stock": 5,
       "desc": "Topos artesanales con relieve tipo flor tejidos a mano en mostacillas con un centro de mostacillas doradas. Chariana",
       "i18n": {}
+    },
+    {
+      "id": 65,
+      "nombre": "Maxi Flores 3D — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-65-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano con un topo superior en mostacillas blancas y doradas, unidos a una flor grande con relieve en mostacillas blancas y doradas y una cuenta central blanca con detalle de rosa. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1147,20 +1161,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-64-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 65,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-65-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
