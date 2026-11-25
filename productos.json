@@ -1120,6 +1120,20 @@
       "stock": 0,
       "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con base circular dorada y un collar con cadena dorada de esferas pequeñas y dije central circular calado; ambas piezas combinan mostacillas azul intenso, cuentas facetadas azul claro y detalles de mostacillas y canutillos dorados. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 90,
+      "nombre": "Brillos Carmesí — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 60000,
+      "precioOld": 63000,
+      "img": "prod-90-mwvjw5w9.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con topo superior calado en tono negro y un collar con cadena delgada dorada y dije central en forma de rombo; todas las piezas combinan cuentas rojas, cristales facetados en tonos rojos  y bordes tejidos en mostacilla dorada. Chariana Artesanal",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1497,20 +1511,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-87-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 90,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-90-mwvjw5w9.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
