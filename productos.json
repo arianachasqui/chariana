@@ -1008,6 +1008,20 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano en cuentas con caída de flecos en tonos azules intensos y negros, inspirados en el ave chamón y en la naturaleza de Tierradentro, Inzá – Cauca. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 51,
+      "nombre": "Aretes Tijereta — Colección Tierradentro",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-51-mwu2gy7k.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano en cuentas con caída de flecos en tonos blancos, negros, grises y destellos celestes, inspirados en el ave tijereta y en la naturaleza, cultura e identidad de Tierradentro, Inzá – Cauca. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1054,22 +1068,7 @@
       "pt": "Chariana Nova"
     }
   },
-  "borradores": [
-    {
-      "id": 51,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-51-mwu2gy7k.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    }
-  ],
+  "borradores": [],
   "categorias": [
     {
       "nombre": "Aretes",
