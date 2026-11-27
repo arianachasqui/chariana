@@ -1235,6 +1235,20 @@
           "desc": "Brincos artesanais tecidos à mão com uma parte superior em miçangas douradas e um pingente vazado com pontas, combinando contas facetadas e miçangas em tom verde-água com detalhes em miçangas douradas. Chariana Artesanal."
         }
       }
+    },
+    {
+      "id": 72,
+      "nombre": "Olas de Mar",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 48000,
+      "precioOld": 50000,
+      "img": "prod-72-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por una pulsera  con diseño geométrico de triángulos y franjas y un par de aretes con relieve tipo racimo, elaborados en mostacillas azul celeste, azul oscuro y blanco. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1360,20 +1374,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-71-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 72,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-72-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
