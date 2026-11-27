@@ -1417,6 +1417,20 @@
       "stock": 20,
       "desc": "Topos artesanales cuadrados tejidos a mano, elaborados con murano facetadas en tonos \nCafés y cobrizos al centro y un tejido perimetral en mostacillas vino, rosa y doradas. Chariana",
       "i18n": {}
+    },
+    {
+      "id": 97,
+      "nombre": "Topos Cuadrados Variedad de Colores",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 20000,
+      "precioOld": 25000,
+      "img": "prod-97-mwxiq3i1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 20,
+      "desc": "Topos artesanales cuadrados tejidos a mano, elaborados con cuentas facetadas en tonos rosados y cobrizos al centro y un tejido perimetral en mostacillas vino, rosa y doradas. Chariana",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1654,20 +1668,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-96-mwxiq3i1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 97,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-97-mwxiq3i1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
