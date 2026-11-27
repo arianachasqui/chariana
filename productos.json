@@ -1319,6 +1319,20 @@
       "stock": 4,
       "desc": "Aretes artesanales tejidos a mano con topo circular bicolor en madera y carey y colgante triangular con remate inferior en flecos cortos, elaborados con mostacillas blancas, rojas, café oscuro y tonos dorados. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 73,
+      "nombre": "Cascada de Perlas - Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-73-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por una pulsera con entramado calado y un par de aretes con argolla dorada y motivo calado, elaborados con perlas nacaradas claras, murano facetadas en tono ámbar y mostacillas doradas. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1374,20 +1388,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-67-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 73,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-73-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
