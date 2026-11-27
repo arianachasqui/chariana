@@ -1162,6 +1162,20 @@
       "stock": 5,
       "desc": "Aretes artesanales tejidos a mano con un topo superior en mostacilla negra y un colgante calado con puntas, elaborados con murano y mostacilla gris oscura y cuentas facetadas con destellos tornasolados",
       "i18n": {}
+    },
+    {
+      "id": 92,
+      "nombre": "Brillo Carmesi",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-92-mwxiq3i1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con topo superior calado en dorado y un collar con cadena delgada dorada y dije central en forma de rombo; todas las piezas combinan mostacillas y murano rojos, y bordes tejidos en mostacilla dorada. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1525,20 +1539,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-91-mwvjw5w9.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 92,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-92-mwxiq3i1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
