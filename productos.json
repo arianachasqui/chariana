@@ -1333,6 +1333,20 @@
       "stock": 1,
       "desc": "Conjunto artesanal tejido a mano compuesto por una pulsera con entramado calado y un par de aretes con argolla dorada y motivo calado, elaborados con perlas nacaradas claras, murano facetadas en tono ámbar y mostacillas doradas. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 74,
+      "nombre": "Destellos Plateados — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-74-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por una pulsera de módulos geométricos enlazados con remate inferior en cuenta cristalina y un par de aretes en racimo; ambas piezas combinan muranos facetadas oscuras con reflejos tornasolados y mostacillas plateadas. Chariana Artesanal",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1388,20 +1402,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-67-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 74,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-74-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
