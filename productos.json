@@ -1249,6 +1249,20 @@
       "stock": 1,
       "desc": "Conjunto artesanal tejido a mano compuesto por una pulsera  con diseño geométrico de triángulos y franjas y un par de aretes con relieve tipo racimo, elaborados en mostacillas azul celeste, azul oscuro y blanco. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 64,
+      "nombre": "Margaritas- Chariana",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 65000,
+      "precioOld": 65000,
+      "img": "prod-64-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano con topo circular dorado en espiral y colgante de flecos largos, elaborados con mostacillas rojas, blancas, doradas y negras que forman un motivo floral superior y motas en los flecos. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1296,20 +1310,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 64,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-64-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 66,
       "nombre": "",
