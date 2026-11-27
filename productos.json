@@ -1204,6 +1204,37 @@
       "stock": 1,
       "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con base circular dorada y un collar con cadena dorada de esferas pequeñas y dije central circular calado; ambas piezas combinan mostacillas azul intenso, murano facetadas azul claro y detalles de mostacillas. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 95,
+      "nombre": "Brillos de Estrellas — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 35000,
+      "precioOld": 40000,
+      "img": "prod-95-mwxiq3i1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano con un topo superior en mostacilla dorada y un colgante calado con puntas, combinando cuentas facetadas y mostacillas en tono verde agua con detalles en mostacilla dorada. Chariana Artesanal.",
+      "i18n": {
+        "en": {
+          "nombre": "Star Glitters — Chariana Artesanal",
+          "desc": "Handwoven artisan earrings with a top section in gold-tone seed beads and an openwork pendant with points, combining faceted beads and seed beads in an aqua-green tone with gold-tone seed bead details. Chariana Artesanal."
+        },
+        "it": {
+          "nombre": "Brillanti di Stelle — Chariana Artesanal",
+          "desc": "Orecchini artigianali tessuti a mano con una parte superiore in perline dorate e un ciondolo traforato con punte, che combina perline sfaccettate e perline in tonalità verde acqua con dettagli in perline dorate. Chariana Artesanal."
+        },
+        "fr": {
+          "nombre": "Éclats d’étoiles — Chariana Artesanal",
+          "desc": "Boucles d'oreilles artisanales tissées à la main avec un haut en perles de rocaille dorées et un pendentif ajouré à pointes, combinant des perles à facettes et des perles de rocaille de couleur vert d'eau avec des détails en perles de rocaille dorées. Chariana Artesanal."
+        },
+        "pt": {
+          "nombre": "Brilhos de Estrelas — Chariana Artesanal",
+          "desc": "Brincos artesanais tecidos à mão com uma parte superior em miçangas douradas e um pingente vazado com pontas, combinando contas facetadas e miçangas em tom verde-água com detalhes em miçangas douradas. Chariana Artesanal."
+        }
+      }
     }
   ],
   "textos": {
@@ -1567,20 +1598,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-91-mwvjw5w9.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 95,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-95-mwxiq3i1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
