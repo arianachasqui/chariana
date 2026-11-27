@@ -1375,6 +1375,20 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano con topo romboidal calado en mostacilla dorada y cuenta central cristalina, y colgante circular calado de centro hexagonal dorado, elaborados con mostacillas rojas, murano rojos facetadas y detalles en mostacilla y dorado. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 99,
+      "nombre": "Flores Dobles  variedad de colores",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 30000,
+      "precioOld": 35000,
+      "img": "prod-99-mwxiq3i1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 6,
+      "desc": "Topos artesanales tejidos a mano con relieve tridimensional en forma de flor, elaborados con mostacillas blancas y un centro tejido en mostacilla dorada. Chariana Artesanal",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1640,20 +1654,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-98-mwxiq3i1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 99,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-99-mwxiq3i1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
