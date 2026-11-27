@@ -1361,6 +1361,20 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano con topo rectangular dorado y colgante calado de borde festoneado, elaborados con mostacillas en tonos vino, rosa pálido y dorado junto con cuentas facetadas transparentes. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 75,
+      "nombre": "Rojo Hexagonal",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 45000,
+      "precioOld": 50000,
+      "img": "prod-75-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano con topo romboidal calado en mostacilla dorada y cuenta central cristalina, y colgante circular calado de centro hexagonal dorado, elaborados con mostacillas rojas, murano rojos facetadas y detalles en mostacilla y dorado. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1416,20 +1430,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-67-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 75,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-75-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
