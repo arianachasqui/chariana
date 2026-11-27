@@ -1389,6 +1389,20 @@
       "stock": 6,
       "desc": "Topos artesanales tejidos a mano con relieve tridimensional en forma de flor, elaborados con mostacillas blancas y un centro tejido en mostacilla dorada. Chariana Artesanal",
       "i18n": {}
+    },
+    {
+      "id": 100,
+      "nombre": "Topos flor Doble",
+      "col": "tierradentro",
+      "cat": "Aretes",
+      "precio": 30000,
+      "precioOld": 35000,
+      "img": "prod-100-mwxiq3i1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 5,
+      "desc": "Topos artesanales tejidos a mano con relieve tridimensional en forma de flor, elaborados con mostacillas blancas y un centro tejido en mostacilla dorada. Chariana Artesanal",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1654,20 +1668,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-98-mwxiq3i1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 100,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-100-mwxiq3i1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
