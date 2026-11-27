@@ -1291,6 +1291,20 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano con gancho dorado y colgante circular calado, elaborados con murano en tono beige, mostacillas café oscuro y detalles en mostacillas beige y doradas. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 70,
+      "nombre": "Media Flor - Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 43000,
+      "precioOld": 48000,
+      "img": "prod-70-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 4,
+      "desc": "Aretes artesanales tejidos a mano con topo circular bicolor en madera y carey y colgante triangular con remate inferior en flecos cortos, elaborados con mostacillas blancas, rojas, café oscuro y tonos dorados. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1346,20 +1360,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-67-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 70,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-70-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
