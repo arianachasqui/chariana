@@ -1347,6 +1347,20 @@
       "stock": 1,
       "desc": "Conjunto artesanal tejido a mano compuesto por una pulsera de módulos geométricos enlazados con remate inferior en cuenta cristalina y un par de aretes en racimo; ambas piezas combinan muranos facetadas oscuras con reflejos tornasolados y mostacillas plateadas. Chariana Artesanal",
       "i18n": {}
+    },
+    {
+      "id": 76,
+      "nombre": "Gotas Caladas",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 45000,
+      "precioOld": 50000,
+      "img": "prod-76-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano con topo rectangular dorado y colgante calado de borde festoneado, elaborados con mostacillas en tonos vino, rosa pálido y dorado junto con cuentas facetadas transparentes. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1416,20 +1430,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-75-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 76,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-76-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
