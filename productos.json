@@ -1190,6 +1190,20 @@
       "stock": 1,
       "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con base circular dorada y un collar con cadena dorada de esferas pequeñas y dije central calado; ambas piezas combinan muramos blancos perladas con destellos iridiscentes, mostacillas doradas y borde en mostacillas blancas. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 94,
+      "nombre": "Aros Azul Mediterráneo — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 55000,
+      "precioOld": 60000,
+      "img": "prod-94-mwxiq3i1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con base circular dorada y un collar con cadena dorada de esferas pequeñas y dije central circular calado; ambas piezas combinan mostacillas azul intenso, murano facetadas azul claro y detalles de mostacillas. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1553,20 +1567,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-91-mwvjw5w9.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 94,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-94-mwxiq3i1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
