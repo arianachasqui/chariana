@@ -1277,6 +1277,20 @@
       "stock": 1,
       "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con base circular dorada y un collar con cadena dorada y dije circular calado; ambas piezas combinan muranos blancos y negros con mostacillas doradas y toques iridiscentes. Chariana",
       "i18n": {}
+    },
+    {
+      "id": 66,
+      "nombre": "Destellos de Estrellas",
+      "col": "contemporanea",
+      "cat": "Aretes",
+      "precio": 35000,
+      "precioOld": 40000,
+      "img": "prod-66-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Aretes artesanales tejidos a mano con gancho dorado y colgante circular calado, elaborados con murano en tono beige, mostacillas café oscuro y detalles en mostacillas beige y doradas. Chariana Artesanal.",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1324,20 +1338,6 @@
     }
   },
   "borradores": [
-    {
-      "id": 66,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-66-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
     {
       "id": 67,
       "nombre": "",
