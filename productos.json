@@ -1263,6 +1263,20 @@
       "stock": 1,
       "desc": "Aretes artesanales tejidos a mano con topo circular dorado en espiral y colgante de flecos largos, elaborados con mostacillas rojas, blancas, doradas y negras que forman un motivo floral superior y motas en los flecos. Chariana Artesanal.",
       "i18n": {}
+    },
+    {
+      "id": 69,
+      "nombre": "Mosaico — Chariana Artesanal",
+      "col": "contemporanea",
+      "cat": "Sets",
+      "precio": 65000,
+      "precioOld": 70000,
+      "img": "prod-69-mwvjk4a1.jpg",
+      "badge": "nuevo",
+      "estrellas": 5,
+      "stock": 1,
+      "desc": "Conjunto artesanal tejido a mano compuesto por un par de aretes con base circular dorada y un collar con cadena dorada y dije circular calado; ambas piezas combinan muranos blancos y negros con mostacillas doradas y toques iridiscentes. Chariana",
+      "i18n": {}
     }
   ],
   "textos": {
@@ -1332,20 +1346,6 @@
       "precio": 0,
       "precioOld": null,
       "img": "prod-67-mwvjk4a1.jpg",
-      "badge": "nuevo",
-      "estrellas": 5,
-      "stock": 5,
-      "desc": "",
-      "i18n": {}
-    },
-    {
-      "id": 69,
-      "nombre": "",
-      "col": "tierradentro",
-      "cat": "Aretes",
-      "precio": 0,
-      "precioOld": null,
-      "img": "prod-69-mwvjk4a1.jpg",
       "badge": "nuevo",
       "estrellas": 5,
       "stock": 5,
